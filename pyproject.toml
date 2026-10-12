@@ -1,0 +1,46 @@
+[project]
+name = "stock-data-mcp"
+version = "0.1.0"
+description = "Personal market-data MCP server: SEC EDGAR, FRED and Yahoo Finance"
+authors = [{ name = "Lukas Moser" }]
+requires-python = ">=3.12"
+dependencies = [
+    "aiolimiter>=1.3.0",
+    "httpx>=0.28.1",
+    "mcp[cli]>=2.3.0",
+    "pandas>=3.0.6",
+    "pydantic-settings>=2.15.0",
+    "tenacity>=9.2.1",
+    "yfinance>=1.7.0",
+]
+
+[project.scripts]
+stock-data-mcp = "stock_data_mcp.server:main"
+
+[build-system]
+requires = ["uv_build>=0.11.32,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "respx>=0.23.1",
+    "ruff>=0.17.0",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = ["live: hits real upstream APIs (run with -m live)"]
+addopts = "-m 'not live'"
