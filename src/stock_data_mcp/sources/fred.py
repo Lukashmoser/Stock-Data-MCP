@@ -7,6 +7,7 @@ import httpx
 from ..cache import DAY, HOUR, Cache
 from ..errors import NotFound, SourceError
 from ..http import get_json
+from ..validate import clean_text
 
 SOURCE = "FRED"
 BASE = "https://api.stlouisfed.org/fred"
@@ -57,9 +58,9 @@ class Fred:
             raw = await self._get("series", series_id=sid)
             s = (raw.get("seriess") or [{}])[0]
             return {
-                "title": s.get("title"),
-                "units": s.get("units"),
-                "frequency": s.get("frequency"),
+                "title": clean_text(s.get("title")),
+                "units": clean_text(s.get("units")),
+                "frequency": clean_text(s.get("frequency")),
                 "seasonal_adjustment": s.get("seasonal_adjustment_short"),
                 "last_updated": s.get("last_updated"),
             }

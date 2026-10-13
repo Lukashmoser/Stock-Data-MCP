@@ -11,6 +11,7 @@ from aiolimiter import AsyncLimiter
 from ..cache import DAY, HOUR, Cache, CacheResult
 from ..errors import NotFound
 from ..http import get_json
+from ..validate import clean_text
 from .xbrl_map import ALL_CONCEPTS, MAP_VERSION
 
 SOURCE = "SEC EDGAR"
@@ -51,7 +52,8 @@ class Edgar:
         async def fetch() -> dict[str, list]:
             raw = await self._get(TICKERS_URL)
             return {
-                normalize_ticker(row["ticker"]): [int(row["cik_str"]), row["title"]] for row in raw.values()
+                normalize_ticker(row["ticker"]): [int(row["cik_str"]), clean_text(row["title"])]
+                for row in raw.values()
             }
 
         return (await self.cache.get_or_fetch("edgar:tickers", DAY, fetch)).value
@@ -79,10 +81,10 @@ class Edgar:
             raw = await self._get(SUBMISSIONS_URL.format(cik=cik))
             recent = raw.get("filings", {}).get("recent", {})
             return {
-                "name": raw.get("name"),
+                "name": clean_text(raw.get("name")),
                 "tickers": raw.get("tickers", []),
                 "sic": raw.get("sic"),
-                "sic_description": raw.get("sicDescription"),
+                "sic_description": clean_text(raw.get("sicDescription")),
                 "fiscal_year_end": raw.get("fiscalYearEnd"),
                 "recent": {c: recent.get(c, []) for c in _FILING_COLS},
             }
@@ -118,7 +120,7 @@ class Edgar:
             }
             desc = recent["primaryDocDescription"][i]
             if desc and desc.upper() != form.upper():
-                row["description"] = desc
+                row["description"] = clean_text(desc)
             items = recent["items"][i] if i < len(recent["items"]) else ""
             if items:
                 row["items"] = items  # 8-K item numbers, e.g. "2.02,9.01"
@@ -165,6 +167,10 @@ class Edgar:
                     ]
                     for unit, rows in units.items()
                 }  # fmt: skip
-            return {"name": raw.get("entityName"), "taxonomies": sorted(taxonomies), "facts": facts}
+            return {
+                "name": clean_text(raw.get("entityName")),
+                "taxonomies": sorted(taxonomies),
+                "facts": facts,
+            }
 
         return await self.cache.get_or_fetch(f"edgar:facts:{cik}:{MAP_VERSION}", DAY, fetch)
