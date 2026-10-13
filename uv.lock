@@ -1415,7 +1415,7 @@ source = { editable = "." }
 dependencies = [
     { name = "aiolimiter" },
     { name = "httpx" },
-    { name = "mcp", extra = ["cli"] },
+    { name = "mcp" },
     { name = "pandas" },
     { name = "pydantic-settings" },
     { name = "tenacity" },
@@ -1424,6 +1424,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "mcp", extra = ["cli"] },
     { name = "pytest" },
     { name = "pytest-asyncio" },
     { name = "respx" },
@@ -1432,17 +1433,18 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "aiolimiter", specifier = ">=1.3.0" },
-    { name = "httpx", specifier = ">=0.28.1" },
-    { name = "mcp", extras = ["cli"], specifier = ">=2.3.0" },
-    { name = "pandas", specifier = ">=3.0.6" },
-    { name = "pydantic-settings", specifier = ">=2.15.0" },
-    { name = "tenacity", specifier = ">=9.2.1" },
-    { name = "yfinance", specifier = ">=1.7.0" },
+    { name = "aiolimiter", specifier = ">=1.3.0,<2" },
+    { name = "httpx", specifier = ">=0.28.1,<1" },
+    { name = "mcp", specifier = ">=2.3.0,<3" },
+    { name = "pandas", specifier = ">=3.0.6,<4" },
+    { name = "pydantic-settings", specifier = ">=2.15.0,<3" },
+    { name = "tenacity", specifier = ">=9.2.1,<10" },
+    { name = "yfinance", specifier = ">=1.7.0,<2" },
 ]
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "mcp", extras = ["cli"], specifier = ">=2.3.0,<3" },
     { name = "pytest", specifier = ">=9.1.1" },
     { name = "pytest-asyncio", specifier = ">=1.4.0" },
     { name = "respx", specifier = ">=0.23.1" },

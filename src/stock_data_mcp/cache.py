@@ -99,5 +99,13 @@ class Cache:
         self.set(key, value, ttl)
         return CacheResult(value)
 
+    def prune(self, max_age_days: float = 30) -> int:
+        """Delete entries that expired more than ``max_age_days`` ago."""
+        cutoff = time.time() - max_age_days * DAY
+        with self._lock:
+            cur = self._conn.execute("DELETE FROM cache WHERE fetched_at + ttl < ?", (cutoff,))
+            self._conn.commit()
+        return cur.rowcount
+
     def close(self) -> None:
         self._conn.close()

@@ -3,7 +3,7 @@
 from functools import lru_cache
 from pathlib import Path
 
-from pydantic import Field
+from pydantic import Field, SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 # Claude Desktop launches the server from an arbitrary cwd, so resolve .env
@@ -16,7 +16,7 @@ class Settings(BaseSettings):
 
     # SEC requires a descriptive User-Agent: "Name email@example.com".
     sec_user_agent: str = Field(min_length=5)
-    fred_api_key: str | None = None
+    fred_api_key: SecretStr | None = None  # SecretStr keeps it out of reprs/tracebacks
     cache_path: Path = REPO_ROOT / ".cache" / "stock_data.sqlite"
     edgar_max_rps: float = 8.0
     log_level: str = "INFO"

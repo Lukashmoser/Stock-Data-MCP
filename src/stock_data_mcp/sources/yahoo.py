@@ -10,6 +10,7 @@ from typing import Any, Protocol
 
 from ..cache import HOUR, MINUTE, Cache
 from ..errors import NotFound, SourceError
+from ..validate import clean_text
 
 log = logging.getLogger(__name__)
 
@@ -82,8 +83,8 @@ def _fetch_quote(symbol: str) -> dict[str, Any]:
         "market_cap": int(m) if (m := _num(opt("marketCap"))) is not None else None,
         "high_52w": _num(opt("yearHigh")),
         "low_52w": _num(opt("yearLow")),
-        "currency": opt("currency"),
-        "exchange": opt("exchange"),
+        "currency": clean_text(opt("currency"), 10),
+        "exchange": clean_text(opt("exchange"), 20),
         "fetched_at": datetime.now(UTC).isoformat(timespec="seconds"),
     }
 

@@ -19,7 +19,7 @@ Requires [uv](https://docs.astral.sh/uv/).
 ```bash
 git clone https://github.com/lukashmoser/Stock-Data-MCP.git
 cd Stock-Data-MCP
-uv sync
+uv sync --locked
 cp .env.example .env   # then edit it
 ```
 
@@ -41,13 +41,15 @@ Add this to `claude_desktop_config.json` (Settings → Developer → Edit Config
   "mcpServers": {
     "stock-data": {
       "command": "uv",
-      "args": ["run", "--directory", "/ABSOLUTE/PATH/TO/Stock-Data-MCP", "stock-data-mcp"]
+      "args": ["run", "--locked", "--no-dev", "--directory", "C:\\path\\to\\Stock-Data-MCP", "stock-data-mcp"]
     }
   }
 }
 ```
 
-If Claude can't find `uv`, use its absolute path (`which uv`) as `command`.
+If Claude can't find `uv`, use its absolute path as `command` (`where uv` on Windows, `which uv` elsewhere). In JSON, Windows paths need doubled backslashes.
+
+`--locked` refuses to run if `uv.lock` is out of date, so launching never installs anything unreviewed; `--no-dev` leaves out test and Inspector tooling.
 
 ## How `get_financials` works
 
@@ -74,7 +76,33 @@ The cache is SQLite at `.cache/stock_data.sqlite` (override with `CACHE_PATH`). 
 | Company facts | 24 h |
 | FRED observations / metadata | 6 h / 7 d |
 
-Delete the file to clear everything. EDGAR requests are rate-limited to 8/s, under the SEC's 10/s limit.
+Delete the file to clear everything; entries expired for more than 30 days are pruned at startup. The cache holds only public data. EDGAR requests are rate-limited to 8/s, under the SEC's 10/s limit.
+
+## Security
+
+The server runs as your user, so it is kept deliberately narrow: it only fetches public market data from fixed hosts and never reads or writes files other than its cache.
+
+**What the code enforces**
+- **stdio only.** No network port is opened; `main()` only ever runs the stdio transport.
+- **Strict tool arguments.** Tickers, series IDs, form types and dates must match short fixed patterns (also published in the tool schemas). This blocks path or URL tricks and limits how much text a prompt-injected request could smuggle out to FRED, Yahoo or the SEC.
+- **Outbound allowlist.** The HTTP client only talks HTTPS to `www.sec.gov`, `data.sec.gov` and `api.stlouisfed.org`, never follows redirects, and caps responses at 150 MB. yfinance uses its own HTTP stack but only builds Yahoo URLs from the validated ticker.
+- **Secrets stay out of logs and results.** The FRED key is held as a `SecretStr`, httpx request logging is turned off, and every log line, traceback and tool error is scrubbed of `api_key=...`.
+- **Third-party text is sanitized.** Company names, filing descriptions and FRED titles are stripped of control and bidi characters and truncated, and the server tells Claude to treat them as data. No tool fetches or returns filing document bodies; adding one would need its own review, since that text could carry prompt injection.
+
+**What you should do (Windows)**
+- Restrict `.env` to your account: `icacls .env /inheritance:r /grant:r "%USERNAME%:F"`.
+- Keep the clone outside OneDrive or other synced/shared folders so `.env` isn't uploaded.
+- Logs go to `%APPDATA%\Claude\logs\mcp-server-stock-data.log`. Keep `LOG_LEVEL` at `INFO` or higher.
+- Only run the MCP Inspector (`mcp dev`) while you're using it; it opens a local web proxy.
+- These tools are read-only, so "always allow" in Claude Desktop is reasonable. Take more care when the same chat also has tools that can read private files: an outbound tool like this one is how such data could leak, which is what the argument limits above guard against.
+
+**Updating dependencies.** Dependencies are the largest risk, since any package runs with your permissions. Versions and hashes are pinned in `uv.lock` and major versions are capped in `pyproject.toml`. Upgrade deliberately:
+
+```bash
+uv lock --upgrade          # then review the uv.lock diff
+uvx pip-audit              # check for known vulnerabilities
+uv sync --locked && uv run pytest
+```
 
 ## Development
 
@@ -82,17 +110,18 @@ Delete the file to clear everything. EDGAR requests are rate-limited to 8/s, und
 uv run pytest               # offline tests (mocked HTTP + synthetic fixtures)
 uv run pytest -m live       # smoke tests against the real APIs (needs .env)
 uv run ruff check . && uv run ruff format .
-uv run mcp dev src/stock_data_mcp/server.py   # MCP Inspector
+uv run mcp dev src/stock_data_mcp/server.py   # MCP Inspector (dev dependency)
 ```
 
 Layout:
 
 ```
 src/stock_data_mcp/
-  server.py        MCP tools (MCPServer, the mcp 2.x successor to FastMCP)
+  server.py        MCP tools (MCPServer, the mcp 2.x successor to FastMCP), logging
+  validate.py      tool-argument patterns, text sanitizing, secret redaction
   config.py        settings from .env
   cache.py         SQLite TTL cache with stale fallback
-  http.py          shared GET with retries / rate limiting / error mapping
+  http.py          allowlisted client; GET with retries, size cap, error mapping
   financials.py    XBRL facts -> statement tables (fiscal calendar, Q4 derivation)
   sources/
     edgar.py       ticker->CIK, submissions, companyfacts
