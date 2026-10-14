@@ -71,39 +71,48 @@ Key figures: <test-specific list>
 
 ## 2. Test universe
 
-All prompts use these tickers, so results can also be checked against each other (the ADBE revenue in ER-03 should match the ADBE revenue in FA-04). If a ticker has been acquired or delisted by the time you run the tests, swap in the alternate and make the same swap in both arms.
+All prompts use well-known large tech companies, so you can sanity-check results yourself. They also reuse the same tickers, so results can be checked against each other (the MSFT revenue in FA-01 should match the MSFT revenue in FA-04).
 
-| Role | Ticker | Alternate | Why it was chosen |
+Claude already knows a lot about these companies from training, which makes arm A a tougher baseline. Expect the gaps to show up mostly as **freshness** (the latest quarter, today's price) rather than in older history.
+
+| Role | Ticker | Used in | Why it was chosen |
 |---|---|---|---|
-| Primary company | **ADBE** | ORCL | Fiscal year ends late Nov/early Dec (52/53-week), so fiscal labels don't match calendar years |
-| Comps peers | **CRM, NOW, INTU, WDAY, ADSK** | TEAM, HUBS | Fiscal years end Jan, Dec, Jul, Jan and Jan, so LTM figures must be aligned |
-| Initiation target | **DDOG** | SNOW | Less covered in training data than mega-caps, so memory helps less |
-| Next to report | **MSFT** | GOOGL | Reports in late October |
-| LBO target | **DBX** | DOCU | Cash-generative, low growth, plausible take-private |
-| Recent IPO, short history | **FIG** (Figma) | — | Edge case: few XBRL periods on file |
-| Private competitor | Canva | — | No public data: should be N/A in **both** arms |
-| Screen universe (15) | ADBE CRM NOW INTU WDAY ADSK DDOG TEAM HUBS SNOW PANW CRWD FTNT ZS DOCU | — | Many tickers per prompt |
-| Benchmarks | **^GSPC, QQQ, IGV** | — | Index and ETF tickers |
-| Macro (FRED) | **DGS10, SOFR, BAMLH0A0HYM2, T10Y2Y, CPIAUCSL** | — | 10y Treasury, SOFR, high-yield spread, curve slope, CPI |
+| Primary company | **MSFT** | FA-01, FA-03, FA-04, FA-05, FA-08, FA-11, FA-12, ER-07 | Fiscal year ends June 30, so fiscal labels don't match calendar years |
+| Comps peers | **GOOGL, AMZN, META, AAPL, ORCL** | FA-03, FA-04 | Fiscal years end Dec, Dec, Dec, late Sep (52/53-week) and May, so LTM figures must be aligned |
+| Earnings update | **NVDA** | ER-03 | Fiscal year ends late January, so fiscal 2027 is mostly calendar 2026 |
+| Earnings preview | **AMZN** | ER-02 | Reports in late October |
+| Thesis | **GOOGL** | ER-11 | Several share classes: market cap and buybacks must cover all of them |
+| Initiation target | **AMD** | ER-04 to ER-06 | 52/53-week fiscal year; less covered than the mega-caps |
+| Competitive analysis | **META** vs. GOOGL, AMZN, RDDT, ByteDance | FA-02 | Compares segment lines (Google advertising, Amazon ads) with whole companies |
+| Recent IPO, short history | **RDDT** (Reddit) | FA-02 | Edge case: few XBRL periods on file |
+| Private competitor | ByteDance (TikTok) | FA-02 | No SEC data: should be N/A or sourced from the web in **both** arms |
+| LBO target | **ZM** (Zoom) | FA-06, F4 / FA-09 | Mega-caps aren't take-private candidates; Zoom is well known, cash-rich and slow-growing. Fiscal year ends Jan 31. Alternate if acquired: PINS |
+| Screen universe (15) | AAPL MSFT GOOGL AMZN META NVDA AVGO ORCL NFLX AMD ADBE CRM INTC QCOM IBM | ER-09 | Many tickers per prompt, many different fiscal year-ends |
+| Coverage list (8) | AAPL MSFT GOOGL AMZN META NVDA NFLX AMD | ER-01, ER-08 | |
+| Benchmarks | **^GSPC, QQQ, XLK** | ER-08, ER-10, FA-04, FA-11 | Index and ETF tickers |
+| Macro (FRED) | **DGS10, SOFR, BAMLH0A0HYM2, T10Y2Y, CPIAUCSL** | ER-01, ER-06, ER-08, ER-10, FA-04, FA-06, FA-12 | 10y Treasury, SOFR, high-yield spread, curve slope, CPI |
+
+If a ticker has been acquired, delisted or changed by the time you run the tests, swap it the same way in both arms.
 
 ---
 
 ## 3. Reference snapshot (ground truth)
 
-Run this **once on test day, in arm B**, before the tests. It calls the MCP tools directly and gives you the reference values to score both arms against. Spot-check five values by hand (two on sec.gov, two on Yahoo Finance, one on FRED). When the reference itself is wrong, the bug is in the MCP: note it and open an issue on this repo.
+Run this **once on test day, in arm B**, before the tests. It calls the MCP tools directly and gives you the reference values to score both arms against. Spot-check five values by hand (two on sec.gov or the companies' investor-relations sites, two on Yahoo Finance, one on FRED). When the reference itself is wrong, the bug is in the MCP: note it and open an issue on this repo.
 
 ### R0: Reference snapshot
 
 ```
 Using only the stock-data tools (no web search, no memory), build a reference data sheet. Make every call explicitly and show the raw values; don't round beyond one decimal.
 
-1. get_quote for: ADBE CRM NOW INTU WDAY ADSK DDOG MSFT DBX FIG TEAM HUBS SNOW PANW CRWD FTNT ZS DOCU ^GSPC QQQ IGV. Table: ticker, price, change %, market cap, 52-week low, 52-week high.
-2. get_financials for ADBE, all three statements, annual, 5 years. Then income statement, quarterly, 2 years.
-3. get_financials, income + cashflow, annual, 3 years, for CRM NOW INTU WDAY ADSK DDOG DBX FIG. Table per ticker: fiscal-year labels, revenue, operating income, net income, diluted EPS, operating cash flow, capex, free cash flow, diluted shares.
-4. get_financials, balance, annual, 1 year, for the same tickers plus ADBE: cash, short-term investments, short-term debt, long-term debt.
-5. get_filings for ADBE, MSFT, DDOG, DBX: latest 10-K, latest 10-Q, latest 3 8-Ks (form, filing date, period).
-6. get_price_history for ADBE, QQQ, IGV, ^GSPC: 1y daily. Report the start close, end close and total return.
-7. get_macro_series latest value and date for DGS10, SOFR, BAMLH0A0HYM2, T10Y2Y; CPIAUCSL YoY % for the latest month.
+1. get_quote for: AAPL MSFT GOOGL GOOG AMZN META NVDA AVGO ORCL NFLX AMD ADBE CRM INTC QCOM IBM RDDT ZM ^GSPC QQQ XLK. Table: ticker, price, change %, market cap, 52-week low, 52-week high.
+2. get_financials for MSFT, all three statements, annual, 5 years. Then income statement, quarterly, 2 years.
+3. get_financials, income + cashflow, annual, 3 years, for GOOGL AMZN META AAPL ORCL NVDA AMD RDDT ZM. Table per ticker: fiscal-year labels, revenue, operating income, net income, diluted EPS, operating cash flow, capex, free cash flow, diluted shares, share repurchases.
+4. get_financials, income, quarterly, 2 years, for NVDA, AMZN and GOOGL.
+5. get_financials, balance, annual, 1 year, for MSFT GOOGL AMZN META AAPL ORCL AMD ZM: cash, short-term investments, short-term debt, long-term debt.
+6. get_filings for MSFT, NVDA, AMZN, GOOGL, AMD, ZM: latest 10-K, latest 10-Q, latest 3 8-Ks (form, filing date, period).
+7. get_price_history for MSFT, GOOGL, QQQ, XLK, ^GSPC: 1y daily. Report the start close, end close and total return.
+8. get_macro_series latest value and date for DGS10, SOFR, BAMLH0A0HYM2, T10Y2Y; CPIAUCSL YoY % for the latest month.
 Finish with a list of any tool errors or stale-data flags.
 ```
 
@@ -121,29 +130,29 @@ Some skills work on a file the user provides (a model to audit, a deck to refres
 
 | ID | File(s) | Used by |
 |---|---|---|
-| F1 | `ADBE_model.xlsx` + `F1_key.md` | FA-05 audit |
+| F1 | `MSFT_model.xlsx` + `F1_key.md` | FA-05 audit |
 | F2 | `quarterly_export.csv` + `F2_key.md` | FA-07 clean data |
-| F3 | `ADBE_snapshot.pptx` + `F3_key.md` | FA-08 deck refresh |
-| F4 | `Project_Canvas.pptx` + `F4_key.md` | FA-09 deck QC |
+| F3 | `MSFT_snapshot.pptx` + `F3_key.md` | FA-08 deck refresh |
+| F4 | `Project_Horizon.pptx` + `F4_key.md` | FA-09 deck QC |
 | F5 | `Northwind_template.pptx` | FA-10 template skill |
 | F6 | `3S_template.xlsx` | FA-01 3-statement model |
-| F7 | `ADBE_quarterly_model.xlsx` + `F7_key.md` | ER-07 model update |
+| F7 | `MSFT_quarterly_model.xlsx` + `F7_key.md` | ER-07 model update |
 
 ### F1: Seeded model for the audit test
 
 ```
-Build an Excel 3-statement model for Adobe (ADBE) and save it as ADBE_model.xlsx: historicals FY2022 to FY2025 from SEC data (use the stock-data tools), projections FY2026 to FY2030 driven by an Assumptions tab, live formulas throughout, blue inputs and black formulas, a Checks row showing the balance sheet balances, and a small valuation block (share price, diluted shares, market cap, net debt, EV/Revenue).
+Build an Excel 3-statement model for Microsoft (MSFT) and save it as MSFT_model.xlsx: historicals FY2023 to FY2026 (fiscal years ending June 30) from SEC data (use the stock-data tools), projections FY2027 to FY2031 driven by an Assumptions tab, live formulas throughout, blue inputs and black formulas, a Checks row showing the balance sheet balances, and a small valuation block (share price, diluted shares, market cap, net debt, EV/Revenue).
 
 Once it works, plant exactly these 7 errors. Don't mark them in the workbook (no comments, colours or notes that give them away):
 Data errors (only detectable against external data):
- D1. FY2024 revenue hardcode set 8% above the reported value.
- D2. Diluted shares in the valuation block set to the FY2022 count instead of the latest.
- D3. FY2025 ending cash typed as the FY2024 value.
+ D1. FY2025 revenue hardcode set 8% above the reported value.
+ D2. Diluted shares in the valuation block set to the FY2023 count instead of the latest.
+ D3. FY2026 ending cash typed as the FY2025 value.
 Formula errors (detectable from the workbook alone):
- M1. FY2027 total current assets: SUM range skips the receivables row.
- M2. FY2028 revenue replaced by a hardcoded number equal to its current formula result.
- M3. FY2029 retained earnings adds prior-year instead of current-year net income, so the balance sheet stops balancing (leave the Checks row formula intact).
- M4. FY2030 D&A references the capex row.
+ M1. FY2028 total current assets: SUM range skips the receivables row.
+ M2. FY2029 revenue replaced by a hardcoded number equal to its current formula result.
+ M3. FY2030 retained earnings adds prior-year instead of current-year net income, so the balance sheet stops balancing (leave the Checks row formula intact).
+ M4. FY2031 D&A references the capex row.
 
 Then write F1_key.md listing each error: ID, sheet, cell, what's wrong, the correct value or formula.
 ```
@@ -151,15 +160,15 @@ Then write F1_key.md listing each error: ID, sheet, cell, what's wrong, the corr
 ### F2: Messy data export for the cleaning test
 
 ```
-Use the stock-data tools to get revenue, operating income and net income (USD millions) for ADBE, CRM, NOW and INTU for each of their last 8 reported quarters. Write them as a long-format CSV, quarterly_export.csv, with columns: ticker, period_end, fiscal_label, metric, value.
+Use the stock-data tools to get revenue, operating income and net income (USD millions) for GOOGL, AMZN, META and MSFT for each of their last 8 reported quarters. Write them as a long-format CSV, quarterly_export.csv, with columns: ticker, period_end, fiscal_label, metric, value.
 
 Then make it messy the way a real export is:
- - three date formats mixed in period_end (2025-08-29, 08/29/2025, 29-Aug-25)
- - tickers with inconsistent casing and stray whitespace (" adbe", "Crm ")
+ - three date formats mixed in period_end (2026-06-30, 06/30/2026, 30-Jun-26)
+ - tickers with inconsistent casing and stray whitespace (" googl", "Meta ")
  - values as text with "$" and thousands separators in about a third of rows
  - 3 exact duplicate rows and 1 near-duplicate (same key, value differs by rounding)
  - a "notes" column mixing numbers, text and blanks
- - CRM values for 2 quarters expressed in thousands instead of millions
+ - META values for 2 quarters expressed in thousands instead of millions
  - 2 values replaced with wrong but plausible numbers (±12%), in different tickers
 
 Write F2_key.md listing every perturbation with row numbers and the original values.
@@ -168,14 +177,14 @@ Write F2_key.md listing every perturbation with row numbers and the original val
 ### F3: Stale deck for the refresh test
 
 ```
-Create a 6-slide PowerPoint, ADBE_snapshot.pptx, titled "Adobe (ADBE) Company Snapshot", as of the end of Adobe's fiscal 2024. Use real values for that point in time from the stock-data tools (statement data for FY2020-FY2024; share price = the close on the last trading day of fiscal 2024, from price history).
- 1. Title slide with "Data as of <FY2024 fiscal year-end date>".
- 2. Key stats: share price, market cap, FY2024 revenue, revenue growth YoY, operating margin, free cash flow, diluted EPS.
- 3. Native bar chart (real chart data, not an image): revenue and operating income, FY2020-FY2024.
- 4. Narrative slide with three bullets that quote numbers (growth rate, FCF margin, buyback amount).
+Create a 6-slide PowerPoint, MSFT_snapshot.pptx, titled "Microsoft (MSFT) Company Snapshot", as of the end of Microsoft's fiscal 2025 (June 30, 2025). Use real values for that point in time from the stock-data tools (statement data for FY2021-FY2025; share price = the close on June 30, 2025, from price history).
+ 1. Title slide with "Data as of 2025-06-30".
+ 2. Key stats: share price, market cap, FY2025 revenue, revenue growth YoY, operating margin, free cash flow, diluted EPS.
+ 3. Native bar chart (real chart data, not an image): revenue and operating income, FY2021-FY2025.
+ 4. Narrative slide with three bullets that quote numbers (growth rate, FCF margin, capex).
  5. Valuation: P/E, EV/Revenue, EV/FCF computed from those numbers, in a table.
  6. Sources and notes footnote slide with dates.
-Use mixed number formats the way real decks do ($21.5B on one slide, $21,505M in a table, "21.5" on the chart axis).
+Use mixed number formats the way real decks do ($281.7B on one slide, $281,724M in a table, "281.7" on the chart axis).
 
 Write F3_key.md listing every number in the deck: slide, exact text, metric, period.
 ```
@@ -183,7 +192,7 @@ Write F3_key.md listing every number in the deck: slide, exact text, metric, per
 ### F4: Pitch deck with planted errors for the QC test
 
 ```
-Create an 8-slide sell-side pitch deck, Project_Canvas.pptx, titled "Project Canvas: Strategic Alternatives for Dropbox (DBX)". Slides: title, situation overview, key financials (LTM revenue, EBITDA, FCF, margins), share price performance (1y), trading comps vs. 4 peers, illustrative valuation range, potential buyer universe, next steps. Use real figures from the stock-data tools.
+Create an 8-slide sell-side pitch deck, Project_Horizon.pptx, titled "Project Horizon: Strategic Alternatives for Zoom (ZM)". Slides: title, situation overview, key financials (LTM revenue, EBITDA, FCF, margins, net cash), share price performance (1y), trading comps vs. 4 peers, illustrative valuation range, potential buyer universe, next steps. Use real figures from the stock-data tools.
 
 Then plant these errors without marking them:
  I1-I3 internal inconsistencies: one metric shows different values on two slides; one table total doesn't sum; one percentage doesn't match the numbers it's computed from.
@@ -209,10 +218,10 @@ Create an empty Excel 3-statement model template, 3S_template.xlsx, with tabs: C
 ### F7: Prior-estimates model for the model-update test
 
 ```
-Using the stock-data tools, build ADBE_quarterly_model.xlsx: a quarterly income statement for Adobe with actuals for the 8 quarters BEFORE the most recently reported one, then 5 estimate columns starting with the most recently reported quarter (so that quarter is still an estimate, as if the model was last updated before the print). Mark columns "A" or "E".
-Estimate rules: revenue = same quarter last year x 1.10; gross margin = trailing-4-quarter average; operating expenses = same quarter last year x 1.08; tax rate 18.5%; diluted shares = latest actual minus 1% per quarter.
-Add an annual summary tab and a Valuation tab: NTM EPS x 22 = target price.
-Write F7_key.md with the reported actuals for the most recent quarter (revenue, gross profit, operating income, net income, diluted EPS, diluted shares) and its 10-Q filing date.
+Using the stock-data tools, build MSFT_quarterly_model.xlsx: a quarterly income statement for Microsoft with actuals for the 8 quarters BEFORE the most recently reported one, then 5 estimate columns starting with the most recently reported quarter (so that quarter is still an estimate, as if the model was last updated before the print). Use Microsoft's fiscal quarter labels and mark columns "A" or "E".
+Estimate rules: revenue = same quarter last year x 1.12; gross margin = trailing-4-quarter average; operating expenses = same quarter last year x 1.06; tax rate 18.0%; diluted shares = latest actual minus 0.3% per quarter.
+Add an annual summary tab and a Valuation tab: NTM EPS x 30 = target price.
+Write F7_key.md with the reported actuals for the most recent quarter (revenue, gross profit, operating income, net income, diluted EPS, diluted shares) and its 10-Q or 10-K filing date.
 ```
 
 ---
@@ -242,7 +251,7 @@ Summary of what each test exercises:
 ```
 /catalysts next 4 weeks
 
-Coverage universe: ADBE, CRM, NOW, INTU, WDAY, ADSK, DDOG, MSFT. Build the catalyst calendar for the next 4 weeks from today: earnings dates (with confirmed vs. estimated status), investor days and conferences, product events, and the macro releases that matter for software multiples (FOMC, CPI, jobs). For each company, also show its most recent SEC filing and current price vs. its 52-week range, and rank the 3 catalysts most likely to move the group.
+Coverage universe: AAPL, MSFT, GOOGL, AMZN, META, NVDA, NFLX, AMD. Build the catalyst calendar for the next 4 weeks from today: earnings dates (with confirmed vs. estimated status), developer conferences and product events, regulatory and antitrust decisions, and the macro releases that matter for tech multiples (FOMC, CPI, jobs). For each company, also show its most recent SEC filing and current price vs. its 52-week range, and rank the 3 catalysts most likely to move the group.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -258,9 +267,9 @@ Key figures: for each of the 8 tickers: next earnings date (and confirmed/estima
 ### ER-02: Earnings preview
 
 ```
-/earnings-preview MSFT
+/earnings-preview AMZN
 
-Build the preview for Microsoft's next quarterly report (identify the quarter and the date). Include consensus for revenue, EPS and Azure growth; reported results for the last 4 quarters, so the trend into the print is visible; the stock's 1-day reaction to each of the last 4 prints; bull/base/bear scenarios with implied stock moves; and the 3-5 things that will decide the reaction.
+Build the preview for Amazon's next quarterly report (identify the quarter and the date). Include consensus for revenue, EPS, operating income and AWS growth; reported results for the last 4 quarters, so the trend into the print is visible; the stock's 1-day reaction to each of the last 4 prints; bull/base/bear scenarios with implied stock moves; and the 3-5 things that will decide the reaction.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -270,15 +279,15 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: quarter being previewed and report date; consensus revenue; consensus diluted EPS; revenue and diluted EPS for each of the last 4 reported quarters; operating margin last quarter; 1-day stock move after each of the last 4 prints; current price; base-case revenue and EPS.
+Key figures: quarter being previewed and report date; consensus revenue; consensus diluted EPS; consensus operating income; revenue, operating income and diluted EPS for each of the last 4 reported quarters; capex last quarter; 1-day stock move after each of the last 4 prints; current price; base-case revenue and EPS.
 ```
 
 ### ER-03: Earnings update
 
 ```
-/earnings ADBE most recent quarter
+/earnings NVDA most recent quarter
 
-Write the earnings update for Adobe's most recently reported quarter. Identify which fiscal quarter that is and when it was reported. Cover beat/miss vs. consensus on revenue and EPS, revenue by segment, margin trends over the last 5 quarters, guidance changes, the stock's reaction, updated estimates, and the thesis impact.
+Write the earnings update for NVIDIA's most recently reported quarter. Identify which fiscal quarter that is and when it was reported. Cover beat/miss vs. consensus on revenue and EPS, revenue by segment (Data Center, Gaming and the rest), margin trends over the last 5 quarters, guidance vs. consensus for the next quarter, the stock's reaction, updated estimates, and the thesis impact.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -288,15 +297,15 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: fiscal quarter label and period-end date; 10-Q filing date; revenue; revenue growth YoY; gross margin; GAAP operating income; GAAP operating margin; GAAP diluted EPS; operating cash flow; free cash flow; diluted shares; consensus revenue; consensus EPS; stock move on the day after the report; current price; rating and price target.
+Key figures: fiscal quarter label and period-end date; 10-Q filing date; revenue; revenue growth YoY; Data Center revenue; gross margin; GAAP operating income; GAAP operating margin; GAAP diluted EPS; operating cash flow; free cash flow; diluted shares; consensus revenue; consensus EPS; next-quarter revenue guidance; stock move on the day after the report; current price; rating and price target.
 ```
 
 ### ER-04: Initiating coverage, Task 1 (company research)
 
 ```
-/initiate DDOG
+/initiate AMD
 
-Start with Task 1 (company research) for Datadog. Run Task 1 only and deliver its output document.
+Start with Task 1 (company research) for AMD. Run Task 1 only and deliver its output document.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -306,7 +315,7 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: latest 10-K filing date and fiscal year; latest 10-Q filing date and quarter; revenue for each of the last 3 fiscal years; revenue growth for each of those years; latest-quarter revenue and YoY growth; GAAP operating margin last fiscal year; free cash flow last fiscal year; stock-based compensation last fiscal year; current price; market cap; cash + short-term investments; total debt.
+Key figures: latest 10-K filing date and fiscal year; latest 10-Q filing date and quarter; revenue for each of the last 3 fiscal years; revenue growth for each of those years; latest-quarter revenue and YoY growth; latest-quarter Data Center segment revenue; GAAP operating margin last fiscal year; free cash flow last fiscal year; stock-based compensation last fiscal year; current price; market cap; cash + short-term investments; total debt.
 ```
 
 ### ER-05: Initiating coverage, Task 2 (financial model)
@@ -314,7 +323,7 @@ Key figures: latest 10-K filing date and fiscal year; latest 10-Q filing date an
 Run in the **same chat** as ER-04 (same arm), right after it finishes.
 
 ```
-Now run Task 2 (financial modeling) for DDOG using the Task 1 output. Deliver the Excel model.
+Now run Task 2 (financial modeling) for AMD using the Task 1 output. Deliver the Excel model.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -332,7 +341,7 @@ Key figures: for each historical fiscal year in the model: revenue, gross profit
 Run in the **same chat** as ER-05.
 
 ```
-Now run Task 3 (valuation) for DDOG using the Task 2 model. Use DCF plus trading comps, and arrive at a price target and rating.
+Now run Task 3 (valuation) for AMD using the Task 2 model. Use DCF plus trading comps against NVDA, AVGO, INTC and QCOM, and arrive at a price target and rating.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -342,19 +351,19 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: current price; diluted shares; net cash/(debt); risk-free rate and its source date; beta and how it was derived; equity risk premium; WACC; terminal growth; DCF value per share; peer median EV/NTM revenue; comps-implied value per share; price target; implied upside %; rating.
+Key figures: current price; diluted shares; net cash/(debt); risk-free rate and its source date; beta and how it was derived; equity risk premium; WACC; terminal growth; DCF value per share; market cap and LTM P/E for each of NVDA, AVGO, INTC, QCOM; peer median EV/NTM revenue; comps-implied value per share; price target; implied upside %; rating.
 ```
 
 > Tasks 4 (charts) and 5 (report assembly) mostly reformat earlier outputs. Run them only if you also want to compare the finished report; in that case score only on whether figures carried over correctly from Tasks 1-3.
 
 ### ER-07: Model update
 
-Upload fixture **F7** (`ADBE_quarterly_model.xlsx`).
+Upload fixture **F7** (`MSFT_quarterly_model.xlsx`).
 
 ```
-/model-update ADBE
+/model-update MSFT
 
-The attached model was last updated before Adobe's most recent quarterly report, so that quarter is still an estimate. Plug in the reported actuals, show estimate vs. actual deltas, roll forward the next-quarter and next-fiscal-year estimates, and recalculate the target price. Flag anything that changes the thesis. Return the updated workbook.
+The attached model was last updated before Microsoft's most recent quarterly report, so that quarter is still an estimate. Plug in the reported actuals, show estimate vs. actual deltas, roll forward the next-quarter and next-fiscal-year estimates, and recalculate the target price. Flag anything that changes the thesis. Return the updated workbook.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -364,7 +373,7 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: quarter updated and its 10-Q filing date; for revenue, gross profit, operating income, net income, diluted EPS and diluted shares: prior estimate, actual, delta %; new next-quarter revenue and EPS estimates; new next-fiscal-year revenue and EPS estimates; old and new target price.
+Key figures: quarter updated and its filing date; for revenue, gross profit, operating income, net income, diluted EPS and diluted shares: prior estimate, actual, delta %; new next-quarter revenue and EPS estimates; new next-fiscal-year revenue and EPS estimates; old and new target price.
 ```
 
 ### ER-08: Morning note
@@ -372,7 +381,7 @@ Key figures: quarter updated and its 10-Q filing date; for revenue, gross profit
 ```
 /morning-note
 
-Write today's morning note for a US software coverage list: ADBE, CRM, NOW, INTU, WDAY, ADSK, DDOG, MSFT. Include the prior session's moves, any SEC filings in the last 2 trading days, the rates backdrop (10y yield level and change), today's key events, a top call, and one trade idea with a risk.
+Write today's morning note for a US mega-cap tech coverage list: AAPL, MSFT, GOOGL, AMZN, META, NVDA, NFLX, AMD. Include the prior session's moves, any SEC filings in the last 2 trading days, the rates backdrop (10y yield level and change), today's key events, a top call, and one trade idea with a risk.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -382,15 +391,15 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: for each of the 8 tickers: last price, 1-day % change, any SEC filing in the last 2 trading days (form + date, or "none"). Then: IGV 1-day % change; 10-year Treasury yield and its 1-day change in bp; the trade idea's ticker, direction and entry price.
+Key figures: for each of the 8 tickers: last price, 1-day % change, any SEC filing in the last 2 trading days (form + date, or "none"). Then: QQQ 1-day % change; XLK 1-day % change; 10-year Treasury yield and its 1-day change in bp; the trade idea's ticker, direction and entry price.
 ```
 
 ### ER-09: Stock screen
 
 ```
-/screen quality software at a reasonable price
+/screen quality large-cap tech at a reasonable price
 
-Screen exactly this universe: ADBE CRM NOW INTU WDAY ADSK DDOG TEAM HUBS SNOW PANW CRWD FTNT ZS DOCU. Rank on TTM revenue growth, TTM free-cash-flow margin, EV/TTM FCF and the "Rule of 40" (growth + FCF margin). Surface 3 long ideas and 1 short idea, with a short pitch and the key risk for each.
+Screen exactly this universe: AAPL MSFT GOOGL AMZN META NVDA AVGO ORCL NFLX AMD ADBE CRM INTC QCOM IBM. Rank on TTM revenue growth, TTM free-cash-flow margin, EV/TTM FCF and the "Rule of 40" (growth + FCF margin). Surface 3 long ideas and 1 short idea, with a short pitch and the key risk for each.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -406,9 +415,9 @@ Key figures: for each of the 15 tickers (one row each, Metric = ticker, with the
 ### ER-10: Sector overview
 
 ```
-/sector US application software
+/sector US mega-cap tech platforms
 
-Write the sector overview: market structure, the 6 largest public players by market cap, growth and margin profiles, valuation vs. history, how rates have affected multiples, the AI disruption debate, and investment implications.
+Write the sector overview for the largest US tech platforms (cloud, digital advertising, devices, semiconductors for AI): market structure, the 6 largest companies by market cap, growth and margin profiles, valuation vs. history, the AI capex cycle and the debate over its payback, how rates have affected multiples, and investment implications.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -418,15 +427,15 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: the 6 largest players you chose, each with market cap, last-fiscal-year revenue, revenue growth % and GAAP operating margin %; IGV 1-year total return; S&P 500 1-year total return; 10-year Treasury yield now and 1 year ago; median EV/revenue of the 6 players.
+Key figures: the 6 largest companies you chose, each with market cap, last-fiscal-year revenue, revenue growth %, GAAP operating margin % and last-fiscal-year capex; combined capex of the 6 for the last fiscal year; XLK 1-year total return; S&P 500 1-year total return; 10-year Treasury yield now and 1 year ago; median EV/revenue of the 6.
 ```
 
 ### ER-11: Thesis tracker
 
 ```
-/thesis ADBE
+/thesis GOOGL
 
-Create a long thesis for Adobe: thesis statement, 3-5 pillars, 3-5 risks, catalysts, target price and stop-loss trigger. Then score each pillar against the latest reported data (the most recent quarter and fiscal year) and the stock's performance over the last 6 months, and give a current conviction level.
+Create a long thesis for Alphabet: thesis statement, 3-5 pillars, 3-5 risks, catalysts, target price and stop-loss trigger. Then score each pillar against the latest reported data (the most recent quarter and fiscal year) and the stock's performance over the last 6 months, and give a current conviction level.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -436,7 +445,7 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: latest quarter label; latest-quarter revenue growth YoY; latest-quarter GAAP operating margin; TTM free cash flow; TTM share repurchases; diluted share count change YoY %; current price; 6-month price return %; 52-week low and high; trailing P/E; target price; stop-loss level; conviction.
+Key figures: latest quarter label; latest-quarter revenue growth YoY; latest-quarter Google Cloud revenue and growth; latest-quarter GAAP operating margin; TTM capex; TTM free cash flow; TTM share repurchases; diluted share count change YoY %; current GOOGL price; market cap across all share classes; 6-month price return %; 52-week low and high; trailing P/E; target price; stop-loss level; conviction.
 ```
 
 ---
@@ -466,7 +475,7 @@ Upload fixture **F6** (`3S_template.xlsx`).
 ```
 /3-statement-model
 
-Fill out the attached template for Adobe (ADBE). Historical columns = the last 4 fiscal years as reported in Adobe's 10-Ks; projections = the next 5 fiscal years with drivers on the Assumptions tab. All three statements must link, the balance sheet must balance, and cash must tie out in every period. Return the completed workbook.
+Fill out the attached template for Microsoft (MSFT). Historical columns = the last 4 fiscal years (ending June 30) as reported in Microsoft's 10-Ks; projections = the next 5 fiscal years with drivers on the Assumptions tab. All three statements must link, the balance sheet must balance, and cash must tie out in every period. Return the completed workbook.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -482,9 +491,9 @@ Key figures: fiscal-year labels of the 4 historical columns; for each historical
 ### FA-02: Competitive analysis
 
 ```
-/competitive-analysis Adobe in creative and design software
+/competitive-analysis Meta in digital advertising
 
-Map Adobe's competitive landscape against Figma (FIG), Microsoft (MSFT, Designer/Copilot), Canva (private) and DocuSign (DOCU, document workflows): positioning, product overlap, financial comparison, AI threat and opportunity, and a strategic synthesis.
+Map Meta's competitive landscape in digital advertising against Alphabet (Google advertising), Amazon (advertising services), Reddit (RDDT) and ByteDance/TikTok (private): positioning, ad formats and audiences, financial comparison, AI's effect on ad targeting and measurement, and a strategic synthesis.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -494,15 +503,15 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: for ADBE, FIG, DOCU and Canva: TTM or last-fiscal-year revenue, revenue growth %, gross margin %, R&D as % of revenue, sales & marketing (or SG&A) as % of revenue, market cap or latest private valuation. For FIG: number of fiscal periods of public financial history available. For MSFT: the segment or revenue line you used as the comparable, with its value.
+Key figures: for META, RDDT and ByteDance: TTM or last-fiscal-year revenue, revenue growth %, gross margin %, R&D as % of revenue, sales & marketing (or SG&A) as % of revenue, market cap or latest private valuation. For Alphabet and Amazon: the advertising revenue line you used, its TTM value and its growth %. For RDDT: number of fiscal periods of public financial history available.
 ```
 
 ### FA-03: Comparable company analysis
 
 ```
-/comps ADBE
+/comps MSFT
 
-Build the trading comps for Adobe against CRM, NOW, INTU, WDAY and ADSK. Purpose: valuation for an investment committee. Use LTM figures aligned to each company's latest reported quarter, and deliver the Excel file with the statistical summary (max, 75th, median, 25th, min).
+Build the trading comps for Microsoft against GOOGL, AMZN, META, AAPL and ORCL. Purpose: valuation for an investment committee. Use LTM figures aligned to each company's latest reported quarter, and deliver the Excel file with the statistical summary (max, 75th, median, 25th, min).
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -518,9 +527,9 @@ Key figures: for each of the 6 companies (one row each, values comma-separated):
 ### FA-04: DCF valuation
 
 ```
-/dcf ADBE
+/dcf MSFT
 
-Value Adobe with a DCF informed by comps (peers: CRM, NOW, INTU, WDAY, ADSK). Base the risk-free rate on the current 10-year Treasury yield and estimate beta from 5 years of monthly returns against the S&P 500. Show bear/base/bull cases and the WACC x terminal growth sensitivity table. Deliver the Excel models.
+Value Microsoft with a DCF informed by comps (peers: GOOGL, AMZN, META, AAPL, ORCL). Base the risk-free rate on the current 10-year Treasury yield and estimate beta from 5 years of monthly returns against the S&P 500. Show bear/base/bull cases and the WACC x terminal growth sensitivity table. Deliver the Excel models.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -530,17 +539,17 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: current price; diluted shares; cash + short-term investments; total debt; revenue, operating income and free cash flow for each of the last 3 fiscal years; risk-free rate (value + date); beta (value + number of observations); equity risk premium; cost of debt; WACC; terminal growth; terminal value as % of EV; base/bear/bull value per share; implied upside %; DCF-implied EV/EBITDA vs. peer median.
+Key figures: current price; diluted shares; cash + short-term investments; total debt; revenue, operating income, capex and free cash flow for each of the last 3 fiscal years; risk-free rate (value + date); beta (value + number of observations); equity risk premium; cost of debt; WACC; terminal growth; terminal value as % of EV; base/bear/bull value per share; implied upside %; DCF-implied EV/EBITDA vs. peer median.
 ```
 
 ### FA-05: Model audit
 
-Upload fixture **F1** (`ADBE_model.xlsx`).
+Upload fixture **F1** (`MSFT_model.xlsx`).
 
 ```
 /debug-model
 
-Audit the attached Adobe model end to end: formulas, hardcodes, balance-sheet balance, cash tie-out, roll-forwards, and whether the historical inputs match what Adobe actually reported. List every issue with sheet, cell, severity and the fix.
+Audit the attached Microsoft model end to end: formulas, hardcodes, balance-sheet balance, cash tie-out, roll-forwards, and whether the historical inputs match what Microsoft actually reported. List every issue with sheet, cell, severity and the fix.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -558,9 +567,9 @@ Score against `F1_key.md`: count hits on D1-D3 (data errors, where the MCP shoul
 ### FA-06: LBO model
 
 ```
-/lbo Dropbox (DBX)
+/lbo Zoom (ZM)
 
-Build an LBO for a take-private of Dropbox. Use the standard template. Assume a 30% premium to the current share price, a 5-year hold, and an exit at the entry EV/EBITDA multiple. Size and price the debt off today's market: SOFR plus a spread for the term loan, and the current high-yield spread for the notes. Report IRR and MOIC with sensitivities on entry premium and exit multiple.
+Build an LBO for a take-private of Zoom. Use the standard template. Assume a 30% premium to the current share price, a 5-year hold, and an exit at the entry EV/EBITDA multiple. Use Zoom's existing cash in the sources of funds, leaving a minimum operating cash balance. Size and price the debt off today's market: SOFR plus a spread for the term loan, and the current high-yield spread for the notes. Report IRR and MOIC with sensitivities on entry premium and exit multiple.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -570,7 +579,7 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: current price; offer price; diluted shares; equity purchase price; existing cash and debt; entry EV; LTM revenue; LTM EBITDA (and how it was built: operating income + D&A, with SBC treatment stated); entry EV/EBITDA; SOFR (value + date); high-yield spread (value + date); total debt raised and leverage multiple; sponsor equity; base-case IRR; base-case MOIC.
+Key figures: current price; offer price; diluted shares; equity purchase price; existing cash + short-term investments; existing debt; entry EV; LTM revenue; LTM EBITDA (and how it was built: operating income + D&A, with SBC treatment stated); entry EV/EBITDA; SOFR (value + date); high-yield spread (value + date); total debt raised and leverage multiple; sponsor equity; base-case IRR; base-case MOIC.
 ```
 
 ### FA-07: Clean data
@@ -595,10 +604,10 @@ Score against `F2_key.md`. The formatting fixes are the control; the unit and wr
 
 ### FA-08: Deck refresh
 
-Upload fixture **F3** (`ADBE_snapshot.pptx`).
+Upload fixture **F3** (`MSFT_snapshot.pptx`).
 
 ```
-Use the deck-refresh skill on the attached deck. Roll it forward from fiscal 2024 to Adobe's latest completed fiscal year, with current market data (today's price). I don't have a mapping: find the new numbers yourself, and recalculate the derived numbers (growth, margins, multiples). Extend the chart to include the new year. Return the updated deck.
+Use the deck-refresh skill on the attached deck. Roll it forward from fiscal 2025 to Microsoft's latest completed fiscal year, with current market data (today's price). I don't have a mapping: find the new numbers yourself, and recalculate the derived numbers (growth, margins, multiples). Extend the chart to include the new year. Return the updated deck.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -608,14 +617,14 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: new fiscal year label; share price; market cap; revenue; revenue growth YoY; operating margin; free cash flow; diluted EPS; buyback amount; P/E; EV/Revenue; EV/FCF; number of number instances changed; number of old-value instances missed (any old number still in the deck).
+Key figures: new fiscal year label; share price; market cap; revenue; revenue growth YoY; operating margin; free cash flow; diluted EPS; capex; P/E; EV/Revenue; EV/FCF; number of number instances changed; number of old-value instances missed (any old number still in the deck).
 ```
 
 At the approval gate, reply with **C2**. Score against `F3_key.md`: every old instance found and replaced (mechanics, same for both arms) plus correct new values (data, where the MCP should help).
 
 ### FA-09: Deck QC
 
-Upload fixture **F4** (`Project_Canvas.pptx`).
+Upload fixture **F4** (`Project_Horizon.pptx`).
 
 ```
 Use the ib-check-deck skill to do a final QC pass on the attached pitch before it goes to the client: number consistency across slides, numbers vs. narrative, language polish, formatting, and whether the key market and financial figures are accurate as of today.
@@ -628,7 +637,7 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: one row per issue found (Metric = slide number, Value = short description, Units = category: internal / external / narrative / language). Then: DBX market cap per the deck vs. your verified value; DBX LTM revenue per the deck vs. your verified value; total issues by category.
+Key figures: one row per issue found (Metric = slide number, Value = short description, Units = category: internal / external / narrative / language). Then: ZM market cap per the deck vs. your verified value; ZM LTM revenue per the deck vs. your verified value; total issues by category.
 ```
 
 Score against `F4_key.md`: X1-X2 are the MCP-sensitive errors; I, N and L errors are the in-test control.
@@ -658,7 +667,7 @@ Arm B should not call `stock-data` here. Any difference between the arms is nois
 ### FA-11: PowerPoint file (pptx-author)
 
 ```
-Use the pptx-author skill to produce a 5-slide .pptx file: "Adobe: 1-Year Stock Performance and Fundamentals". Slides: title; ADBE vs. QQQ vs. IGV 1-year total return line chart (native chart, weekly data); last 8 quarters of revenue and operating margin (combo chart); free cash flow and buybacks by fiscal year for the last 4 years; key takeaways with the numbers.
+Use the pptx-author skill to produce a 5-slide .pptx file: "Microsoft: 1-Year Stock Performance and Fundamentals". Slides: title; MSFT vs. QQQ vs. XLK 1-year total return line chart (native chart, weekly data); last 8 quarters of revenue and operating margin (combo chart); capex and free cash flow by fiscal year for the last 4 years; key takeaways with the numbers.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -668,13 +677,13 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: 1-year total return for ADBE, QQQ and IGV (with start and end dates); number of weekly data points per series; revenue and operating margin for each of the last 8 quarters; free cash flow and share repurchases for each of the last 4 fiscal years; whether the charts are native (yes/no).
+Key figures: 1-year total return for MSFT, QQQ and XLK (with start and end dates); number of weekly data points per series; revenue and operating margin for each of the last 8 quarters; capex and free cash flow for each of the last 4 fiscal years; whether the charts are native (yes/no).
 ```
 
 ### FA-12: Excel file (xlsx-author)
 
 ```
-Use the xlsx-author skill to produce an Excel workbook: Inputs tab with ADBE monthly adjusted closes and month-end 10-year Treasury yields for the last 5 years; Calc tab with monthly returns, the monthly change in yield, a 12-month rolling correlation between them, and the full-period correlation, all as live formulas; a Summary tab with a chart. Note the data source of every input column.
+Use the xlsx-author skill to produce an Excel workbook: Inputs tab with MSFT monthly adjusted closes and month-end 10-year Treasury yields for the last 5 years; Calc tab with monthly returns, the monthly change in yield, a 12-month rolling correlation between them, and the full-period correlation, all as live formulas; a Summary tab with a chart. Note the data source of every input column.
 
 ---
 Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
@@ -684,7 +693,7 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 2. Sources used: each tool, connector or website you called, with a call count.
 3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
 4. Freshness: the date of the latest market price and the latest financial reporting period you used.
-Key figures: first and last month in the data; number of monthly rows; first and last ADBE adjusted close; first and last 10-year yield; full-period correlation; latest 12-month rolling correlation; whether every Calc cell is a formula (yes/no); whether any input values were estimated or interpolated (yes/no, and which).
+Key figures: first and last month in the data; number of monthly rows; first and last MSFT adjusted close; first and last 10-year yield; full-period correlation; latest 12-month rolling correlation; whether every Calc cell is a formula (yes/no); whether any input values were estimated or interpolated (yes/no, and which).
 ```
 
 ### FA-13: Skill creator
@@ -703,7 +712,7 @@ End your reply with a section headed exactly "## Comparison Block" containing:
 Key figures: data tools or sources the skill tells Claude to use (each by name); whether it handles a ticker that errors (yes/no); whether it was test-run on a sample watchlist (yes/no, and with which tickers); files in the packaged skill.
 ```
 
-Then, in a new chat in **arm B** for both outputs, install each generated skill and run `Run weekly-watchlist-review for ADBE, DDOG, DBX`. Compare which version produces a correct table without edits.
+Then, in a new chat in **arm B** for both outputs, install each generated skill and run `Run weekly-watchlist-review for AAPL, NVDA, META`. Compare which version produces a correct table without edits.
 
 ---
 
@@ -720,9 +729,11 @@ Then, in a new chat in **arm B** for both outputs, install each generated skill 
 | Multiples (EV/EBITDA, P/E) | ±5% (they compound several inputs) |
 | Macro series (yields, spreads) | Exact for the same observation date; otherwise ±10bp |
 | Dates (filings, period ends, earnings dates) | Exact |
-| Fiscal-period labels | Exact (for example ADBE's fiscal Q3 is not calendar Q3) |
+| Fiscal-period labels | Exact (for example NVIDIA's fiscal 2027 runs from Feb 2026 to Jan 2027, and Microsoft's fiscal 2026 ended June 30, 2026) |
 
 Valuation outputs (target price, WACC, IRR, DCF value) have no single right answer. Don't score them for accuracy. Instead check that the **inputs** behind them are correct, and note how far the outputs moved between arms.
+
+Segment figures (Data Center, Google Cloud, AWS, advertising lines) aren't in the MCP's standardized statements. Score them against the company's own report, and expect both arms to get them from the web.
 
 ### 7.2 Scorecard per test
 
@@ -803,5 +814,5 @@ Produce:
 - **Gap larger in a test than in the FA-10 control:** the MCP made a real difference for that skill.
 - **Arm B gave wrong numbers that match R0:** the MCP returned the wrong value. Check the `concepts` field in `get_financials` output and the XBRL mapping in `src/stock_data_mcp/sources/xbrl_map.py`.
 - **Arm B didn't call the MCP:** the skill's data-source instructions don't steer it to these tools. Possible fixes: clearer tool descriptions in `server.py`, or naming the tools in your prompt.
-- **Arm B called the MCP, then still used web search for the same data:** look for tool errors or missing line items (banks, IFRS filers, recent IPOs) in the transcript.
+- **Arm B called the MCP, then still used web search for the same data:** look for tool errors or missing line items in the transcript.
 - **No gap on consensus, guidance, segments or news rows:** that's expected. The MCP has none of these, so both arms must use web search.
