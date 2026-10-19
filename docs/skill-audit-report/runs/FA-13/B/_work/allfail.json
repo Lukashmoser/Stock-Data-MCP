@@ -1,0 +1,1 @@
+{"as_of": "2026-10-15", "tickers": {"ZZZZQ": {"quote": {"error": "Yahoo Finance error: KeyError: 'currentTradingPeriod'"}, "history": {"error": "No price history for 'ZZZZQ'", "hint": "Check the ticker (Yahoo format)."}, "filings": {"error": "Ticker 'ZZZZQ' not found in SEC company list"}, "filings_8k": {"error": "Ticker 'ZZZZQ' not found in SEC company list"}}}}

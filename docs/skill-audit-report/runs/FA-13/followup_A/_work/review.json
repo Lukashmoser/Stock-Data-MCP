@@ -1,0 +1,58 @@
+{
+  "as_of": "2026-10-18",
+  "rows": [
+    {
+      "ticker": "AAPL",
+      "status": "OK",
+      "last_price": 343.46,
+      "price_date": "2026-10-16",
+      "chg_1w_pct": 2.0259030418250834,
+      "chg_1m_pct": 3.3242080563159915,
+      "pos_52w_pct": 95.5218180082116,
+      "low_52w": 243.42,
+      "high_52w": 348.15,
+      "latest_form": "144",
+      "latest_filed": "2026-10-16",
+      "recent_8k": false,
+      "recent_8k_dates": [],
+      "notes": []
+    },
+    {
+      "ticker": "NVDA",
+      "status": "OK",
+      "last_price": 214.13,
+      "price_date": "2026-10-16",
+      "chg_1w_pct": -6.60764131193301,
+      "chg_1m_pct": 0.10752688172042113,
+      "pos_52w_pct": 63.034134007585315,
+      "low_52w": 164.27,
+      "high_52w": 243.37,
+      "latest_form": "4/A",
+      "latest_filed": "2026-10-13",
+      "recent_8k": false,
+      "recent_8k_dates": [],
+      "notes": []
+    },
+    {
+      "ticker": "META",
+      "status": "OK",
+      "last_price": 709.33,
+      "price_date": "2026-10-16",
+      "chg_1w_pct": -1.29962291455048,
+      "chg_1m_pct": 5.349690335803725,
+      "pos_52w_pct": 72.84250269687163,
+      "low_52w": 520.26,
+      "high_52w": 779.82,
+      "latest_form": "4",
+      "latest_filed": "2026-10-14",
+      "recent_8k": false,
+      "recent_8k_dates": [],
+      "notes": []
+    }
+  ],
+  "facts": [
+    "equal-weight 1W avg -2.0% across 3 names; best AAPL +2.0%, worst NVDA -6.6%",
+    "near 52-wk high (>=90%): AAPL; near 52-wk low (<=10%): none",
+    "8-Ks in last 7 days: none"
+  ]
+}

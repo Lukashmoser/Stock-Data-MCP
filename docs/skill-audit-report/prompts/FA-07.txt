@@ -1,0 +1,11 @@
+Use the clean-data-xls skill on the attached quarterly_export.csv. Standardize tickers and dates, convert text numbers, dedupe, and flag mixed-type columns. Also flag any values that look wrong (unit errors or numbers that don't match what the company reported) and, where you can, give the corrected value with its source. Return the cleaned file and a change log.
+
+---
+Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
+Report money in USD millions (per-share values in USD), percentages to one decimal place, dates as YYYY-MM-DD.
+End your reply with a section headed exactly "## Comparison Block" containing:
+1. Key figures: a table with columns Metric | Value | Units | Period or as-of date | Source | Confidence (H/M/L). One row per metric listed below, in the order listed. Write N/A instead of dropping a row. Source = the tool name, the filing (form + filing date) or the URL; write "model knowledge" for anything recalled from memory.
+2. Sources used: each tool, connector or website you called, with a call count.
+3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
+4. Freshness: the date of the latest market price and the latest financial reporting period you used.
+Key figures: rows in, rows out; duplicates removed; date formats normalized (count); text-to-number conversions (count); unit errors found (rows + corrected values); wrong values found (rows + corrected values + source).

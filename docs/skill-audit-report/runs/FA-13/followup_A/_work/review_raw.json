@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-10-18",
+  "rows": [
+    {
+      "ticker": "AAPL",
+      "status": "PARTIAL",
+      "last_price": 343.46,
+      "price_date": null,
+      "chg_1w_pct": null,
+      "chg_1m_pct": null,
+      "pos_52w_pct": null,
+      "low_52w": null,
+      "high_52w": null,
+      "latest_form": "144",
+      "latest_filed": "2026-10-16",
+      "recent_8k": false,
+      "recent_8k_dates": [],
+      "notes": [
+        "no usable price data"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "status": "PARTIAL",
+      "last_price": 214.13,
+      "price_date": null,
+      "chg_1w_pct": null,
+      "chg_1m_pct": null,
+      "pos_52w_pct": null,
+      "low_52w": null,
+      "high_52w": null,
+      "latest_form": "4/A",
+      "latest_filed": "2026-10-13",
+      "recent_8k": false,
+      "recent_8k_dates": [],
+      "notes": [
+        "no usable price data"
+      ]
+    },
+    {
+      "ticker": "META",
+      "status": "PARTIAL",
+      "last_price": 709.33,
+      "price_date": null,
+      "chg_1w_pct": null,
+      "chg_1m_pct": null,
+      "pos_52w_pct": null,
+      "low_52w": null,
+      "high_52w": null,
+      "latest_form": "4",
+      "latest_filed": "2026-10-14",
+      "recent_8k": false,
+      "recent_8k_dates": [],
+      "notes": [
+        "no usable price data"
+      ]
+    }
+  ],
+  "facts": [
+    "8-Ks in last 7 days: none",
+    "incomplete data: AAPL, NVDA, META"
+  ]
+}

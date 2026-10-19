@@ -1,0 +1,4836 @@
+
+=== POTENTIAL INCONSISTENCIES DETECTED ===
+
+Category: GROWTH
+  Expected: 24.0 (Slides: [2], Count: 1)
+  Found:    12 (Slides: [2], Count: 1)
+  Severity: medium
+
+Category: GROWTH
+  Expected: 24.0 (Slides: [2], Count: 1)
+  Found:    14.0 (Slides: [2], Count: 1)
+  Severity: medium
+
+Category: GROWTH
+  Expected: 24.0 (Slides: [2], Count: 1)
+  Found:    27 (Slides: [2], Count: 1)
+  Severity: medium
+
+Category: VALUATION
+  Expected: $35.8B (Slides: [2], Count: 1)
+  Found:    $7,250M (Slides: [2], Count: 1)
+  Severity: high
+
+Category: VALUATION
+  Expected: $35.8B (Slides: [2], Count: 1)
+  Found:    11.0 (Slides: [4], Count: 1)
+  Severity: high
+
+Category: VALUATION
+  Expected: $35.8B (Slides: [2], Count: 1)
+  Found:    58 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: VALUATION
+  Expected: $35.8B (Slides: [2], Count: 1)
+  Found:    7704.0 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: VALUATION
+  Expected: $35.8B (Slides: [2], Count: 1)
+  Found:    8166.0 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: VALUATION
+  Expected: $35.8B (Slides: [2], Count: 1)
+  Found:    8988.0 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: VALUATION
+  Expected: $35.8B (Slides: [2], Count: 1)
+  Found:    26,964 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: VALUATION
+  Expected: $35.8B (Slides: [2], Count: 1)
+  Found:    34,668 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: VALUATION
+  Expected: $35.8B (Slides: [2], Count: 1)
+  Found:    28,552 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: VALUATION
+  Expected: $35.8B (Slides: [2], Count: 1)
+  Found:    31, (Slides: [6], Count: 1)
+  Severity: high
+
+Category: VALUATION
+  Expected: $35.8B (Slides: [2], Count: 1)
+  Found:    13, (Slides: [6], Count: 1)
+  Severity: high
+
+Category: MARGIN
+  Expected: 14.0 (Slides: [2], Count: 1)
+  Found:    42.9% (Slides: [3], Count: 1)
+  Severity: medium
+
+Category: MARGIN
+  Expected: 14.0 (Slides: [2], Count: 1)
+  Found:    11.0 (Slides: [3], Count: 1)
+  Severity: medium
+
+Category: MARGIN
+  Expected: 14.0 (Slides: [2], Count: 1)
+  Found:    3,860 (Slides: [3], Count: 1)
+  Severity: medium
+
+Category: MARGIN
+  Expected: 14.0 (Slides: [2], Count: 1)
+  Found:    85.9% (Slides: [3], Count: 1)
+  Severity: medium
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    0.053 (Slides: [2], Count: 2)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    4,494 (Slides: [3, 6], Count: 2)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    $4,494M (Slides: [2], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    85.9% (Slides: [2], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    $1,316M (Slides: [2], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    5.5% (Slides: [2], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    27 (Slides: [2], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    51 (Slides: [2], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    0.044 (Slides: [2], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    0.049 (Slides: [2], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    11.0 (Slides: [3], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    18.0x (Slides: [6], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    24.0x (Slides: [6], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    7.0x (Slides: [6], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    22,470 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: REVENUE
+  Expected: 4.9% (Slides: [2, 6], Count: 2)
+  Found:    31,458 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: EBITDA_MARGIN
+  Expected: 29.3% (Slides: [3], Count: 2)
+  Found:    13.0 (Slides: [2], Count: 1)
+  Severity: medium
+
+Category: EBITDA_MARGIN
+  Expected: 29.3% (Slides: [3], Count: 2)
+  Found:    11.0 (Slides: [3], Count: 1)
+  Severity: medium
+
+Category: EBITDA_MARGIN
+  Expected: 29.3% (Slides: [3], Count: 2)
+  Found:    1,316 (Slides: [3], Count: 1)
+  Severity: medium
+
+Category: PERCENTAGE
+  Expected: 26.4% (Slides: [3, 4, 5], Count: 3)
+  Found:    67.9% (Slides: [5], Count: 2)
+  Severity: medium
+
+Category: PERCENTAGE
+  Expected: 26.4% (Slides: [3, 4, 5], Count: 3)
+  Found:    42.9% (Slides: [3], Count: 1)
+  Severity: medium
+
+Category: PERCENTAGE
+  Expected: 26.4% (Slides: [3, 4, 5], Count: 3)
+  Found:    85.9% (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: PERCENTAGE
+  Expected: 26.4% (Slides: [3, 4, 5], Count: 3)
+  Found:    46.8% (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: PERCENTAGE
+  Expected: 26.4% (Slides: [3, 4, 5], Count: 3)
+  Found:    60.9% (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: PERCENTAGE
+  Expected: 26.4% (Slides: [3, 4, 5], Count: 3)
+  Found:    33.1% (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: PERCENTAGE
+  Expected: 26.4% (Slides: [3, 4, 5], Count: 3)
+  Found:    64.5% (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: PERCENTAGE
+  Expected: 26.4% (Slides: [3, 4, 5], Count: 3)
+  Found:    24.3% (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: PERCENTAGE
+  Expected: 26.4% (Slides: [3, 4, 5], Count: 3)
+  Found:    71.8% (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: PERCENTAGE
+  Expected: 26.4% (Slides: [3, 4, 5], Count: 3)
+  Found:    6.7% (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: PERCENTAGE
+  Expected: 26.4% (Slides: [3, 4, 5], Count: 3)
+  Found:    28.7% (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: EBITDA
+  Expected: 31, (Slides: [3], Count: 1)
+  Found:    14.0x (Slides: [6], Count: 1)
+  Severity: high
+
+Category: EBITDA
+  Expected: 31, (Slides: [3], Count: 1)
+  Found:    18.0x (Slides: [6], Count: 1)
+  Severity: high
+
+Category: EBITDA
+  Expected: 31, (Slides: [3], Count: 1)
+  Found:    1,361 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: EBITDA
+  Expected: 31, (Slides: [3], Count: 1)
+  Found:    24,498 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: EBITDA
+  Expected: 31, (Slides: [3], Count: 1)
+  Found:    32,664 (Slides: [6], Count: 1)
+  Severity: high
+
+Category: MULTIPLE
+  Expected: 28.3x (Slides: [5], Count: 2)
+  Found:    6.4x (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: MULTIPLE
+  Expected: 28.3x (Slides: [5], Count: 2)
+  Found:    24.1x (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: MULTIPLE
+  Expected: 28.3x (Slides: [5], Count: 2)
+  Found:    12.1x (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: MULTIPLE
+  Expected: 28.3x (Slides: [5], Count: 2)
+  Found:    25.8x (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: MULTIPLE
+  Expected: 28.3x (Slides: [5], Count: 2)
+  Found:    9.4x (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: MULTIPLE
+  Expected: 28.3x (Slides: [5], Count: 2)
+  Found:    7.4x (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: MULTIPLE
+  Expected: 28.3x (Slides: [5], Count: 2)
+  Found:    30.4x (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: MULTIPLE
+  Expected: 28.3x (Slides: [5], Count: 2)
+  Found:    2.9x (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: MULTIPLE
+  Expected: 28.3x (Slides: [5], Count: 2)
+  Found:    43.7x (Slides: [5], Count: 1)
+  Severity: medium
+
+Category: MULTIPLE
+  Expected: 28.3x (Slides: [5], Count: 2)
+  Found:    8.4x (Slides: [5], Count: 1)
+  Severity: medium
+
+{
+  "total_numbers": 237,
+  "by_category": {
+    "other": [
+      {
+        "value": "36.0",
+        "slide": 1,
+        "context": "rategic Alternatives for Zoom (ZM)   <<Text 0 sz={36.0} f={None}>>"
+      },
+      {
+        "value": "13,",
+        "slide": 1,
+        "context": "Discussion materials  |  October 13, 2026   <<Text 0 sz={16.0} f={None}>>"
+      },
+      {
+        "value": "16.0",
+        "slide": 1,
+        "context": "ion materials  |  October 13, 2026   <<Text 0 sz={16.0} f={None}>>"
+      },
+      {
+        "value": "14.0",
+        "slide": 2,
+        "context": "1   <<Text 2 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "14.0",
+        "slide": 2,
+        "context": "Scale   <<Text 3 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "13.0",
+        "slide": 2,
+        "context": "ash of $7,250MM and no funded debt   <<Text 3 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "14.0",
+        "slide": 2,
+        "context": "2   <<Text 5 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "14.0",
+        "slide": 2,
+        "context": "3   <<Text 8 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "14.0",
+        "slide": 2,
+        "context": "Capital return   <<Text 9 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "$1,926M",
+        "slide": 2,
+        "context": "LTM free cash flow of $1,926MM funds buybacks ($1,460MM repurchased over the LT"
+      },
+      {
+        "value": "$1,460M",
+        "slide": 2,
+        "context": "LTM free cash flow of $1,926MM funds buybacks ($1,460MM repurchased over the LTM period)   <<Text 9 "
+      },
+      {
+        "value": "13.0",
+        "slide": 2,
+        "context": "M repurchased over the LTM period)   <<Text 9 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "11",
+        "slide": 2,
+        "context": "4   <<Text 11 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "14.0",
+        "slide": 2,
+        "context": "4   <<Text 11 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "12",
+        "slide": 2,
+        "context": "Y of 5.5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "13.0",
+        "slide": 2,
+        "context": "5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "26",
+        "slide": 2,
+        "context": "cats: ['Q3 FY26', 'Q4 FY26', 'Q1 FY27', 'Q2 FY27']"
+      },
+      {
+        "value": "26",
+        "slide": 2,
+        "context": "cats: ['Q3 FY26', 'Q4 FY26', 'Q1 FY27', 'Q2 FY27']"
+      },
+      {
+        "value": "27",
+        "slide": 2,
+        "context": "cats: ['Q3 FY26', 'Q4 FY26', 'Q1 FY27', 'Q2 FY27']"
+      },
+      {
+        "value": "27",
+        "slide": 2,
+        "context": "cats: ['Q3 FY26', 'Q4 FY26', 'Q1 FY27', 'Q2 FY27']"
+      },
+      {
+        "value": "10",
+        "slide": 2,
+        "context": "Source: Company filings (Form 10-Q for the quarter ended July 31, 2026); market da"
+      },
+      {
+        "value": "31,",
+        "slide": 2,
+        "context": "any filings (Form 10-Q for the quarter ended July 31, 2026); market data as of October 13, 2026. LTM"
+      },
+      {
+        "value": "13,",
+        "slide": 2,
+        "context": "r ended July 31, 2026); market data as of October 13, 2026. LTM = four quarters ended July 31, 2026."
+      },
+      {
+        "value": "31,",
+        "slide": 2,
+        "context": "October 13, 2026. LTM = four quarters ended July 31, 2026.   <<Text 14 sz={9.0} f={None}>>"
+      },
+      {
+        "value": "14",
+        "slide": 2,
+        "context": "LTM = four quarters ended July 31, 2026.   <<Text 14 sz={9.0} f={None}>>"
+      },
+      {
+        "value": "9.0",
+        "slide": 2,
+        "context": "our quarters ended July 31, 2026.   <<Text 14 sz={9.0} f={None}>>"
+      },
+      {
+        "value": "24.0",
+        "slide": 3,
+        "context": "generative, fortress balance sheet   <<Text 0 sz={24.0} f={None}>>"
+      },
+      {
+        "value": "$4,494M",
+        "slide": 3,
+        "context": "$4,494MM   <<Text 2 sz={22.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "22.0",
+        "slide": 3,
+        "context": "$4,494MM   <<Text 2 sz={22.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "$1,316M",
+        "slide": 3,
+        "context": "$1,316MM   <<Text 5 sz={22.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "22.0",
+        "slide": 3,
+        "context": "$1,316MM   <<Text 5 sz={22.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "$1,926M",
+        "slide": 3,
+        "context": "$1,926MM   <<Text 8 sz={22.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "22.0",
+        "slide": 3,
+        "context": "$1,926MM   <<Text 8 sz={22.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "$7,250M",
+        "slide": 3,
+        "context": "$7,250MM   <<Text 11 sz={22.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "11",
+        "slide": 3,
+        "context": "$7,250MM   <<Text 11 sz={22.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "22.0",
+        "slide": 3,
+        "context": "$7,250MM   <<Text 11 sz={22.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "12",
+        "slide": 3,
+        "context": "Net cash   <<Text 12 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "11.0",
+        "slide": 3,
+        "context": "Net cash   <<Text 12 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "1,185",
+        "slide": 3,
+        "context": "Operating income (EBIT) | 1,185 | 26.4%"
+      },
+      {
+        "value": "31",
+        "slide": 3,
+        "context": "Net cash build ($MM) | 7/31/2026"
+      },
+      {
+        "value": "932",
+        "slide": 3,
+        "context": "Cash & cash equivalents | 932"
+      },
+      {
+        "value": "6,138",
+        "slide": 3,
+        "context": "Marketable securities | 6,138"
+      },
+      {
+        "value": "7,250",
+        "slide": 3,
+        "context": "Net cash | 7,250"
+      },
+      {
+        "value": "13",
+        "slide": 3,
+        "context": "tion. FCF = operating cash flow \u2212 capex.   <<Text 13 sz={9.0} f={None}>>"
+      },
+      {
+        "value": "9.0",
+        "slide": 3,
+        "context": "CF = operating cash flow \u2212 capex.   <<Text 13 sz={9.0} f={None}>>"
+      },
+      {
+        "value": "24.0",
+        "slide": 4,
+        "context": "ce performance: last twelve months   <<Text 0 sz={24.0} f={None}>>"
+      },
+      {
+        "value": "65",
+        "slide": 4,
+        "context": "CHART LINE_MARKERS (65) title=ZM share price ($)"
+      },
+      {
+        "value": "25",
+        "slide": 4,
+        "context": "cats: ['Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26"
+      },
+      {
+        "value": "25",
+        "slide": 4,
+        "context": "cats: ['Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26"
+      },
+      {
+        "value": "25",
+        "slide": 4,
+        "context": "cats: ['Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26"
+      },
+      {
+        "value": "26",
+        "slide": 4,
+        "context": "cats: ['Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26"
+      },
+      {
+        "value": "26",
+        "slide": 4,
+        "context": "ts: ['Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-"
+      },
+      {
+        "value": "26",
+        "slide": 4,
+        "context": "25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-"
+      },
+      {
+        "value": "26",
+        "slide": 4,
+        "context": "25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-"
+      },
+      {
+        "value": "26",
+        "slide": 4,
+        "context": "25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-"
+      },
+      {
+        "value": "26",
+        "slide": 4,
+        "context": "26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-26']"
+      },
+      {
+        "value": "26",
+        "slide": 4,
+        "context": "26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-26']"
+      },
+      {
+        "value": "26",
+        "slide": 4,
+        "context": "26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-26']"
+      },
+      {
+        "value": "26",
+        "slide": 4,
+        "context": "26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-26']"
+      },
+      {
+        "value": "26",
+        "slide": 4,
+        "context": "26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-26']"
+      },
+      {
+        "value": "80.01",
+        "slide": 4,
+        "context": "series ZM share price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59"
+      },
+      {
+        "value": "84.96",
+        "slide": 4,
+        "context": "series ZM share price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14"
+      },
+      {
+        "value": "83.32",
+        "slide": 4,
+        "context": "series ZM share price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07"
+      },
+      {
+        "value": "92.1",
+        "slide": 4,
+        "context": "series ZM share price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 1"
+      },
+      {
+        "value": "73.94",
+        "slide": 4,
+        "context": "s ZM share price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33"
+      },
+      {
+        "value": "82.36",
+        "slide": 4,
+        "context": "are price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88"
+      },
+      {
+        "value": "103.44",
+        "slide": 4,
+        "context": "ce ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16"
+      },
+      {
+        "value": "101.59",
+        "slide": 4,
+        "context": "[80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]"
+      },
+      {
+        "value": "87.14",
+        "slide": 4,
+        "context": "84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]"
+      },
+      {
+        "value": "96.07",
+        "slide": 4,
+        "context": "83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]"
+      },
+      {
+        "value": "101.33",
+        "slide": 4,
+        "context": "92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]"
+      },
+      {
+        "value": "92.88",
+        "slide": 4,
+        "context": ".94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]"
+      },
+      {
+        "value": "98.16",
+        "slide": 4,
+        "context": ".36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]"
+      },
+      {
+        "value": "$98.16",
+        "slide": 4,
+        "context": "$98.16   <<Text 2 sz={20.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "20.0",
+        "slide": 4,
+        "context": "$98.16   <<Text 2 sz={20.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "11.0",
+        "slide": 4,
+        "context": "Current share price   <<Text 2 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "20.0",
+        "slide": 4,
+        "context": "+27.2%   <<Text 4 sz={20.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "11.0",
+        "slide": 4,
+        "context": "1-year share price return   <<Text 4 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "$114.74",
+        "slide": 4,
+        "context": "$114.74 / $70.70   <<Text 6 sz={16.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "$70.70",
+        "slide": 4,
+        "context": "$114.74 / $70.70   <<Text 6 sz={16.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "16.0",
+        "slide": 4,
+        "context": "$114.74 / $70.70   <<Text 6 sz={16.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "52",
+        "slide": 4,
+        "context": "52-week high / low   <<Text 6 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "11.0",
+        "slide": 4,
+        "context": "52-week high / low   <<Text 6 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "$35.8B",
+        "slide": 4,
+        "context": "$35.8B   <<Text 8 sz={20.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "20.0",
+        "slide": 4,
+        "context": "$35.8B   <<Text 8 sz={20.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "10",
+        "slide": 4,
+        "context": "Source: Market data, 10/13/2025 \u2013 10/13/2026 (last weekly close of each m"
+      },
+      {
+        "value": "13",
+        "slide": 4,
+        "context": "Source: Market data, 10/13/2025 \u2013 10/13/2026 (last weekly close of each mont"
+      },
+      {
+        "value": "10",
+        "slide": 4,
+        "context": "Source: Market data, 10/13/2025 \u2013 10/13/2026 (last weekly close of each month). 1-year"
+      },
+      {
+        "value": "13",
+        "slide": 4,
+        "context": "Source: Market data, 10/13/2025 \u2013 10/13/2026 (last weekly close of each month). 1-year re"
+      },
+      {
+        "value": "10",
+        "slide": 4,
+        "context": "st weekly close of each month). 1-year return vs. 10/13/2025 close ($80.01).   <<Text 9 sz={9.0} f={"
+      },
+      {
+        "value": "13",
+        "slide": 4,
+        "context": "weekly close of each month). 1-year return vs. 10/13/2025 close ($80.01).   <<Text 9 sz={9.0} f={Non"
+      },
+      {
+        "value": "$80.01",
+        "slide": 4,
+        "context": "each month). 1-year return vs. 10/13/2025 close ($80.01).   <<Text 9 sz={9.0} f={None}>>"
+      },
+      {
+        "value": "9.0",
+        "slide": 4,
+        "context": "urn vs. 10/13/2025 close ($80.01).   <<Text 9 sz={9.0} f={None}>>"
+      },
+      {
+        "value": "24.0",
+        "slide": 5,
+        "context": "es: video and communications peers   <<Text 0 sz={24.0} f={None}>>"
+      },
+      {
+        "value": "35,802",
+        "slide": 5,
+        "context": "Zoom (ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x"
+      },
+      {
+        "value": "28,552",
+        "slide": 5,
+        "context": "Zoom (ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x"
+      },
+      {
+        "value": "4,494",
+        "slide": 5,
+        "context": "Zoom (ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x"
+      },
+      {
+        "value": "4,035,413",
+        "slide": 5,
+        "context": "Microsoft (MSFT) | 4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25"
+      },
+      {
+        "value": "3,998,864",
+        "slide": 5,
+        "context": "Microsoft (MSFT) | 4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x"
+      },
+      {
+        "value": "331,839",
+        "slide": 5,
+        "context": "Microsoft (MSFT) | 4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x"
+      },
+      {
+        "value": "4,326,706",
+        "slide": 5,
+        "context": "Alphabet (GOOGL) | 4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28."
+      },
+      {
+        "value": "4,184,396",
+        "slide": 5,
+        "context": "Alphabet (GOOGL) | 4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x"
+      },
+      {
+        "value": "445,867",
+        "slide": 5,
+        "context": "Alphabet (GOOGL) | 4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x"
+      },
+      {
+        "value": "453,673",
+        "slide": 5,
+        "context": "Cisco (CSCO) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x"
+      },
+      {
+        "value": "467,288",
+        "slide": 5,
+        "context": "Cisco (CSCO) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x"
+      },
+      {
+        "value": "63,325",
+        "slide": 5,
+        "context": "Cisco (CSCO) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x"
+      },
+      {
+        "value": "6,571",
+        "slide": 5,
+        "context": "RingCentral (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x"
+      },
+      {
+        "value": "7,580",
+        "slide": 5,
+        "context": "RingCentral (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x"
+      },
+      {
+        "value": "2,584",
+        "slide": 5,
+        "context": "RingCentral (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x"
+      },
+      {
+        "value": "13.0",
+        "slide": 5,
+        "context": "e-sheet optionality for any buyer.   <<Text 2 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "13",
+        "slide": 5,
+        "context": "Source: Company filings; market data as of 13-Oct-2026. LTM through each company's latest repor"
+      },
+      {
+        "value": "9.0",
+        "slide": 5,
+        "context": "\u2212 cash and short-term investments.   <<Text 3 sz={9.0} f={None}>>"
+      },
+      {
+        "value": "24.0",
+        "slide": 6,
+        "context": "Illustrative valuation range   <<Text 0 sz={24.0} f={None}>>"
+      },
+      {
+        "value": "26964.0",
+        "slide": 6,
+        "context": "series Base: [26964.0, 24498.0, 22470.0]"
+      },
+      {
+        "value": "24498.0",
+        "slide": 6,
+        "context": "series Base: [26964.0, 24498.0, 22470.0]"
+      },
+      {
+        "value": "22470.0",
+        "slide": 6,
+        "context": "series Base: [26964.0, 24498.0, 22470.0]"
+      },
+      {
+        "value": "11.0",
+        "slide": 6,
+        "context": "layered in during the next phase.   <<Text 1 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "9.0",
+        "slide": 6,
+        "context": "arket data as of October 13, 2026.   <<Text 2 sz={9.0} f={None}>>"
+      },
+      {
+        "value": "24.0",
+        "slide": 7,
+        "context": "Potential Buyer Univrese   <<Text 0 sz={24.0} f={None}>>"
+      },
+      {
+        "value": "16.0",
+        "slide": 7,
+        "context": "Strategic buyers   <<Text 2 sz={16.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "13.0",
+        "slide": 7,
+        "context": "ency; contact center and SMB reach   <<Text 3 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "13.0",
+        "slide": 7,
+        "context": "pace and Google Meet consolidation   <<Text 3 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "13.0",
+        "slide": 7,
+        "context": "and collaboration hardware attach   <<Text 3 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "13.0",
+        "slide": 7,
+        "context": "r engagement and Slack integration   <<Text 3 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "13.0",
+        "slide": 7,
+        "context": "ure and enterprise apps cross-sell   <<Text 3 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "16.0",
+        "slide": 7,
+        "context": "Financial sponsors   <<Text 5 sz={16.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "13.0",
+        "slide": 7,
+        "context": "p software take-private experience   <<Text 6 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "13.0",
+        "slide": 7,
+        "context": "rge-cap technology buyout capacity   <<Text 6 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "13.0",
+        "slide": 7,
+        "context": "rprise software operating playbook   <<Text 6 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "13.0",
+        "slide": 7,
+        "context": "cale capital; club-deal capability   <<Text 6 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "24.0",
+        "slide": 8,
+        "context": "Next steps   <<Text 0 sz={24.0} f={None}>>"
+      },
+      {
+        "value": "10",
+        "slide": 8,
+        "context": "2026-10-20   <<Text 3 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "20",
+        "slide": 8,
+        "context": "2026-10-20   <<Text 3 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "12.0",
+        "slide": 8,
+        "context": "2026-10-20   <<Text 3 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "14.0",
+        "slide": 8,
+        "context": "Board discussion   <<Text 5 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "12.0",
+        "slide": 8,
+        "context": "ves and confirm process objectives   <<Text 5 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "10",
+        "slide": 8,
+        "context": "2026-10-27   <<Text 7 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "27",
+        "slide": 8,
+        "context": "2026-10-27   <<Text 7 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "12.0",
+        "slide": 8,
+        "context": "2026-10-27   <<Text 7 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "14.0",
+        "slide": 8,
+        "context": "Preparation   <<Text 9 sz={14.0} f={None}>>"
+      },
+      {
+        "value": ",t",
+        "slide": 8,
+        "context": "Finalize buyer list, teaser and confidentiality agreements   <<Text 9 sz"
+      },
+      {
+        "value": "12.0",
+        "slide": 8,
+        "context": "ser and confidentiality agreements   <<Text 9 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "11",
+        "slide": 8,
+        "context": "2026-11-09   <<Text 11 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "09",
+        "slide": 8,
+        "context": "2026-11-09   <<Text 11 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "11",
+        "slide": 8,
+        "context": "2026-11-09   <<Text 11 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "12.0",
+        "slide": 8,
+        "context": "2026-11-09   <<Text 11 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "13",
+        "slide": 8,
+        "context": "Outreach   <<Text 13 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "14.0",
+        "slide": 8,
+        "context": "Outreach   <<Text 13 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "13",
+        "slide": 8,
+        "context": "utreach to strategic and sponsor parties   <<Text 13 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "12.0",
+        "slide": 8,
+        "context": "to strategic and sponsor parties   <<Text 13 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "12",
+        "slide": 8,
+        "context": "2026-12-07   <<Text 15 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "07",
+        "slide": 8,
+        "context": "2026-12-07   <<Text 15 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "15",
+        "slide": 8,
+        "context": "2026-12-07   <<Text 15 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "12.0",
+        "slide": 8,
+        "context": "2026-12-07   <<Text 15 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "17",
+        "slide": 8,
+        "context": "First-round bids   <<Text 17 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "14.0",
+        "slide": 8,
+        "context": "First-round bids   <<Text 17 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "17",
+        "slide": 8,
+        "context": "interest and select second-round parties   <<Text 17 sz={12.0} f={None}>>"
+      },
+      {
+        "value": "12.0",
+        "slide": 8,
+        "context": "t and select second-round parties   <<Text 17 sz={12.0} f={None}>>"
+      }
+    ],
+    "growth": [
+      {
+        "value": "24.0",
+        "slide": 2,
+        "context": "iew: Zoom's growth is accelerating   <<Text 0 sz={24.0} f={None}>>"
+      },
+      {
+        "value": "12",
+        "slide": 2,
+        "context": "Growth   <<Text 12 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "14.0",
+        "slide": 2,
+        "context": "Growth   <<Text 12 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "27",
+        "slide": 2,
+        "context": "ue growth YoY of 5.5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13.0} f={None}>>"
+      }
+    ],
+    "valuation": [
+      {
+        "value": "$35.8B",
+        "slide": 2,
+        "context": "Market cap of $35.8B with net cash of $7,250MM and no funded debt   <<"
+      },
+      {
+        "value": "$7,250M",
+        "slide": 2,
+        "context": "Market cap of $35.8B with net cash of $7,250MM and no funded debt   <<Text 3 sz={13.0} f={None}"
+      },
+      {
+        "value": "11.0",
+        "slide": 4,
+        "context": "Market capitalization   <<Text 8 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "58",
+        "slide": 6,
+        "context": "CHART BAR_STACKED (58) title=Implied enterprise value ($M)"
+      },
+      {
+        "value": "7704.0",
+        "slide": 6,
+        "context": "series Implied EV range ($M): [7704.0, 8166.0, 8988.0]"
+      },
+      {
+        "value": "8166.0",
+        "slide": 6,
+        "context": "series Implied EV range ($M): [7704.0, 8166.0, 8988.0]"
+      },
+      {
+        "value": "8988.0",
+        "slide": 6,
+        "context": "series Implied EV range ($M): [7704.0, 8166.0, 8988.0]"
+      },
+      {
+        "value": "26,964",
+        "slide": 6,
+        "context": "EV / LTM FCF | 1,926 | 26,964 \u2013 34,668"
+      },
+      {
+        "value": "34,668",
+        "slide": 6,
+        "context": "EV / LTM FCF | 1,926 | 26,964 \u2013 34,668"
+      },
+      {
+        "value": "28,552",
+        "slide": 6,
+        "context": "Current EV |  | 28,552"
+      },
+      {
+        "value": "31,",
+        "slide": 6,
+        "context": "Illustrative only. LTM = four quarters ended July 31, 2026. Current EV based on market data as of Oc"
+      },
+      {
+        "value": "13,",
+        "slide": 6,
+        "context": "26. Current EV based on market data as of October 13, 2026.   <<Text 2 sz={9.0} f={None}>>"
+      }
+    ],
+    "margin": [
+      {
+        "value": "14.0",
+        "slide": 2,
+        "context": "Profitability   <<Text 6 sz={14.0} f={None}>>"
+      },
+      {
+        "value": "42.9%",
+        "slide": 3,
+        "context": "LTM FCF (42.9% margin)   <<Text 9 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "11.0",
+        "slide": 3,
+        "context": "LTM FCF (42.9% margin)   <<Text 9 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "3,860",
+        "slide": 3,
+        "context": "Gross profit | 3,860 | 85.9%"
+      },
+      {
+        "value": "85.9%",
+        "slide": 3,
+        "context": "Gross profit | 3,860 | 85.9%"
+      }
+    ],
+    "revenue": [
+      {
+        "value": "$4,494M",
+        "slide": 2,
+        "context": "LTM revenue of $4,494MM at an 85.9% gross margin and $1,316MM of EBITDA"
+      },
+      {
+        "value": "85.9%",
+        "slide": 2,
+        "context": "LTM revenue of $4,494MM at an 85.9% gross margin and $1,316MM of EBITDA   <<Text 6 sz"
+      },
+      {
+        "value": "$1,316M",
+        "slide": 2,
+        "context": "revenue of $4,494MM at an 85.9% gross margin and $1,316MM of EBITDA   <<Text 6 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "5.5%",
+        "slide": 2,
+        "context": "Revenue growth YoY of 5.5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13"
+      },
+      {
+        "value": "27",
+        "slide": 2,
+        "context": "Revenue growth YoY of 5.5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13.0} f={None}"
+      },
+      {
+        "value": "4.9%",
+        "slide": 2,
+        "context": "Revenue growth YoY of 5.5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "51",
+        "slide": 2,
+        "context": "CHART COLUMN_CLUSTERED (51) title=Quarterly revenue growth YoY"
+      },
+      {
+        "value": "0.044",
+        "slide": 2,
+        "context": "series Revenue growth YoY: [0.044, 0.053, 0.055, 0.049]"
+      },
+      {
+        "value": "0.053",
+        "slide": 2,
+        "context": "series Revenue growth YoY: [0.044, 0.053, 0.055, 0.049]"
+      },
+      {
+        "value": "0.055",
+        "slide": 2,
+        "context": "series Revenue growth YoY: [0.044, 0.053, 0.055, 0.049]"
+      },
+      {
+        "value": "0.049",
+        "slide": 2,
+        "context": "series Revenue growth YoY: [0.044, 0.053, 0.055, 0.049]"
+      },
+      {
+        "value": "11.0",
+        "slide": 3,
+        "context": "LTM revenue   <<Text 3 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "4,494",
+        "slide": 3,
+        "context": "Revenue | 4,494 | \u2014"
+      },
+      {
+        "value": "18.0x",
+        "slide": 6,
+        "context": "['EV / LTM FCF (14.0x\u201318.0x)', 'EV / LTM EBITDA (18.0x\u201324.0x)', 'EV / LTM revenue (5.0x\u20137.0x)']"
+      },
+      {
+        "value": "24.0x",
+        "slide": 6,
+        "context": "/ LTM FCF (14.0x\u201318.0x)', 'EV / LTM EBITDA (18.0x\u201324.0x)', 'EV / LTM revenue (5.0x\u20137.0x)']"
+      },
+      {
+        "value": "5.0x",
+        "slide": 6,
+        "context": "V / LTM EBITDA (18.0x\u201324.0x)', 'EV / LTM revenue (5.0x\u20137.0x)']"
+      },
+      {
+        "value": "7.0x",
+        "slide": 6,
+        "context": "TM EBITDA (18.0x\u201324.0x)', 'EV / LTM revenue (5.0x\u20137.0x)']"
+      },
+      {
+        "value": "4,494",
+        "slide": 6,
+        "context": "EV / LTM revenue | 4,494 | 22,470 \u2013 31,458"
+      },
+      {
+        "value": "22,470",
+        "slide": 6,
+        "context": "EV / LTM revenue | 4,494 | 22,470 \u2013 31,458"
+      },
+      {
+        "value": "31,458",
+        "slide": 6,
+        "context": "EV / LTM revenue | 4,494 | 22,470 \u2013 31,458"
+      }
+    ],
+    "ebitda_margin": [
+      {
+        "value": "13.0",
+        "slide": 2,
+        "context": "ross margin and $1,316MM of EBITDA   <<Text 6 sz={13.0} f={None}>>"
+      },
+      {
+        "value": "29.3%",
+        "slide": 3,
+        "context": "LTM EBITDA (29.3% margin)   <<Text 6 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "11.0",
+        "slide": 3,
+        "context": "LTM EBITDA (29.3% margin)   <<Text 6 sz={11.0} f={None}>>"
+      },
+      {
+        "value": "1,316",
+        "slide": 3,
+        "context": "EBITDA | 1,316 | 29.3%"
+      },
+      {
+        "value": "29.3%",
+        "slide": 3,
+        "context": "EBITDA | 1,316 | 29.3%"
+      }
+    ],
+    "percentage": [
+      {
+        "value": "26.4%",
+        "slide": 3,
+        "context": "Operating income (EBIT) | 1,185 | 26.4%"
+      },
+      {
+        "value": "42.9%",
+        "slide": 3,
+        "context": "Free cash flow | 1,926 | 42.9%"
+      },
+      {
+        "value": "27.2%",
+        "slide": 4,
+        "context": "+27.2%   <<Text 4 sz={20.0} f={'Cambria'}>>"
+      },
+      {
+        "value": "85.9%",
+        "slide": 5,
+        "context": "Zoom (ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x"
+      },
+      {
+        "value": "26.4%",
+        "slide": 5,
+        "context": "Zoom (ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x"
+      },
+      {
+        "value": "67.9%",
+        "slide": 5,
+        "context": "rosoft (MSFT) | 4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x"
+      },
+      {
+        "value": "46.8%",
+        "slide": 5,
+        "context": "MSFT) | 4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x"
+      },
+      {
+        "value": "60.9%",
+        "slide": 5,
+        "context": "habet (GOOGL) | 4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x"
+      },
+      {
+        "value": "33.1%",
+        "slide": 5,
+        "context": "OOGL) | 4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x"
+      },
+      {
+        "value": "64.5%",
+        "slide": 5,
+        "context": "Cisco (CSCO) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x"
+      },
+      {
+        "value": "24.3%",
+        "slide": 5,
+        "context": "sco (CSCO) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x"
+      },
+      {
+        "value": "71.8%",
+        "slide": 5,
+        "context": "RingCentral (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x"
+      },
+      {
+        "value": "6.7%",
+        "slide": 5,
+        "context": "ngCentral (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x"
+      },
+      {
+        "value": "66.2%",
+        "slide": 5,
+        "context": "Peer median |  |  |  | 66.2% | 28.7% | 8.4x | 29.4x"
+      },
+      {
+        "value": "28.7%",
+        "slide": 5,
+        "context": "Peer median |  |  |  | 66.2% | 28.7% | 8.4x | 29.4x"
+      }
+    ],
+    "ebitda": [
+      {
+        "value": "31,",
+        "slide": 3,
+        "context": ": Company filings. LTM = four quarters ended July 31, 2026. EBITDA = GAAP operating income + depreci"
+      },
+      {
+        "value": "14.0x",
+        "slide": 6,
+        "context": "cats: ['EV / LTM FCF (14.0x\u201318.0x)', 'EV / LTM EBITDA (18.0x\u201324.0x)', 'EV / L"
+      },
+      {
+        "value": "18.0x",
+        "slide": 6,
+        "context": "cats: ['EV / LTM FCF (14.0x\u201318.0x)', 'EV / LTM EBITDA (18.0x\u201324.0x)', 'EV / LTM rev"
+      },
+      {
+        "value": "1,361",
+        "slide": 6,
+        "context": "EV / LTM EBITDA | 1,361 | 24,498 \u2013 32,664"
+      },
+      {
+        "value": "24,498",
+        "slide": 6,
+        "context": "EV / LTM EBITDA | 1,361 | 24,498 \u2013 32,664"
+      },
+      {
+        "value": "32,664",
+        "slide": 6,
+        "context": "EV / LTM EBITDA | 1,361 | 24,498 \u2013 32,664"
+      }
+    ],
+    "multiple": [
+      {
+        "value": "6.4x",
+        "slide": 5,
+        "context": "(ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x"
+      },
+      {
+        "value": "24.1x",
+        "slide": 5,
+        "context": "35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x"
+      },
+      {
+        "value": "12.1x",
+        "slide": 5,
+        "context": "4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x"
+      },
+      {
+        "value": "25.8x",
+        "slide": 5,
+        "context": "3 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x"
+      },
+      {
+        "value": "9.4x",
+        "slide": 5,
+        "context": "4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x"
+      },
+      {
+        "value": "28.3x",
+        "slide": 5,
+        "context": "06 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x"
+      },
+      {
+        "value": "7.4x",
+        "slide": 5,
+        "context": "O) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x"
+      },
+      {
+        "value": "30.4x",
+        "slide": 5,
+        "context": "3,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x"
+      },
+      {
+        "value": "2.9x",
+        "slide": 5,
+        "context": "al (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x"
+      },
+      {
+        "value": "43.7x",
+        "slide": 5,
+        "context": ") | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x"
+      },
+      {
+        "value": "8.4x",
+        "slide": 5,
+        "context": "Peer median |  |  |  | 66.2% | 28.7% | 8.4x | 29.4x"
+      },
+      {
+        "value": "29.4x",
+        "slide": 5,
+        "context": "Peer median |  |  |  | 66.2% | 28.7% | 8.4x | 29.4x"
+      }
+    ]
+  },
+  "numbers": [
+    {
+      "value": "36.0",
+      "normalized": 36.0,
+      "unit": "none",
+      "slide": 1,
+      "context": "rategic Alternatives for Zoom (ZM)   <<Text 0 sz={36.0} f={None}>>",
+      "line_number": 2,
+      "category": "other"
+    },
+    {
+      "value": "13,",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 1,
+      "context": "Discussion materials  |  October 13, 2026   <<Text 0 sz={16.0} f={None}>>",
+      "line_number": 3,
+      "category": "other"
+    },
+    {
+      "value": "16.0",
+      "normalized": 16.0,
+      "unit": "none",
+      "slide": 1,
+      "context": "ion materials  |  October 13, 2026   <<Text 0 sz={16.0} f={None}>>",
+      "line_number": 3,
+      "category": "other"
+    },
+    {
+      "value": "24.0",
+      "normalized": 24.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "iew: Zoom's growth is accelerating   <<Text 0 sz={24.0} f={None}>>",
+      "line_number": 6,
+      "category": "growth"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "1   <<Text 2 sz={14.0} f={None}>>",
+      "line_number": 7,
+      "category": "other"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "Scale   <<Text 3 sz={14.0} f={None}>>",
+      "line_number": 8,
+      "category": "other"
+    },
+    {
+      "value": "$35.8B",
+      "normalized": 35800000000.0,
+      "unit": "USD_B",
+      "slide": 2,
+      "context": "Market cap of $35.8B with net cash of $7,250MM and no funded debt   <<",
+      "line_number": 9,
+      "category": "valuation"
+    },
+    {
+      "value": "$7,250M",
+      "normalized": 7250000000.0,
+      "unit": "USD_M",
+      "slide": 2,
+      "context": "Market cap of $35.8B with net cash of $7,250MM and no funded debt   <<Text 3 sz={13.0} f={None}",
+      "line_number": 9,
+      "category": "valuation"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "ash of $7,250MM and no funded debt   <<Text 3 sz={13.0} f={None}>>",
+      "line_number": 9,
+      "category": "other"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "2   <<Text 5 sz={14.0} f={None}>>",
+      "line_number": 10,
+      "category": "other"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "Profitability   <<Text 6 sz={14.0} f={None}>>",
+      "line_number": 11,
+      "category": "margin"
+    },
+    {
+      "value": "$4,494M",
+      "normalized": 4494000000.0,
+      "unit": "USD_M",
+      "slide": 2,
+      "context": "LTM revenue of $4,494MM at an 85.9% gross margin and $1,316MM of EBITDA",
+      "line_number": 12,
+      "category": "revenue"
+    },
+    {
+      "value": "85.9%",
+      "normalized": 85.9,
+      "unit": "%",
+      "slide": 2,
+      "context": "LTM revenue of $4,494MM at an 85.9% gross margin and $1,316MM of EBITDA   <<Text 6 sz",
+      "line_number": 12,
+      "category": "revenue"
+    },
+    {
+      "value": "$1,316M",
+      "normalized": 1316000000.0,
+      "unit": "USD_M",
+      "slide": 2,
+      "context": "revenue of $4,494MM at an 85.9% gross margin and $1,316MM of EBITDA   <<Text 6 sz={13.0} f={None}>>",
+      "line_number": 12,
+      "category": "revenue"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "ross margin and $1,316MM of EBITDA   <<Text 6 sz={13.0} f={None}>>",
+      "line_number": 12,
+      "category": "ebitda_margin"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "3   <<Text 8 sz={14.0} f={None}>>",
+      "line_number": 13,
+      "category": "other"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "Capital return   <<Text 9 sz={14.0} f={None}>>",
+      "line_number": 14,
+      "category": "other"
+    },
+    {
+      "value": "$1,926M",
+      "normalized": 1926000000.0,
+      "unit": "USD_M",
+      "slide": 2,
+      "context": "LTM free cash flow of $1,926MM funds buybacks ($1,460MM repurchased over the LT",
+      "line_number": 15,
+      "category": "other"
+    },
+    {
+      "value": "$1,460M",
+      "normalized": 1460000000.0,
+      "unit": "USD_M",
+      "slide": 2,
+      "context": "LTM free cash flow of $1,926MM funds buybacks ($1,460MM repurchased over the LTM period)   <<Text 9 sz={",
+      "line_number": 15,
+      "category": "other"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "M repurchased over the LTM period)   <<Text 9 sz={13.0} f={None}>>",
+      "line_number": 15,
+      "category": "other"
+    },
+    {
+      "value": "11",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "4   <<Text 11 sz={14.0} f={None}>>",
+      "line_number": 16,
+      "category": "other"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "4   <<Text 11 sz={14.0} f={None}>>",
+      "line_number": 16,
+      "category": "other"
+    },
+    {
+      "value": "12",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "Growth   <<Text 12 sz={14.0} f={None}>>",
+      "line_number": 17,
+      "category": "growth"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "Growth   <<Text 12 sz={14.0} f={None}>>",
+      "line_number": 17,
+      "category": "growth"
+    },
+    {
+      "value": "5.5%",
+      "normalized": 5.5,
+      "unit": "%",
+      "slide": 2,
+      "context": "Revenue growth YoY of 5.5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13",
+      "line_number": 18,
+      "category": "revenue"
+    },
+    {
+      "value": "27",
+      "normalized": 27.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "Revenue growth YoY of 5.5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13.0} f={None}",
+      "line_number": 18,
+      "category": "revenue"
+    },
+    {
+      "value": "4.9%",
+      "normalized": 4.9,
+      "unit": "%",
+      "slide": 2,
+      "context": "Revenue growth YoY of 5.5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13.0} f={None}>>",
+      "line_number": 18,
+      "category": "revenue"
+    },
+    {
+      "value": "27",
+      "normalized": 27.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "ue growth YoY of 5.5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13.0} f={None}>>",
+      "line_number": 18,
+      "category": "growth"
+    },
+    {
+      "value": "12",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "Y of 5.5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13.0} f={None}>>",
+      "line_number": 18,
+      "category": "other"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "5% in Q1 FY27 and 4.9% in Q2 FY27   <<Text 12 sz={13.0} f={None}>>",
+      "line_number": 18,
+      "category": "other"
+    },
+    {
+      "value": "51",
+      "normalized": 51.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "CHART COLUMN_CLUSTERED (51) title=Quarterly revenue growth YoY",
+      "line_number": 19,
+      "category": "revenue"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "cats: ['Q3 FY26', 'Q4 FY26', 'Q1 FY27', 'Q2 FY27']",
+      "line_number": 20,
+      "category": "other"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "cats: ['Q3 FY26', 'Q4 FY26', 'Q1 FY27', 'Q2 FY27']",
+      "line_number": 20,
+      "category": "other"
+    },
+    {
+      "value": "27",
+      "normalized": 27.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "cats: ['Q3 FY26', 'Q4 FY26', 'Q1 FY27', 'Q2 FY27']",
+      "line_number": 20,
+      "category": "other"
+    },
+    {
+      "value": "27",
+      "normalized": 27.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "cats: ['Q3 FY26', 'Q4 FY26', 'Q1 FY27', 'Q2 FY27']",
+      "line_number": 20,
+      "category": "other"
+    },
+    {
+      "value": "0.044",
+      "normalized": 0.044,
+      "unit": "none",
+      "slide": 2,
+      "context": "series Revenue growth YoY: [0.044, 0.053, 0.055, 0.049]",
+      "line_number": 21,
+      "category": "revenue"
+    },
+    {
+      "value": "0.053",
+      "normalized": 0.053,
+      "unit": "none",
+      "slide": 2,
+      "context": "series Revenue growth YoY: [0.044, 0.053, 0.055, 0.049]",
+      "line_number": 21,
+      "category": "revenue"
+    },
+    {
+      "value": "0.055",
+      "normalized": 0.055,
+      "unit": "none",
+      "slide": 2,
+      "context": "series Revenue growth YoY: [0.044, 0.053, 0.055, 0.049]",
+      "line_number": 21,
+      "category": "revenue"
+    },
+    {
+      "value": "0.049",
+      "normalized": 0.049,
+      "unit": "none",
+      "slide": 2,
+      "context": "series Revenue growth YoY: [0.044, 0.053, 0.055, 0.049]",
+      "line_number": 21,
+      "category": "revenue"
+    },
+    {
+      "value": "10",
+      "normalized": 10.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "Source: Company filings (Form 10-Q for the quarter ended July 31, 2026); market da",
+      "line_number": 22,
+      "category": "other"
+    },
+    {
+      "value": "31,",
+      "normalized": 31.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "any filings (Form 10-Q for the quarter ended July 31, 2026); market data as of October 13, 2026. LTM =",
+      "line_number": 22,
+      "category": "other"
+    },
+    {
+      "value": "13,",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "r ended July 31, 2026); market data as of October 13, 2026. LTM = four quarters ended July 31, 2026.",
+      "line_number": 22,
+      "category": "other"
+    },
+    {
+      "value": "31,",
+      "normalized": 31.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "October 13, 2026. LTM = four quarters ended July 31, 2026.   <<Text 14 sz={9.0} f={None}>>",
+      "line_number": 22,
+      "category": "other"
+    },
+    {
+      "value": "14",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "LTM = four quarters ended July 31, 2026.   <<Text 14 sz={9.0} f={None}>>",
+      "line_number": 22,
+      "category": "other"
+    },
+    {
+      "value": "9.0",
+      "normalized": 9.0,
+      "unit": "none",
+      "slide": 2,
+      "context": "our quarters ended July 31, 2026.   <<Text 14 sz={9.0} f={None}>>",
+      "line_number": 22,
+      "category": "other"
+    },
+    {
+      "value": "24.0",
+      "normalized": 24.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "generative, fortress balance sheet   <<Text 0 sz={24.0} f={None}>>",
+      "line_number": 25,
+      "category": "other"
+    },
+    {
+      "value": "$4,494M",
+      "normalized": 4494000000.0,
+      "unit": "USD_M",
+      "slide": 3,
+      "context": "$4,494MM   <<Text 2 sz={22.0} f={'Cambria'}>>",
+      "line_number": 26,
+      "category": "other"
+    },
+    {
+      "value": "22.0",
+      "normalized": 22.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "$4,494MM   <<Text 2 sz={22.0} f={'Cambria'}>>",
+      "line_number": 26,
+      "category": "other"
+    },
+    {
+      "value": "11.0",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "LTM revenue   <<Text 3 sz={11.0} f={None}>>",
+      "line_number": 27,
+      "category": "revenue"
+    },
+    {
+      "value": "$1,316M",
+      "normalized": 1316000000.0,
+      "unit": "USD_M",
+      "slide": 3,
+      "context": "$1,316MM   <<Text 5 sz={22.0} f={'Cambria'}>>",
+      "line_number": 28,
+      "category": "other"
+    },
+    {
+      "value": "22.0",
+      "normalized": 22.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "$1,316MM   <<Text 5 sz={22.0} f={'Cambria'}>>",
+      "line_number": 28,
+      "category": "other"
+    },
+    {
+      "value": "29.3%",
+      "normalized": 29.3,
+      "unit": "%",
+      "slide": 3,
+      "context": "LTM EBITDA (29.3% margin)   <<Text 6 sz={11.0} f={None}>>",
+      "line_number": 29,
+      "category": "ebitda_margin"
+    },
+    {
+      "value": "11.0",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "LTM EBITDA (29.3% margin)   <<Text 6 sz={11.0} f={None}>>",
+      "line_number": 29,
+      "category": "ebitda_margin"
+    },
+    {
+      "value": "$1,926M",
+      "normalized": 1926000000.0,
+      "unit": "USD_M",
+      "slide": 3,
+      "context": "$1,926MM   <<Text 8 sz={22.0} f={'Cambria'}>>",
+      "line_number": 30,
+      "category": "other"
+    },
+    {
+      "value": "22.0",
+      "normalized": 22.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "$1,926MM   <<Text 8 sz={22.0} f={'Cambria'}>>",
+      "line_number": 30,
+      "category": "other"
+    },
+    {
+      "value": "42.9%",
+      "normalized": 42.9,
+      "unit": "%",
+      "slide": 3,
+      "context": "LTM FCF (42.9% margin)   <<Text 9 sz={11.0} f={None}>>",
+      "line_number": 31,
+      "category": "margin"
+    },
+    {
+      "value": "11.0",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "LTM FCF (42.9% margin)   <<Text 9 sz={11.0} f={None}>>",
+      "line_number": 31,
+      "category": "margin"
+    },
+    {
+      "value": "$7,250M",
+      "normalized": 7250000000.0,
+      "unit": "USD_M",
+      "slide": 3,
+      "context": "$7,250MM   <<Text 11 sz={22.0} f={'Cambria'}>>",
+      "line_number": 32,
+      "category": "other"
+    },
+    {
+      "value": "11",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "$7,250MM   <<Text 11 sz={22.0} f={'Cambria'}>>",
+      "line_number": 32,
+      "category": "other"
+    },
+    {
+      "value": "22.0",
+      "normalized": 22.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "$7,250MM   <<Text 11 sz={22.0} f={'Cambria'}>>",
+      "line_number": 32,
+      "category": "other"
+    },
+    {
+      "value": "12",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "Net cash   <<Text 12 sz={11.0} f={None}>>",
+      "line_number": 33,
+      "category": "other"
+    },
+    {
+      "value": "11.0",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "Net cash   <<Text 12 sz={11.0} f={None}>>",
+      "line_number": 33,
+      "category": "other"
+    },
+    {
+      "value": "4,494",
+      "normalized": 4494.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "Revenue | 4,494 | \u2014",
+      "line_number": 35,
+      "category": "revenue"
+    },
+    {
+      "value": "3,860",
+      "normalized": 3860.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "Gross profit | 3,860 | 85.9%",
+      "line_number": 36,
+      "category": "margin"
+    },
+    {
+      "value": "85.9%",
+      "normalized": 85.9,
+      "unit": "%",
+      "slide": 3,
+      "context": "Gross profit | 3,860 | 85.9%",
+      "line_number": 36,
+      "category": "margin"
+    },
+    {
+      "value": "1,185",
+      "normalized": 1185.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "Operating income (EBIT) | 1,185 | 26.4%",
+      "line_number": 37,
+      "category": "other"
+    },
+    {
+      "value": "26.4%",
+      "normalized": 26.4,
+      "unit": "%",
+      "slide": 3,
+      "context": "Operating income (EBIT) | 1,185 | 26.4%",
+      "line_number": 37,
+      "category": "percentage"
+    },
+    {
+      "value": "1,316",
+      "normalized": 1316.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "EBITDA | 1,316 | 29.3%",
+      "line_number": 38,
+      "category": "ebitda_margin"
+    },
+    {
+      "value": "29.3%",
+      "normalized": 29.3,
+      "unit": "%",
+      "slide": 3,
+      "context": "EBITDA | 1,316 | 29.3%",
+      "line_number": 38,
+      "category": "ebitda_margin"
+    },
+    {
+      "value": "42.9%",
+      "normalized": 42.9,
+      "unit": "%",
+      "slide": 3,
+      "context": "Free cash flow | 1,926 | 42.9%",
+      "line_number": 39,
+      "category": "percentage"
+    },
+    {
+      "value": "31",
+      "normalized": 31.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "Net cash build ($MM) | 7/31/2026",
+      "line_number": 40,
+      "category": "other"
+    },
+    {
+      "value": "932",
+      "normalized": 932.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "Cash & cash equivalents | 932",
+      "line_number": 41,
+      "category": "other"
+    },
+    {
+      "value": "6,138",
+      "normalized": 6138.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "Marketable securities | 6,138",
+      "line_number": 42,
+      "category": "other"
+    },
+    {
+      "value": "7,250",
+      "normalized": 7250.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "Net cash | 7,250",
+      "line_number": 44,
+      "category": "other"
+    },
+    {
+      "value": "31,",
+      "normalized": 31.0,
+      "unit": "none",
+      "slide": 3,
+      "context": ": Company filings. LTM = four quarters ended July 31, 2026. EBITDA = GAAP operating income + depreciati",
+      "line_number": 45,
+      "category": "ebitda"
+    },
+    {
+      "value": "13",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "tion. FCF = operating cash flow \u2212 capex.   <<Text 13 sz={9.0} f={None}>>",
+      "line_number": 45,
+      "category": "other"
+    },
+    {
+      "value": "9.0",
+      "normalized": 9.0,
+      "unit": "none",
+      "slide": 3,
+      "context": "CF = operating cash flow \u2212 capex.   <<Text 13 sz={9.0} f={None}>>",
+      "line_number": 45,
+      "category": "other"
+    },
+    {
+      "value": "24.0",
+      "normalized": 24.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "ce performance: last twelve months   <<Text 0 sz={24.0} f={None}>>",
+      "line_number": 48,
+      "category": "other"
+    },
+    {
+      "value": "65",
+      "normalized": 65.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "CHART LINE_MARKERS (65) title=ZM share price ($)",
+      "line_number": 49,
+      "category": "other"
+    },
+    {
+      "value": "25",
+      "normalized": 25.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "cats: ['Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "25",
+      "normalized": 25.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "cats: ['Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "25",
+      "normalized": 25.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "cats: ['Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "cats: ['Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "ts: ['Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-26",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-26']",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-26']",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-26']",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-26']",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "26",
+      "normalized": 26.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26', 'Oct-26']",
+      "line_number": 50,
+      "category": "other"
+    },
+    {
+      "value": "80.01",
+      "normalized": 80.01,
+      "unit": "none",
+      "slide": 4,
+      "context": "series ZM share price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "84.96",
+      "normalized": 84.96,
+      "unit": "none",
+      "slide": 4,
+      "context": "series ZM share price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "83.32",
+      "normalized": 83.32,
+      "unit": "none",
+      "slide": 4,
+      "context": "series ZM share price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "92.1",
+      "normalized": 92.1,
+      "unit": "none",
+      "slide": 4,
+      "context": "series ZM share price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "73.94",
+      "normalized": 73.94,
+      "unit": "none",
+      "slide": 4,
+      "context": "s ZM share price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "82.36",
+      "normalized": 82.36,
+      "unit": "none",
+      "slide": 4,
+      "context": "are price ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "103.44",
+      "normalized": 103.44,
+      "unit": "none",
+      "slide": 4,
+      "context": "ce ($): [80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "101.59",
+      "normalized": 101.59,
+      "unit": "none",
+      "slide": 4,
+      "context": "[80.01, 84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "87.14",
+      "normalized": 87.14,
+      "unit": "none",
+      "slide": 4,
+      "context": "84.96, 83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "96.07",
+      "normalized": 96.07,
+      "unit": "none",
+      "slide": 4,
+      "context": "83.32, 92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "101.33",
+      "normalized": 101.33,
+      "unit": "none",
+      "slide": 4,
+      "context": "92.1, 73.94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "92.88",
+      "normalized": 92.88,
+      "unit": "none",
+      "slide": 4,
+      "context": ".94, 82.36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "98.16",
+      "normalized": 98.16,
+      "unit": "none",
+      "slide": 4,
+      "context": ".36, 103.44, 101.59, 87.14, 96.07, 101.33, 92.88, 98.16]",
+      "line_number": 51,
+      "category": "other"
+    },
+    {
+      "value": "$98.16",
+      "normalized": 98.16,
+      "unit": "USD",
+      "slide": 4,
+      "context": "$98.16   <<Text 2 sz={20.0} f={'Cambria'}>>",
+      "line_number": 52,
+      "category": "other"
+    },
+    {
+      "value": "20.0",
+      "normalized": 20.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "$98.16   <<Text 2 sz={20.0} f={'Cambria'}>>",
+      "line_number": 52,
+      "category": "other"
+    },
+    {
+      "value": "11.0",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "Current share price   <<Text 2 sz={11.0} f={None}>>",
+      "line_number": 53,
+      "category": "other"
+    },
+    {
+      "value": "27.2%",
+      "normalized": 27.2,
+      "unit": "%",
+      "slide": 4,
+      "context": "+27.2%   <<Text 4 sz={20.0} f={'Cambria'}>>",
+      "line_number": 54,
+      "category": "percentage"
+    },
+    {
+      "value": "20.0",
+      "normalized": 20.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "+27.2%   <<Text 4 sz={20.0} f={'Cambria'}>>",
+      "line_number": 54,
+      "category": "other"
+    },
+    {
+      "value": "11.0",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "1-year share price return   <<Text 4 sz={11.0} f={None}>>",
+      "line_number": 55,
+      "category": "other"
+    },
+    {
+      "value": "$114.74",
+      "normalized": 114.74,
+      "unit": "USD",
+      "slide": 4,
+      "context": "$114.74 / $70.70   <<Text 6 sz={16.0} f={'Cambria'}>>",
+      "line_number": 56,
+      "category": "other"
+    },
+    {
+      "value": "$70.70",
+      "normalized": 70.7,
+      "unit": "USD",
+      "slide": 4,
+      "context": "$114.74 / $70.70   <<Text 6 sz={16.0} f={'Cambria'}>>",
+      "line_number": 56,
+      "category": "other"
+    },
+    {
+      "value": "16.0",
+      "normalized": 16.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "$114.74 / $70.70   <<Text 6 sz={16.0} f={'Cambria'}>>",
+      "line_number": 56,
+      "category": "other"
+    },
+    {
+      "value": "52",
+      "normalized": 52.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "52-week high / low   <<Text 6 sz={11.0} f={None}>>",
+      "line_number": 57,
+      "category": "other"
+    },
+    {
+      "value": "11.0",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "52-week high / low   <<Text 6 sz={11.0} f={None}>>",
+      "line_number": 57,
+      "category": "other"
+    },
+    {
+      "value": "$35.8B",
+      "normalized": 35800000000.0,
+      "unit": "USD_B",
+      "slide": 4,
+      "context": "$35.8B   <<Text 8 sz={20.0} f={'Cambria'}>>",
+      "line_number": 58,
+      "category": "other"
+    },
+    {
+      "value": "20.0",
+      "normalized": 20.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "$35.8B   <<Text 8 sz={20.0} f={'Cambria'}>>",
+      "line_number": 58,
+      "category": "other"
+    },
+    {
+      "value": "11.0",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "Market capitalization   <<Text 8 sz={11.0} f={None}>>",
+      "line_number": 59,
+      "category": "valuation"
+    },
+    {
+      "value": "10",
+      "normalized": 10.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "Source: Market data, 10/13/2025 \u2013 10/13/2026 (last weekly close of each m",
+      "line_number": 60,
+      "category": "other"
+    },
+    {
+      "value": "13",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "Source: Market data, 10/13/2025 \u2013 10/13/2026 (last weekly close of each mont",
+      "line_number": 60,
+      "category": "other"
+    },
+    {
+      "value": "10",
+      "normalized": 10.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "Source: Market data, 10/13/2025 \u2013 10/13/2026 (last weekly close of each month). 1-year",
+      "line_number": 60,
+      "category": "other"
+    },
+    {
+      "value": "13",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "Source: Market data, 10/13/2025 \u2013 10/13/2026 (last weekly close of each month). 1-year re",
+      "line_number": 60,
+      "category": "other"
+    },
+    {
+      "value": "10",
+      "normalized": 10.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "st weekly close of each month). 1-year return vs. 10/13/2025 close ($80.01).   <<Text 9 sz={9.0} f={No",
+      "line_number": 60,
+      "category": "other"
+    },
+    {
+      "value": "13",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "weekly close of each month). 1-year return vs. 10/13/2025 close ($80.01).   <<Text 9 sz={9.0} f={None}",
+      "line_number": 60,
+      "category": "other"
+    },
+    {
+      "value": "$80.01",
+      "normalized": 80.01,
+      "unit": "USD",
+      "slide": 4,
+      "context": "each month). 1-year return vs. 10/13/2025 close ($80.01).   <<Text 9 sz={9.0} f={None}>>",
+      "line_number": 60,
+      "category": "other"
+    },
+    {
+      "value": "9.0",
+      "normalized": 9.0,
+      "unit": "none",
+      "slide": 4,
+      "context": "urn vs. 10/13/2025 close ($80.01).   <<Text 9 sz={9.0} f={None}>>",
+      "line_number": 60,
+      "category": "other"
+    },
+    {
+      "value": "24.0",
+      "normalized": 24.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "es: video and communications peers   <<Text 0 sz={24.0} f={None}>>",
+      "line_number": 63,
+      "category": "other"
+    },
+    {
+      "value": "35,802",
+      "normalized": 35802.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Zoom (ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x",
+      "line_number": 65,
+      "category": "other"
+    },
+    {
+      "value": "28,552",
+      "normalized": 28552.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Zoom (ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x",
+      "line_number": 65,
+      "category": "other"
+    },
+    {
+      "value": "4,494",
+      "normalized": 4494.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Zoom (ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x",
+      "line_number": 65,
+      "category": "other"
+    },
+    {
+      "value": "85.9%",
+      "normalized": 85.9,
+      "unit": "%",
+      "slide": 5,
+      "context": "Zoom (ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x",
+      "line_number": 65,
+      "category": "percentage"
+    },
+    {
+      "value": "26.4%",
+      "normalized": 26.4,
+      "unit": "%",
+      "slide": 5,
+      "context": "Zoom (ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x",
+      "line_number": 65,
+      "category": "percentage"
+    },
+    {
+      "value": "6.4x",
+      "normalized": 6.4,
+      "unit": "x",
+      "slide": 5,
+      "context": "(ZM) | 35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x",
+      "line_number": 65,
+      "category": "multiple"
+    },
+    {
+      "value": "24.1x",
+      "normalized": 24.1,
+      "unit": "x",
+      "slide": 5,
+      "context": "35,802 | 28,552 | 4,494 | 85.9% | 26.4% | 6.4x | 24.1x",
+      "line_number": 65,
+      "category": "multiple"
+    },
+    {
+      "value": "4,035,413",
+      "normalized": 4035413.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Microsoft (MSFT) | 4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25",
+      "line_number": 66,
+      "category": "other"
+    },
+    {
+      "value": "3,998,864",
+      "normalized": 3998864.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Microsoft (MSFT) | 4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x",
+      "line_number": 66,
+      "category": "other"
+    },
+    {
+      "value": "331,839",
+      "normalized": 331839.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Microsoft (MSFT) | 4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x",
+      "line_number": 66,
+      "category": "other"
+    },
+    {
+      "value": "67.9%",
+      "normalized": 67.9,
+      "unit": "%",
+      "slide": 5,
+      "context": "rosoft (MSFT) | 4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x",
+      "line_number": 66,
+      "category": "percentage"
+    },
+    {
+      "value": "46.8%",
+      "normalized": 46.8,
+      "unit": "%",
+      "slide": 5,
+      "context": "MSFT) | 4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x",
+      "line_number": 66,
+      "category": "percentage"
+    },
+    {
+      "value": "12.1x",
+      "normalized": 12.1,
+      "unit": "x",
+      "slide": 5,
+      "context": "4,035,413 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x",
+      "line_number": 66,
+      "category": "multiple"
+    },
+    {
+      "value": "25.8x",
+      "normalized": 25.8,
+      "unit": "x",
+      "slide": 5,
+      "context": "3 | 3,998,864 | 331,839 | 67.9% | 46.8% | 12.1x | 25.8x",
+      "line_number": 66,
+      "category": "multiple"
+    },
+    {
+      "value": "4,326,706",
+      "normalized": 4326706.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Alphabet (GOOGL) | 4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.",
+      "line_number": 67,
+      "category": "other"
+    },
+    {
+      "value": "4,184,396",
+      "normalized": 4184396.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Alphabet (GOOGL) | 4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x",
+      "line_number": 67,
+      "category": "other"
+    },
+    {
+      "value": "445,867",
+      "normalized": 445867.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Alphabet (GOOGL) | 4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x",
+      "line_number": 67,
+      "category": "other"
+    },
+    {
+      "value": "60.9%",
+      "normalized": 60.9,
+      "unit": "%",
+      "slide": 5,
+      "context": "habet (GOOGL) | 4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x",
+      "line_number": 67,
+      "category": "percentage"
+    },
+    {
+      "value": "33.1%",
+      "normalized": 33.1,
+      "unit": "%",
+      "slide": 5,
+      "context": "OOGL) | 4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x",
+      "line_number": 67,
+      "category": "percentage"
+    },
+    {
+      "value": "9.4x",
+      "normalized": 9.4,
+      "unit": "x",
+      "slide": 5,
+      "context": "4,326,706 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x",
+      "line_number": 67,
+      "category": "multiple"
+    },
+    {
+      "value": "28.3x",
+      "normalized": 28.3,
+      "unit": "x",
+      "slide": 5,
+      "context": "06 | 4,184,396 | 445,867 | 60.9% | 33.1% | 9.4x | 28.3x",
+      "line_number": 67,
+      "category": "multiple"
+    },
+    {
+      "value": "453,673",
+      "normalized": 453673.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Cisco (CSCO) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x",
+      "line_number": 68,
+      "category": "other"
+    },
+    {
+      "value": "467,288",
+      "normalized": 467288.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Cisco (CSCO) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x",
+      "line_number": 68,
+      "category": "other"
+    },
+    {
+      "value": "63,325",
+      "normalized": 63325.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Cisco (CSCO) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x",
+      "line_number": 68,
+      "category": "other"
+    },
+    {
+      "value": "64.5%",
+      "normalized": 64.5,
+      "unit": "%",
+      "slide": 5,
+      "context": "Cisco (CSCO) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x",
+      "line_number": 68,
+      "category": "percentage"
+    },
+    {
+      "value": "24.3%",
+      "normalized": 24.3,
+      "unit": "%",
+      "slide": 5,
+      "context": "sco (CSCO) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x",
+      "line_number": 68,
+      "category": "percentage"
+    },
+    {
+      "value": "7.4x",
+      "normalized": 7.4,
+      "unit": "x",
+      "slide": 5,
+      "context": "O) | 453,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x",
+      "line_number": 68,
+      "category": "multiple"
+    },
+    {
+      "value": "30.4x",
+      "normalized": 30.4,
+      "unit": "x",
+      "slide": 5,
+      "context": "3,673 | 467,288 | 63,325 | 64.5% | 24.3% | 7.4x | 30.4x",
+      "line_number": 68,
+      "category": "multiple"
+    },
+    {
+      "value": "6,571",
+      "normalized": 6571.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "RingCentral (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x",
+      "line_number": 69,
+      "category": "other"
+    },
+    {
+      "value": "7,580",
+      "normalized": 7580.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "RingCentral (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x",
+      "line_number": 69,
+      "category": "other"
+    },
+    {
+      "value": "2,584",
+      "normalized": 2584.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "RingCentral (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x",
+      "line_number": 69,
+      "category": "other"
+    },
+    {
+      "value": "71.8%",
+      "normalized": 71.8,
+      "unit": "%",
+      "slide": 5,
+      "context": "RingCentral (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x",
+      "line_number": 69,
+      "category": "percentage"
+    },
+    {
+      "value": "6.7%",
+      "normalized": 6.7,
+      "unit": "%",
+      "slide": 5,
+      "context": "ngCentral (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x",
+      "line_number": 69,
+      "category": "percentage"
+    },
+    {
+      "value": "2.9x",
+      "normalized": 2.9,
+      "unit": "x",
+      "slide": 5,
+      "context": "al (RNG) | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x",
+      "line_number": 69,
+      "category": "multiple"
+    },
+    {
+      "value": "43.7x",
+      "normalized": 43.7,
+      "unit": "x",
+      "slide": 5,
+      "context": ") | 6,571 | 7,580 | 2,584 | 71.8% | 6.7% | 2.9x | 43.7x",
+      "line_number": 69,
+      "category": "multiple"
+    },
+    {
+      "value": "66.2%",
+      "normalized": 66.2,
+      "unit": "%",
+      "slide": 5,
+      "context": "Peer median |  |  |  | 66.2% | 28.7% | 8.4x | 29.4x",
+      "line_number": 70,
+      "category": "percentage"
+    },
+    {
+      "value": "28.7%",
+      "normalized": 28.7,
+      "unit": "%",
+      "slide": 5,
+      "context": "Peer median |  |  |  | 66.2% | 28.7% | 8.4x | 29.4x",
+      "line_number": 70,
+      "category": "percentage"
+    },
+    {
+      "value": "8.4x",
+      "normalized": 8.4,
+      "unit": "x",
+      "slide": 5,
+      "context": "Peer median |  |  |  | 66.2% | 28.7% | 8.4x | 29.4x",
+      "line_number": 70,
+      "category": "multiple"
+    },
+    {
+      "value": "29.4x",
+      "normalized": 29.4,
+      "unit": "x",
+      "slide": 5,
+      "context": "Peer median |  |  |  | 66.2% | 28.7% | 8.4x | 29.4x",
+      "line_number": 70,
+      "category": "multiple"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "e-sheet optionality for any buyer.   <<Text 2 sz={13.0} f={None}>>",
+      "line_number": 71,
+      "category": "other"
+    },
+    {
+      "value": "13",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "Source: Company filings; market data as of 13-Oct-2026. LTM through each company's latest repor",
+      "line_number": 72,
+      "category": "other"
+    },
+    {
+      "value": "9.0",
+      "normalized": 9.0,
+      "unit": "none",
+      "slide": 5,
+      "context": "\u2212 cash and short-term investments.   <<Text 3 sz={9.0} f={None}>>",
+      "line_number": 72,
+      "category": "other"
+    },
+    {
+      "value": "24.0",
+      "normalized": 24.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "Illustrative valuation range   <<Text 0 sz={24.0} f={None}>>",
+      "line_number": 75,
+      "category": "other"
+    },
+    {
+      "value": "58",
+      "normalized": 58.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "CHART BAR_STACKED (58) title=Implied enterprise value ($M)",
+      "line_number": 76,
+      "category": "valuation"
+    },
+    {
+      "value": "14.0x",
+      "normalized": 14.0,
+      "unit": "x",
+      "slide": 6,
+      "context": "cats: ['EV / LTM FCF (14.0x\u201318.0x)', 'EV / LTM EBITDA (18.0x\u201324.0x)', 'EV / L",
+      "line_number": 77,
+      "category": "ebitda"
+    },
+    {
+      "value": "18.0x",
+      "normalized": 18.0,
+      "unit": "x",
+      "slide": 6,
+      "context": "cats: ['EV / LTM FCF (14.0x\u201318.0x)', 'EV / LTM EBITDA (18.0x\u201324.0x)', 'EV / LTM rev",
+      "line_number": 77,
+      "category": "ebitda"
+    },
+    {
+      "value": "18.0x",
+      "normalized": 18.0,
+      "unit": "x",
+      "slide": 6,
+      "context": "['EV / LTM FCF (14.0x\u201318.0x)', 'EV / LTM EBITDA (18.0x\u201324.0x)', 'EV / LTM revenue (5.0x\u20137.0x)']",
+      "line_number": 77,
+      "category": "revenue"
+    },
+    {
+      "value": "24.0x",
+      "normalized": 24.0,
+      "unit": "x",
+      "slide": 6,
+      "context": "/ LTM FCF (14.0x\u201318.0x)', 'EV / LTM EBITDA (18.0x\u201324.0x)', 'EV / LTM revenue (5.0x\u20137.0x)']",
+      "line_number": 77,
+      "category": "revenue"
+    },
+    {
+      "value": "5.0x",
+      "normalized": 5.0,
+      "unit": "x",
+      "slide": 6,
+      "context": "V / LTM EBITDA (18.0x\u201324.0x)', 'EV / LTM revenue (5.0x\u20137.0x)']",
+      "line_number": 77,
+      "category": "revenue"
+    },
+    {
+      "value": "7.0x",
+      "normalized": 7.0,
+      "unit": "x",
+      "slide": 6,
+      "context": "TM EBITDA (18.0x\u201324.0x)', 'EV / LTM revenue (5.0x\u20137.0x)']",
+      "line_number": 77,
+      "category": "revenue"
+    },
+    {
+      "value": "26964.0",
+      "normalized": 26964.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "series Base: [26964.0, 24498.0, 22470.0]",
+      "line_number": 78,
+      "category": "other"
+    },
+    {
+      "value": "24498.0",
+      "normalized": 24498.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "series Base: [26964.0, 24498.0, 22470.0]",
+      "line_number": 78,
+      "category": "other"
+    },
+    {
+      "value": "22470.0",
+      "normalized": 22470.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "series Base: [26964.0, 24498.0, 22470.0]",
+      "line_number": 78,
+      "category": "other"
+    },
+    {
+      "value": "7704.0",
+      "normalized": 7704.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "series Implied EV range ($M): [7704.0, 8166.0, 8988.0]",
+      "line_number": 79,
+      "category": "valuation"
+    },
+    {
+      "value": "8166.0",
+      "normalized": 8166.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "series Implied EV range ($M): [7704.0, 8166.0, 8988.0]",
+      "line_number": 79,
+      "category": "valuation"
+    },
+    {
+      "value": "8988.0",
+      "normalized": 8988.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "series Implied EV range ($M): [7704.0, 8166.0, 8988.0]",
+      "line_number": 79,
+      "category": "valuation"
+    },
+    {
+      "value": "4,494",
+      "normalized": 4494.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "EV / LTM revenue | 4,494 | 22,470 \u2013 31,458",
+      "line_number": 81,
+      "category": "revenue"
+    },
+    {
+      "value": "22,470",
+      "normalized": 22470.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "EV / LTM revenue | 4,494 | 22,470 \u2013 31,458",
+      "line_number": 81,
+      "category": "revenue"
+    },
+    {
+      "value": "31,458",
+      "normalized": 31458.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "EV / LTM revenue | 4,494 | 22,470 \u2013 31,458",
+      "line_number": 81,
+      "category": "revenue"
+    },
+    {
+      "value": "1,361",
+      "normalized": 1361.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "EV / LTM EBITDA | 1,361 | 24,498 \u2013 32,664",
+      "line_number": 82,
+      "category": "ebitda"
+    },
+    {
+      "value": "24,498",
+      "normalized": 24498.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "EV / LTM EBITDA | 1,361 | 24,498 \u2013 32,664",
+      "line_number": 82,
+      "category": "ebitda"
+    },
+    {
+      "value": "32,664",
+      "normalized": 32664.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "EV / LTM EBITDA | 1,361 | 24,498 \u2013 32,664",
+      "line_number": 82,
+      "category": "ebitda"
+    },
+    {
+      "value": "26,964",
+      "normalized": 26964.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "EV / LTM FCF | 1,926 | 26,964 \u2013 34,668",
+      "line_number": 83,
+      "category": "valuation"
+    },
+    {
+      "value": "34,668",
+      "normalized": 34668.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "EV / LTM FCF | 1,926 | 26,964 \u2013 34,668",
+      "line_number": 83,
+      "category": "valuation"
+    },
+    {
+      "value": "28,552",
+      "normalized": 28552.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "Current EV |  | 28,552",
+      "line_number": 84,
+      "category": "valuation"
+    },
+    {
+      "value": "11.0",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "layered in during the next phase.   <<Text 1 sz={11.0} f={None}>>",
+      "line_number": 85,
+      "category": "other"
+    },
+    {
+      "value": "31,",
+      "normalized": 31.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "Illustrative only. LTM = four quarters ended July 31, 2026. Current EV based on market data as of Octob",
+      "line_number": 86,
+      "category": "valuation"
+    },
+    {
+      "value": "13,",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "26. Current EV based on market data as of October 13, 2026.   <<Text 2 sz={9.0} f={None}>>",
+      "line_number": 86,
+      "category": "valuation"
+    },
+    {
+      "value": "9.0",
+      "normalized": 9.0,
+      "unit": "none",
+      "slide": 6,
+      "context": "arket data as of October 13, 2026.   <<Text 2 sz={9.0} f={None}>>",
+      "line_number": 86,
+      "category": "other"
+    },
+    {
+      "value": "24.0",
+      "normalized": 24.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "Potential Buyer Univrese   <<Text 0 sz={24.0} f={None}>>",
+      "line_number": 89,
+      "category": "other"
+    },
+    {
+      "value": "16.0",
+      "normalized": 16.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "Strategic buyers   <<Text 2 sz={16.0} f={'Cambria'}>>",
+      "line_number": 90,
+      "category": "other"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "ency; contact center and SMB reach   <<Text 3 sz={13.0} f={None}>>",
+      "line_number": 91,
+      "category": "other"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "pace and Google Meet consolidation   <<Text 3 sz={13.0} f={None}>>",
+      "line_number": 92,
+      "category": "other"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "and collaboration hardware attach   <<Text 3 sz={13.0} f={None}>>",
+      "line_number": 93,
+      "category": "other"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "r engagement and Slack integration   <<Text 3 sz={13.0} f={None}>>",
+      "line_number": 94,
+      "category": "other"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "ure and enterprise apps cross-sell   <<Text 3 sz={13.0} f={None}>>",
+      "line_number": 95,
+      "category": "other"
+    },
+    {
+      "value": "16.0",
+      "normalized": 16.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "Financial sponsors   <<Text 5 sz={16.0} f={'Cambria'}>>",
+      "line_number": 96,
+      "category": "other"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "p software take-private experience   <<Text 6 sz={13.0} f={None}>>",
+      "line_number": 97,
+      "category": "other"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "rge-cap technology buyout capacity   <<Text 6 sz={13.0} f={None}>>",
+      "line_number": 98,
+      "category": "other"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "rprise software operating playbook   <<Text 6 sz={13.0} f={None}>>",
+      "line_number": 99,
+      "category": "other"
+    },
+    {
+      "value": "13.0",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 7,
+      "context": "cale capital; club-deal capability   <<Text 6 sz={13.0} f={None}>>",
+      "line_number": 100,
+      "category": "other"
+    },
+    {
+      "value": "24.0",
+      "normalized": 24.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "Next steps   <<Text 0 sz={24.0} f={None}>>",
+      "line_number": 103,
+      "category": "other"
+    },
+    {
+      "value": "10",
+      "normalized": 10.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-10-20   <<Text 3 sz={12.0} f={None}>>",
+      "line_number": 104,
+      "category": "other"
+    },
+    {
+      "value": "20",
+      "normalized": 20.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-10-20   <<Text 3 sz={12.0} f={None}>>",
+      "line_number": 104,
+      "category": "other"
+    },
+    {
+      "value": "12.0",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-10-20   <<Text 3 sz={12.0} f={None}>>",
+      "line_number": 104,
+      "category": "other"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "Board discussion   <<Text 5 sz={14.0} f={None}>>",
+      "line_number": 105,
+      "category": "other"
+    },
+    {
+      "value": "12.0",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "ves and confirm process objectives   <<Text 5 sz={12.0} f={None}>>",
+      "line_number": 106,
+      "category": "other"
+    },
+    {
+      "value": "10",
+      "normalized": 10.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-10-27   <<Text 7 sz={12.0} f={None}>>",
+      "line_number": 107,
+      "category": "other"
+    },
+    {
+      "value": "27",
+      "normalized": 27.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-10-27   <<Text 7 sz={12.0} f={None}>>",
+      "line_number": 107,
+      "category": "other"
+    },
+    {
+      "value": "12.0",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-10-27   <<Text 7 sz={12.0} f={None}>>",
+      "line_number": 107,
+      "category": "other"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "Preparation   <<Text 9 sz={14.0} f={None}>>",
+      "line_number": 108,
+      "category": "other"
+    },
+    {
+      "value": ",t",
+      "normalized": 0.0,
+      "unit": "t",
+      "slide": 8,
+      "context": "Finalize buyer list, teaser and confidentiality agreements   <<Text 9 sz",
+      "line_number": 109,
+      "category": "other"
+    },
+    {
+      "value": "12.0",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "ser and confidentiality agreements   <<Text 9 sz={12.0} f={None}>>",
+      "line_number": 109,
+      "category": "other"
+    },
+    {
+      "value": "11",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-11-09   <<Text 11 sz={12.0} f={None}>>",
+      "line_number": 110,
+      "category": "other"
+    },
+    {
+      "value": "09",
+      "normalized": 9.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-11-09   <<Text 11 sz={12.0} f={None}>>",
+      "line_number": 110,
+      "category": "other"
+    },
+    {
+      "value": "11",
+      "normalized": 11.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-11-09   <<Text 11 sz={12.0} f={None}>>",
+      "line_number": 110,
+      "category": "other"
+    },
+    {
+      "value": "12.0",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-11-09   <<Text 11 sz={12.0} f={None}>>",
+      "line_number": 110,
+      "category": "other"
+    },
+    {
+      "value": "13",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "Outreach   <<Text 13 sz={14.0} f={None}>>",
+      "line_number": 111,
+      "category": "other"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "Outreach   <<Text 13 sz={14.0} f={None}>>",
+      "line_number": 111,
+      "category": "other"
+    },
+    {
+      "value": "13",
+      "normalized": 13.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "utreach to strategic and sponsor parties   <<Text 13 sz={12.0} f={None}>>",
+      "line_number": 112,
+      "category": "other"
+    },
+    {
+      "value": "12.0",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "to strategic and sponsor parties   <<Text 13 sz={12.0} f={None}>>",
+      "line_number": 112,
+      "category": "other"
+    },
+    {
+      "value": "12",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-12-07   <<Text 15 sz={12.0} f={None}>>",
+      "line_number": 113,
+      "category": "other"
+    },
+    {
+      "value": "07",
+      "normalized": 7.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-12-07   <<Text 15 sz={12.0} f={None}>>",
+      "line_number": 113,
+      "category": "other"
+    },
+    {
+      "value": "15",
+      "normalized": 15.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-12-07   <<Text 15 sz={12.0} f={None}>>",
+      "line_number": 113,
+      "category": "other"
+    },
+    {
+      "value": "12.0",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "2026-12-07   <<Text 15 sz={12.0} f={None}>>",
+      "line_number": 113,
+      "category": "other"
+    },
+    {
+      "value": "17",
+      "normalized": 17.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "First-round bids   <<Text 17 sz={14.0} f={None}>>",
+      "line_number": 114,
+      "category": "other"
+    },
+    {
+      "value": "14.0",
+      "normalized": 14.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "First-round bids   <<Text 17 sz={14.0} f={None}>>",
+      "line_number": 114,
+      "category": "other"
+    },
+    {
+      "value": "17",
+      "normalized": 17.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "interest and select second-round parties   <<Text 17 sz={12.0} f={None}>>",
+      "line_number": 115,
+      "category": "other"
+    },
+    {
+      "value": "12.0",
+      "normalized": 12.0,
+      "unit": "none",
+      "slide": 8,
+      "context": "t and select second-round parties   <<Text 17 sz={12.0} f={None}>>",
+      "line_number": 115,
+      "category": "other"
+    }
+  ],
+  "inconsistencies": [
+    {
+      "category": "growth",
+      "expected": {
+        "value": "24.0",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "12",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "growth",
+      "expected": {
+        "value": "24.0",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "14.0",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "growth",
+      "expected": {
+        "value": "24.0",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "27",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "valuation",
+      "expected": {
+        "value": "$35.8B",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "$7,250M",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "valuation",
+      "expected": {
+        "value": "$35.8B",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "11.0",
+        "slides": [
+          4
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "valuation",
+      "expected": {
+        "value": "$35.8B",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "58",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "valuation",
+      "expected": {
+        "value": "$35.8B",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "7704.0",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "valuation",
+      "expected": {
+        "value": "$35.8B",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "8166.0",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "valuation",
+      "expected": {
+        "value": "$35.8B",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "8988.0",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "valuation",
+      "expected": {
+        "value": "$35.8B",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "26,964",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "valuation",
+      "expected": {
+        "value": "$35.8B",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "34,668",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "valuation",
+      "expected": {
+        "value": "$35.8B",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "28,552",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "valuation",
+      "expected": {
+        "value": "$35.8B",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "31,",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "valuation",
+      "expected": {
+        "value": "$35.8B",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "13,",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "margin",
+      "expected": {
+        "value": "14.0",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "42.9%",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "margin",
+      "expected": {
+        "value": "14.0",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "11.0",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "margin",
+      "expected": {
+        "value": "14.0",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "3,860",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "margin",
+      "expected": {
+        "value": "14.0",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "85.9%",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "0.053",
+        "slides": [
+          2
+        ],
+        "count": 2
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "4,494",
+        "slides": [
+          3,
+          6
+        ],
+        "count": 2
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "$4,494M",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "85.9%",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "$1,316M",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "5.5%",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "27",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "51",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "0.044",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "0.049",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "11.0",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "18.0x",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "24.0x",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "7.0x",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "22,470",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "revenue",
+      "expected": {
+        "value": "4.9%",
+        "slides": [
+          2,
+          6
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "31,458",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "ebitda_margin",
+      "expected": {
+        "value": "29.3%",
+        "slides": [
+          3
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "13.0",
+        "slides": [
+          2
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "ebitda_margin",
+      "expected": {
+        "value": "29.3%",
+        "slides": [
+          3
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "11.0",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "ebitda_margin",
+      "expected": {
+        "value": "29.3%",
+        "slides": [
+          3
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "1,316",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "percentage",
+      "expected": {
+        "value": "26.4%",
+        "slides": [
+          3,
+          4,
+          5
+        ],
+        "count": 3
+      },
+      "found": {
+        "value": "67.9%",
+        "slides": [
+          5
+        ],
+        "count": 2
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "percentage",
+      "expected": {
+        "value": "26.4%",
+        "slides": [
+          3,
+          4,
+          5
+        ],
+        "count": 3
+      },
+      "found": {
+        "value": "42.9%",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "percentage",
+      "expected": {
+        "value": "26.4%",
+        "slides": [
+          3,
+          4,
+          5
+        ],
+        "count": 3
+      },
+      "found": {
+        "value": "85.9%",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "percentage",
+      "expected": {
+        "value": "26.4%",
+        "slides": [
+          3,
+          4,
+          5
+        ],
+        "count": 3
+      },
+      "found": {
+        "value": "46.8%",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "percentage",
+      "expected": {
+        "value": "26.4%",
+        "slides": [
+          3,
+          4,
+          5
+        ],
+        "count": 3
+      },
+      "found": {
+        "value": "60.9%",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "percentage",
+      "expected": {
+        "value": "26.4%",
+        "slides": [
+          3,
+          4,
+          5
+        ],
+        "count": 3
+      },
+      "found": {
+        "value": "33.1%",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "percentage",
+      "expected": {
+        "value": "26.4%",
+        "slides": [
+          3,
+          4,
+          5
+        ],
+        "count": 3
+      },
+      "found": {
+        "value": "64.5%",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "percentage",
+      "expected": {
+        "value": "26.4%",
+        "slides": [
+          3,
+          4,
+          5
+        ],
+        "count": 3
+      },
+      "found": {
+        "value": "24.3%",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "percentage",
+      "expected": {
+        "value": "26.4%",
+        "slides": [
+          3,
+          4,
+          5
+        ],
+        "count": 3
+      },
+      "found": {
+        "value": "71.8%",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "percentage",
+      "expected": {
+        "value": "26.4%",
+        "slides": [
+          3,
+          4,
+          5
+        ],
+        "count": 3
+      },
+      "found": {
+        "value": "6.7%",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "percentage",
+      "expected": {
+        "value": "26.4%",
+        "slides": [
+          3,
+          4,
+          5
+        ],
+        "count": 3
+      },
+      "found": {
+        "value": "28.7%",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "ebitda",
+      "expected": {
+        "value": "31,",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "14.0x",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "ebitda",
+      "expected": {
+        "value": "31,",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "18.0x",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "ebitda",
+      "expected": {
+        "value": "31,",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "1,361",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "ebitda",
+      "expected": {
+        "value": "31,",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "24,498",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "ebitda",
+      "expected": {
+        "value": "31,",
+        "slides": [
+          3
+        ],
+        "count": 1
+      },
+      "found": {
+        "value": "32,664",
+        "slides": [
+          6
+        ],
+        "count": 1
+      },
+      "severity": "high"
+    },
+    {
+      "category": "multiple",
+      "expected": {
+        "value": "28.3x",
+        "slides": [
+          5
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "6.4x",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "multiple",
+      "expected": {
+        "value": "28.3x",
+        "slides": [
+          5
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "24.1x",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "multiple",
+      "expected": {
+        "value": "28.3x",
+        "slides": [
+          5
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "12.1x",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "multiple",
+      "expected": {
+        "value": "28.3x",
+        "slides": [
+          5
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "25.8x",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "multiple",
+      "expected": {
+        "value": "28.3x",
+        "slides": [
+          5
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "9.4x",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "multiple",
+      "expected": {
+        "value": "28.3x",
+        "slides": [
+          5
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "7.4x",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "multiple",
+      "expected": {
+        "value": "28.3x",
+        "slides": [
+          5
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "30.4x",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "multiple",
+      "expected": {
+        "value": "28.3x",
+        "slides": [
+          5
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "2.9x",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "multiple",
+      "expected": {
+        "value": "28.3x",
+        "slides": [
+          5
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "43.7x",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    },
+    {
+      "category": "multiple",
+      "expected": {
+        "value": "28.3x",
+        "slides": [
+          5
+        ],
+        "count": 2
+      },
+      "found": {
+        "value": "8.4x",
+        "slides": [
+          5
+        ],
+        "count": 1
+      },
+      "severity": "medium"
+    }
+  ]
+}
