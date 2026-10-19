@@ -1,0 +1,914 @@
+[
+ {
+  "id": "ER-01",
+  "skill": "catalyst-calendar",
+  "A": [
+   0,
+   1,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 7,
+  "Bt": 10,
+  "d": 3,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   0,
+   1,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   1,
+   2,
+   2,
+   2,
+   1
+  ],
+  "adj": "Reference correction: R0's quote listed AAPL's 52-week high as 345.34 while showing a 348.15 day high the same day, and Yahoo rolled GOOGL's 52-week window minutes later. B's 348.15 and 244.15 were right at fetch time."
+ },
+ {
+  "id": "ER-02",
+  "skill": "earnings-preview",
+  "A": [
+   2,
+   2,
+   1,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 9,
+  "Bt": 10,
+  "d": 1,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   2,
+   1,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "ER-03",
+  "skill": "earnings-analysis",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "ER-04",
+  "skill": "initiating-coverage T1",
+  "A": [
+   2,
+   2,
+   1,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 9,
+  "Bt": 10,
+  "d": 1,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   1,
+   2,
+   1,
+   2,
+   1
+  ],
+  "judgeB": [
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": "Reference correction: R0's AMD FCF (6,735) is OCF minus capex including discontinued operations; both arms' 5,519 is AMD's reported figure. Counted as correct."
+ },
+ {
+  "id": "ER-05",
+  "skill": "initiating-coverage T2",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "ER-06",
+  "skill": "initiating-coverage T3",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "ER-07",
+  "skill": "model-update",
+  "A": [
+   2,
+   1,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 9,
+  "Bt": 10,
+  "d": 1,
+  "mcp": "yes",
+  "keys": "A 6/6 actuals + 6/6 prior estimates + filing date (cited 8-K, not 10-K) + old TP; B 6/6 actuals + 6/6 prior estimates + filing date (10-K) + old TP",
+  "judgeA": [
+   2,
+   1,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "ER-08",
+  "skill": "morning-note",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "ER-09",
+  "skill": "idea-generation",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "ER-10",
+  "skill": "sector-overview",
+  "A": [
+   1,
+   2,
+   1,
+   2,
+   1
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 7,
+  "Bt": 10,
+  "d": 3,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   1,
+   2,
+   1,
+   2,
+   1
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "ER-11",
+  "skill": "thesis-tracker",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-01",
+  "skill": "3-statement-model",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "n/a (F6 is a blank template; both pass balance and cash checks)",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-02",
+  "skill": "competitive-analysis",
+  "A": [
+   1,
+   1,
+   1,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 7,
+  "Bt": 10,
+  "d": 3,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   1,
+   1,
+   1,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-03",
+  "skill": "comps-analysis",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-04",
+  "skill": "dcf-model",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-05",
+  "skill": "audit-xls",
+  "A": [
+   1,
+   1,
+   1,
+   2,
+   2
+  ],
+  "B": [
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 7,
+  "Bt": 9,
+  "d": 2,
+  "mcp": "yes",
+  "keys": "A 3/3 data + 4/4 formula; B 3/3 data + 4/4 formula",
+  "judgeA": [
+   1,
+   1,
+   1,
+   2,
+   2
+  ],
+  "judgeB": [
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-06",
+  "skill": "lbo-model",
+  "A": [
+   2,
+   1,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 9,
+  "Bt": 10,
+  "d": 1,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   1,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-07",
+  "skill": "clean-data-xls",
+  "A": [
+   1,
+   2,
+   1,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 8,
+  "Bt": 10,
+  "d": 2,
+  "mcp": "yes",
+  "keys": "formatting (control) A 4/4 + B 4/4 (dupes 3+1, dates 70/70, text\u2192number 32/32, tickers 81/81, notes flagged mixed-type); unit errors A 6/6 rows (5/6 values exact) vs B 6/6 rows (6/6 exact); wrong values A 2/2 vs B 2/2; false positives A 2 vs B 0",
+  "judgeA": [
+   1,
+   2,
+   1,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-08",
+  "skill": "deck-refresh",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "old instances replaced A all (0 missed) vs B all (0 missed); new values correct A 12/12 + all derived vs B 12/12 + all derived; chart extended A yes but FY2026 bar clipped at axis max 320 vs B yes with axis rescaled to 400",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-09",
+  "skill": "ib-check-deck",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   1,
+   2,
+   2,
+   2,
+   1
+  ],
+  "At": 10,
+  "Bt": 8,
+  "d": -2,
+  "mcp": "yes",
+  "keys": "X (external) A 2/2 vs B 2/2; I/N/L A 8/8 vs B 8/8; extras: B valid catch of the mislabelled 1-year base date ($80.01 is the week-of-10-13 weekly close, not the 10-13 close; consistent with the key, no fixture error in the answer key), B wrong +5.6% 1-day move (MCP bug); A low-confidence month-end false positive",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   1,
+   2,
+   2,
+   2,
+   1
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-10",
+  "skill": "ppt-template-creator (control)",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "no",
+  "keys": "n/a (control; 6/6 template facts both arms)",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-11",
+  "skill": "pptx-author",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-12",
+  "skill": "xlsx-author",
+  "A": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 10,
+  "Bt": 10,
+  "d": 0,
+  "mcp": "yes",
+  "keys": "n/a",
+  "judgeA": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ },
+ {
+  "id": "FA-13",
+  "skill": "skill-creator",
+  "A": [
+   2,
+   2,
+   2,
+   1,
+   2
+  ],
+  "B": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "At": 9,
+  "Bt": 10,
+  "d": 1,
+  "mcp": "yes",
+  "keys": "follow-up correct-without-edits: A no (raw paste gives a silent all-n/a price table; correct only after the reshape its reference doc prescribes) vs B no but nearly (all numbers right, one wrong cell: META latest filing n/a); B is closer",
+  "judgeA": [
+   2,
+   2,
+   2,
+   1,
+   2
+  ],
+  "judgeB": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "adj": ""
+ }
+]

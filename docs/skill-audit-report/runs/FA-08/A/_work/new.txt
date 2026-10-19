@@ -1,0 +1,172 @@
+=== Slide 1 Title Dark
+ -- PLACEHOLDER (14) Text 0 548640 1371600 8046720 1188720
+   P: ['Microsoft (MSFT) Company Snapshot']
+ -- PLACEHOLDER (14) Text 0 548640 2697480 8046720 822960
+   P: ['Fiscal year ended June 30, 2026']
+ -- AUTO_SHAPE (1) asof-pill 548640 3840480 2377440 411480
+   P: []
+ -- TEXT_BOX (17) Text 3 548640 3840480 2377440 411480
+   P: ['Data as of 2026-10-15']
+ NOTES: 
+=== Slide 2 Title Only
+ -- PLACEHOLDER (14) Text 0 457200 274320 8229600 685800
+   P: ['Key stats: FY2026 at a glance']
+ -- AUTO_SHAPE (1) stat-card-1 457200 1188720 1920240 1600200
+   P: []
+ -- TEXT_BOX (17) Text 2 594360 1325880 1645920 640080
+   P: ['$539.44']
+ -- TEXT_BOX (17) Text 3 594360 1993392 1645920 320040
+   P: ['Share price']
+ -- TEXT_BOX (17) Text 4 594360 2304288 1645920 320040
+   P: ['Close, 2026-10-15']
+ -- AUTO_SHAPE (1) stat-card-2 2560320 1188720 1920240 1600200
+   P: []
+ -- TEXT_BOX (17) Text 6 2697480 1325880 1645920 640080
+   P: ['$4.01T']
+ -- TEXT_BOX (17) Text 7 2697480 1993392 1645920 320040
+   P: ['Market cap']
+ -- TEXT_BOX (17) Text 8 2697480 2304288 1645920 320040
+   P: ['7,427M shares outstanding']
+ -- AUTO_SHAPE (1) stat-card-3 4663440 1188720 1920240 1600200
+   P: []
+ -- TEXT_BOX (17) Text 10 4800600 1325880 1645920 640080
+   P: ['$331.8B']
+ -- TEXT_BOX (17) Text 11 4800600 1993392 1645920 320040
+   P: ['FY2026 revenue']
+ -- TEXT_BOX (17) Text 12 4800600 2304288 1645920 320040
+   P: ['Fiscal year to 6/30/26']
+ -- AUTO_SHAPE (1) stat-card-4 6766560 1188720 1920240 1600200
+   P: []
+ -- TEXT_BOX (17) Text 14 6903720 1325880 1645920 640080
+   P: ['17.8%']
+ -- TEXT_BOX (17) Text 15 6903720 1993392 1645920 320040
+   P: ['Revenue growth YoY']
+ -- TEXT_BOX (17) Text 16 6903720 2304288 1645920 320040
+   P: ['vs. FY2025 $281.7B']
+ -- AUTO_SHAPE (1) stat-card-5 1508760 2971800 1920240 1600200
+   P: []
+ -- TEXT_BOX (17) Text 18 1645920 3108960 1645920 640080
+   P: ['46.8%']
+ -- TEXT_BOX (17) Text 19 1645920 3776472 1645920 320040
+   P: ['Operating margin']
+ -- TEXT_BOX (17) Text 20 1645920 4087368 1645920 320040
+   P: ['Op. income $155.2B']
+ -- AUTO_SHAPE (1) stat-card-6 3611880 2971800 1920240 1600200
+   P: []
+ -- TEXT_BOX (17) Text 22 3749040 3108960 1645920 640080
+   P: ['$67.0B']
+ -- TEXT_BOX (17) Text 23 3749040 3776472 1645920 320040
+   P: ['Free cash flow']
+ -- TEXT_BOX (17) Text 24 3749040 4087368 1645920 320040
+   P: ['OCF less capex']
+ -- AUTO_SHAPE (1) stat-card-7 5715000 2971800 1920240 1600200
+   P: []
+ -- TEXT_BOX (17) Text 26 5852160 3108960 1645920 640080
+   P: ['$17.95']
+ -- TEXT_BOX (17) Text 27 5852160 3776472 1645920 320040
+   P: ['Diluted EPS']
+ -- TEXT_BOX (17) Text 28 5852160 4087368 1645920 320040
+   P: ['FY2026 GAAP']
+ -- PLACEHOLDER (14) Slide Number Placeholder 0 8229600 4754880 457200 274320
+   P: []
+ NOTES: 
+=== Slide 3 Title Only
+ -- PLACEHOLDER (14) Text 0 457200 274320 8229600 685800
+   P: ['Revenue and operating income, FY2021–FY2026']
+ -- CHART (3) Chart 0 457200 1051560 5852160 3566160
+   chart type COLUMN_CLUSTERED (51) cats ['FY2021', 'FY2022', 'FY2023', 'FY2024', 'FY2025', 'FY2026']
+   series Revenue ($B) [168.1, 198.3, 211.9, 245.1, 281.7, 331.8]
+   series Operating income ($B) [69.9, 83.4, 88.5, 109.4, 128.5, 155.2]
+ -- AUTO_SHAPE (1) chart-callout 6537960 1188720 2148840 3291840
+   P: []
+ -- TEXT_BOX (17) Text 2 6675120 1325880 1874520 3017520
+   P: ['14.6%']
+   P: ['Revenue CAGR, FY2021–FY2026']
+   P: [' ']
+   P: ['17.3%']
+   P: ['Operating income CAGR, FY2021–FY2026']
+   P: [' ']
+   P: ['46.8%']
+   P: ['FY2026 operating margin (FY2021: 41.6%)']
+ -- PLACEHOLDER (14) Slide Number Placeholder 0 8229600 4754880 457200 274320
+   P: []
+ NOTES: 
+=== Slide 4 Title Only
+ -- PLACEHOLDER (14) Text 0 457200 274320 8229600 685800
+   P: ['FY2026: double-digit growth amid a capex surge']
+ -- AUTO_SHAPE (1) bullet-badge-1 457200 1188720 914400 914400
+   P: []
+ -- TEXT_BOX (17) Text 2 457200 1188720 914400 914400
+   P: ['17.8%']
+ -- TEXT_BOX (17) Text 3 1600200 1170432 7040880 960120
+   P: ['Revenue growth']
+   P: ['Revenue rose 17.8% YoY to $331.8B in FY2026, up from $281.7B in FY2025.']
+ -- AUTO_SHAPE (1) bullet-badge-2 457200 2331720 914400 914400
+   P: []
+ -- TEXT_BOX (17) Text 5 457200 2331720 914400 914400
+   P: ['20.2%']
+ -- TEXT_BOX (17) Text 6 1600200 2313432 7040880 960120
+   P: ['FCF margin']
+   P: ['Free cash flow of $67.0B equals a 20.2% FCF margin, down from 25.4% in FY2025 as investment stepped up.']
+ -- AUTO_SHAPE (1) bullet-badge-3 457200 3474720 914400 914400
+   P: []
+ -- TEXT_BOX (17) Text 8 457200 3474720 914400 914400
+   P: ['$115.9B']
+ -- TEXT_BOX (17) Text 9 1600200 3456432 7040880 960120
+   P: ['Capex']
+   P: ['Capital expenditures climbed 79.6% to $115.9B (34.9% of revenue), driven by datacenter build-out for cloud and AI.']
+ -- PLACEHOLDER (14) Slide Number Placeholder 0 8229600 4754880 457200 274320
+   P: []
+ NOTES: 
+=== Slide 5 Title Only
+ -- PLACEHOLDER (14) Text 0 457200 274320 8229600 685800
+   P: ['Valuation at current price, 2026-10-15']
+ -- TABLE (19) Table 0 457200 1097280 4937760 914400
+   R: ['Input ($M, except per share)', 'Value']
+   R: ['Share price (10/15/26 close)', '$539.44']
+   R: ['Shares outstanding (M)', '7,427']
+   R: ['Market capitalization', '$4,006,421M']
+   R: ['Plus: total debt', '$40,294M']
+   R: ['Less: cash & short-term investments', '($76,843M)']
+   R: ['Enterprise value', '$3,969,872M']
+   R: ['FY2026 revenue', '$331,839M']
+   R: ['FY2026 free cash flow', '$66,987M']
+   R: ['FY2026 diluted EPS', '$17.95']
+ -- AUTO_SHAPE (1) multiple-1 5669280 1097280 3017520 914400
+   P: []
+ -- TEXT_BOX (17) Text 2 5806440 1097280 1188720 914400
+   P: ['30.1x']
+ -- TEXT_BOX (17) Text 3 7040880 1097280 1600200 914400
+   P: ['P/E']
+   P: ['$539.44 ÷ $17.95']
+ -- AUTO_SHAPE (1) multiple-2 5669280 2194560 3017520 914400
+   P: []
+ -- TEXT_BOX (17) Text 5 5806440 2194560 1188720 914400
+   P: ['12.0x']
+ -- TEXT_BOX (17) Text 6 7040880 2194560 1600200 914400
+   P: ['EV / Revenue']
+   P: ['$3,969,872M ÷ $331,839M']
+ -- AUTO_SHAPE (1) multiple-3 5669280 3291840 3017520 914400
+   P: []
+ -- TEXT_BOX (17) Text 8 5806440 3291840 1188720 914400
+   P: ['59.3x']
+ -- TEXT_BOX (17) Text 9 7040880 3291840 1600200 914400
+   P: ['EV / FCF']
+   P: ['$3,969,872M ÷ $66,987M']
+ -- PLACEHOLDER (14) Slide Number Placeholder 0 8229600 4754880 457200 274320
+   P: []
+ NOTES: 
+=== Slide 6 Title Only
+ -- PLACEHOLDER (14) Text 0 457200 274320 8229600 685800
+   P: ['Sources and notes']
+ -- TEXT_BOX (17) Text 1 457200 1097280 8229600 3520440
+   P: ['Financial statements: Microsoft Form 10-K for the fiscal year ended June 30, 2026, as presented in the FY2026 Q4 earnings release (Form 8-K Exhibit 99.1, 2026-07-29); FY2021–FY2025 from prior 10-K filings. All periods end June 30.']
+   P: ['Share price: Nasdaq closing price on October 15, 2026 ($539.44), unadjusted (stockanalysis.com daily history; cross-checked with Investing.com).']
+   P: ['Market cap = share price × 7,427M common shares outstanding at June 30, 2026 as reported in the FY2026 balance sheet data.']
+   P: ['Enterprise value = market cap + total debt (current portion $9,227M + long-term $31,067M) − cash & equivalents ($20,935M) − short-term investments ($55,908M); leases excluded.']
+   P: ['Free cash flow = cash from operations ($182,935M) − additions to property and equipment ($115,948M). Finance-lease additions not deducted.']
+   P: ['Operating margin = operating income ÷ revenue. Growth rates and CAGRs computed from reported revenue and operating income. Chart values in $ billions, rounded to one decimal.']
+   P: ['Data compiled October 15, 2026; financial figures reflect the fiscal year ended June 30, 2026; share price, market cap and multiples use the October 15, 2026 close.']
+ -- PLACEHOLDER (14) Slide Number Placeholder 0 8229600 4754880 457200 274320
+   P: []
+ NOTES: 

@@ -1,0 +1,102 @@
+{
+  "as_of": "2026-10-12",
+  "rows": [
+    {
+      "ticker": "AAPL",
+      "status": "OK",
+      "last_price": 257.8,
+      "price_date": "2026-10-09",
+      "chg_1w_pct": 3.0169830169830325,
+      "chg_1m_pct": 16.68326242418756,
+      "pos_52w_pct": 96.60526315789475,
+      "low_52w": 184.38,
+      "high_52w": 260.38,
+      "latest_form": "8-K",
+      "latest_filed": "2026-10-07",
+      "recent_8k": true,
+      "recent_8k_dates": [
+        "2026-10-07"
+      ],
+      "notes": []
+    },
+    {
+      "ticker": "MSFT",
+      "status": "OK",
+      "last_price": 428.83,
+      "price_date": "2026-10-09",
+      "chg_1w_pct": 1.9300705949466312,
+      "chg_1m_pct": 10.84602062708402,
+      "pos_52w_pct": 54.43378119001916,
+      "low_52w": 386.29,
+      "high_52w": 464.44,
+      "latest_form": "8-K",
+      "latest_filed": "2026-09-20",
+      "recent_8k": false,
+      "recent_8k_dates": [],
+      "notes": []
+    },
+    {
+      "ticker": "NVDA",
+      "status": "OK",
+      "last_price": 222.78,
+      "price_date": "2026-10-09",
+      "chg_1w_pct": 4.704610612398352,
+      "chg_1m_pct": 26.802891456542778,
+      "pos_52w_pct": 100.0,
+      "low_52w": 127.86,
+      "high_52w": 222.78,
+      "latest_form": "4",
+      "latest_filed": "2026-10-10",
+      "recent_8k": true,
+      "recent_8k_dates": [
+        "2026-10-05"
+      ],
+      "notes": []
+    },
+    {
+      "ticker": "BADX",
+      "status": "ERROR",
+      "last_price": null,
+      "price_date": null,
+      "chg_1w_pct": null,
+      "chg_1m_pct": null,
+      "pos_52w_pct": null,
+      "low_52w": null,
+      "high_52w": null,
+      "latest_form": null,
+      "latest_filed": null,
+      "recent_8k": null,
+      "recent_8k_dates": [],
+      "notes": [
+        "fetch error: get_quote: unknown symbol BADX",
+        "no usable price data",
+        "no filings returned"
+      ]
+    },
+    {
+      "ticker": "NEWCO",
+      "status": "PARTIAL",
+      "last_price": 10.3,
+      "price_date": "2026-10-09",
+      "chg_1w_pct": -6.36363636363636,
+      "chg_1m_pct": -22.55639097744361,
+      "pos_52w_pct": 0.0,
+      "low_52w": 10.3,
+      "high_52w": 13.9,
+      "latest_form": null,
+      "latest_filed": null,
+      "recent_8k": null,
+      "recent_8k_dates": [],
+      "notes": [
+        "history starts 2026-09-03; 52-wk range is partial",
+        "no filings returned"
+      ]
+    }
+  ],
+  "facts": [
+    "equal-weight 1W avg +0.8% across 4 names; best NVDA +4.7%, worst NEWCO -6.4%",
+    "near 52-wk high (>=90%): AAPL, NVDA; near 52-wk low (<=10%): NEWCO",
+    "8-Ks in last 7 days: AAPL (2026-10-07), NVDA (2026-10-05)",
+    "incomplete data: BADX, NEWCO"
+  ]
+}

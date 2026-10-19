@@ -1,0 +1,13 @@
+/screen quality large-cap tech at a reasonable price
+
+Screen exactly this universe: AAPL MSFT GOOGL AMZN META NVDA AVGO ORCL NFLX AMD ADBE CRM INTC QCOM IBM. Rank on TTM revenue growth, TTM free-cash-flow margin, EV/TTM FCF and the "Rule of 40" (growth + FCF margin). Surface 3 long ideas and 1 short idea, with a short pitch and the key risk for each.
+
+---
+Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
+Report money in USD millions (per-share values in USD), percentages to one decimal place, dates as YYYY-MM-DD.
+End your reply with a section headed exactly "## Comparison Block" containing:
+1. Key figures: a table with columns Metric | Value | Units | Period or as-of date | Source | Confidence (H/M/L). One row per metric listed below, in the order listed. Write N/A instead of dropping a row. Source = the tool name, the filing (form + filing date) or the URL; write "model knowledge" for anything recalled from memory.
+2. Sources used: each tool, connector or website you called, with a call count.
+3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
+4. Freshness: the date of the latest market price and the latest financial reporting period you used.
+Key figures: for each of the 15 tickers (one row each, Metric = ticker, with the values comma-separated in the Value column): price, market cap, TTM revenue, TTM revenue growth %, TTM FCF, FCF margin %, EV/TTM FCF, Rule of 40 score, and the end date of the latest quarter used. Then: the 3 longs and 1 short.

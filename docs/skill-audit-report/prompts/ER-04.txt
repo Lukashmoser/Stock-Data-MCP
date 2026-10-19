@@ -1,0 +1,13 @@
+/initiate AMD
+
+Start with Task 1 (company research) for AMD. Run Task 1 only and deliver its output document.
+
+---
+Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
+Report money in USD millions (per-share values in USD), percentages to one decimal place, dates as YYYY-MM-DD.
+End your reply with a section headed exactly "## Comparison Block" containing:
+1. Key figures: a table with columns Metric | Value | Units | Period or as-of date | Source | Confidence (H/M/L). One row per metric listed below, in the order listed. Write N/A instead of dropping a row. Source = the tool name, the filing (form + filing date) or the URL; write "model knowledge" for anything recalled from memory.
+2. Sources used: each tool, connector or website you called, with a call count.
+3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
+4. Freshness: the date of the latest market price and the latest financial reporting period you used.
+Key figures: latest 10-K filing date and fiscal year; latest 10-Q filing date and quarter; revenue for each of the last 3 fiscal years; revenue growth for each of those years; latest-quarter revenue and YoY growth; latest-quarter Data Center segment revenue; GAAP operating margin last fiscal year; free cash flow last fiscal year; stock-based compensation last fiscal year; current price; market cap; cash + short-term investments; total debt.

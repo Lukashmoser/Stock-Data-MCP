@@ -1,0 +1,101 @@
+ticker,period_end,fiscal_label,metric,value,notes
+googl,30-Sep-24,FY2024Q3,revenue,"$88,268",n/a
+GOOGL,09/30/2024,FY2024Q3,operating_income,"$28,521",
+ googl,30-Sep-24,FY2024Q3,net_income,26301,
+ googl,2024-12-31,FY2024Q4,revenue,96469,
+GOOGL,31-Dec-24,FY2024Q4,operating_income,30972,10-Q
+GOOGL,31-Dec-24,FY2024Q4,operating_income,30972,10-Q
+googl,2024-12-31,FY2024Q4,net_income,26536,10-Q
+ googl,2025-03-31,FY2025Q1,revenue,90234,1
+GOOGL ,2025-03-31,FY2025Q1,operating_income,30606,n/a
+googl,03/31/2025,FY2025Q1,net_income,30395,n/a
+googl,30-Jun-25,FY2025Q2,revenue,96428,
+googl,30-Jun-25,FY2025Q2,operating_income,31271,
+ googl,06/30/2025,FY2025Q2,net_income,28196,0.5
+ googl,2025-09-30,FY2025Q3,revenue,102346,1
+GOOGL ,2025-09-30,FY2025Q3,operating_income,31228,
+googl,30-Sep-25,FY2025Q3,net_income,34979,
+GOOGL ,12/31/2025,FY2025Q4,revenue,113829,12.5
+googl,2025-12-31,FY2025Q4,operating_income,35934,
+ googl,12/31/2025,FY2025Q4,net_income,"$34,455",1
+googl,2026-03-31,FY2026Q1,revenue,109896,0.5
+GOOGL,31-Mar-26,FY2026Q1,operating_income,"$39,696",10-Q
+googl,31-Mar-26,FY2026Q1,net_income,62578,FY
+googl,06/30/2026,FY2026Q2,revenue,119796,10-Q
+GOOGL,30-Jun-26,FY2026Q2,operating_income,40770,FY
+GOOGL,30-Jun-26,FY2026Q2,net_income,112193,XBRL
+AMZN ,30-Sep-24,FY2024Q3,revenue,158877,FY
+amzn ,30-Sep-24,FY2024Q3,operating_income,"$17,411",
+amzn ,09/30/2024,FY2024Q3,net_income,"$15,328",12.5
+ Amzn,31-Dec-24,FY2024Q4,revenue,187792,3
+ Amzn,2024-12-31,FY2024Q4,operating_income,21203,XBRL
+ Amzn,2024-12-31,FY2024Q4,net_income,"$20,004",2
+amzn ,31-Mar-25,FY2025Q1,revenue,"$155,667",10-K
+ Amzn,31-Mar-25,FY2025Q1,operating_income,18405,2
+amzn,2025-03-31,FY2025Q1,net_income,17127,
+amzn,06/30/2025,FY2025Q2,revenue,"$167,702",
+ Amzn,2025-06-30,FY2025Q2,operating_income,19171,
+AMZN ,06/30/2025,FY2025Q2,net_income,"$18,164",FY
+amzn,09/30/2025,FY2025Q3,revenue,"$201,789",10-Q
+amzn,30-Sep-25,FY2025Q3,operating_income,17422,n/a
+AMZN,09/30/2025,FY2025Q3,net_income,21187,n/a
+amzn,31-Dec-25,FY2025Q4,revenue,"$213,386",12.5
+AMZN,12/31/2025,FY2025Q4,operating_income,24977,see filing
+amzn ,2025-12-31,FY2025Q4,net_income,21192,FY
+ Amzn,2026-03-31,FY2026Q1,revenue,"$181,519",FY
+AMZN ,2026-03-31,FY2026Q1,operating_income,23852,n/a
+AMZN,31-Mar-26,FY2026Q1,net_income,30255,
+AMZN,31-Mar-26,FY2026Q1,net_income,30255,
+amzn ,06/30/2026,FY2026Q2,revenue,200606,FY
+amzn,2026-06-30,FY2026Q2,operating_income,"$27,461",
+AMZN,2026-06-30,FY2026Q2,net_income,62647,see filing
+meta,09/30/2024,FY2024Q3,revenue,40589,10-K
+Meta ,09/30/2024,FY2024Q3,operating_income,17350,10-K
+meta ,30-Sep-24,FY2024Q3,net_income,15688,
+meta,31-Dec-24,FY2024Q4,revenue,"$48,385,000",0.5
+ META,2024-12-31,FY2024Q4,operating_income,"$23,364,000",1
+ META,2024-12-31,FY2024Q4,net_income,"$20,838,000",12.5
+ META,03/31/2025,FY2025Q1,revenue,42314,
+META,2025-03-31,FY2025Q1,operating_income,"$17,555",FY
+meta ,31-Mar-25,FY2025Q1,net_income,16644,
+META,2025-06-30,FY2025Q2,revenue,"$47,516",
+META,30-Jun-25,FY2025Q2,operating_income,"$20,441",prelim
+Meta ,06/30/2025,FY2025Q2,net_income,18337,FY
+ META,09/30/2025,FY2025Q3,revenue,"$51,242,000",
+Meta ,09/30/2025,FY2025Q3,operating_income,20535000,
+meta ,09/30/2025,FY2025Q3,net_income,2709000,ok
+meta,2025-12-31,FY2025Q4,revenue,"$59,893",2
+ META,12/31/2025,FY2025Q4,operating_income,"$24,745",
+meta,2025-12-31,FY2025Q4,net_income,22768,
+meta,03/31/2026,FY2026Q1,revenue,"$56,311",3
+meta ,03/31/2026,FY2026Q1,operating_income,"$22,872",prelim
+Meta ,03/31/2026,FY2026Q1,net_income,26773,
+ META,06/30/2026,FY2026Q2,revenue,60801,10-K
+meta,30-Jun-26,FY2026Q2,operating_income,18775,2
+ META,30-Jun-26,FY2026Q2,net_income,"$15,848",1
+MSFT,09/30/2024,FY2025Q1,revenue,65585,12.5
+MSFT ,09/30/2024,FY2025Q1,operating_income,30552,
+MSFT,09/30/2024,FY2025Q1,net_income,24667,ok
+ Msft,2024-12-31,FY2025Q2,revenue,69632,2
+msft,31-Dec-24,FY2025Q2,operating_income,31653,
+MSFT,12/31/2024,FY2025Q2,operating_income,31652.6,
+ Msft,12/31/2024,FY2025Q2,net_income,"$24,108",3
+MSFT ,2025-03-31,FY2025Q3,revenue,70066,
+MSFT ,2025-03-31,FY2025Q3,revenue,70066,
+msft,2025-03-31,FY2025Q3,operating_income,32000,n/a
+MSFT,31-Mar-25,FY2025Q3,net_income,25824,
+msft ,06/30/2025,FY2025Q4,revenue,"$76,441",
+msft,06/30/2025,FY2025Q4,operating_income,"$34,323",prelim
+msft,30-Jun-25,FY2025Q4,net_income,27233,10-K
+MSFT ,2025-09-30,FY2026Q1,revenue,"$77,673",ok
+msft ,09/30/2025,FY2026Q1,operating_income,37961,FY
+msft,30-Sep-25,FY2026Q1,net_income,27747,
+msft ,2025-12-31,FY2026Q2,revenue,"$81,273",0.5
+MSFT,12/31/2025,FY2026Q2,operating_income,38275,10-K
+MSFT ,12/31/2025,FY2026Q2,net_income,38458,prelim
+ Msft,03/31/2026,FY2026Q3,revenue,82886,
+msft,31-Mar-26,FY2026Q3,operating_income,"$38,398",XBRL
+MSFT ,31-Mar-26,FY2026Q3,net_income,31778,prelim
+MSFT ,06/30/2026,FY2026Q4,revenue,90007,
+ Msft,06/30/2026,FY2026Q4,operating_income,40603,
+msft ,2026-06-30,FY2026Q4,net_income,35766,ok

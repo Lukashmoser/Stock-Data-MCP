@@ -1,0 +1,13 @@
+/earnings NVDA most recent quarter
+
+Write the earnings update for NVIDIA's most recently reported quarter. Identify which fiscal quarter that is and when it was reported. Cover beat/miss vs. consensus on revenue and EPS, revenue by segment (Data Center, Gaming and the rest), margin trends over the last 5 quarters, guidance vs. consensus for the next quarter, the stock's reaction, updated estimates, and the thesis impact.
+
+---
+Don't pause for confirmations: take sensible defaults and list them under "Estimates and gaps".
+Report money in USD millions (per-share values in USD), percentages to one decimal place, dates as YYYY-MM-DD.
+End your reply with a section headed exactly "## Comparison Block" containing:
+1. Key figures: a table with columns Metric | Value | Units | Period or as-of date | Source | Confidence (H/M/L). One row per metric listed below, in the order listed. Write N/A instead of dropping a row. Source = the tool name, the filing (form + filing date) or the URL; write "model knowledge" for anything recalled from memory.
+2. Sources used: each tool, connector or website you called, with a call count.
+3. Estimates and gaps: every figure you estimated, assumed, or could not verify, and every default you chose.
+4. Freshness: the date of the latest market price and the latest financial reporting period you used.
+Key figures: fiscal quarter label and period-end date; 10-Q filing date; revenue; revenue growth YoY; Data Center revenue; gross margin; GAAP operating income; GAAP operating margin; GAAP diluted EPS; operating cash flow; free cash flow; diluted shares; consensus revenue; consensus EPS; next-quarter revenue guidance; stock move on the day after the report; current price; rating and price target.

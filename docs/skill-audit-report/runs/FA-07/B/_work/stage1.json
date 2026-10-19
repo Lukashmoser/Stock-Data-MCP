@@ -1,0 +1,2202 @@
+{
+ "out": [
+  {
+   "src_row": 2,
+   "ticker": "GOOGL",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2024Q3",
+   "metric": "revenue",
+   "value_raw": 88268.0,
+   "notes": "n/a"
+  },
+  {
+   "src_row": 3,
+   "ticker": "GOOGL",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2024Q3",
+   "metric": "operating_income",
+   "value_raw": 28521.0,
+   "notes": ""
+  },
+  {
+   "src_row": 4,
+   "ticker": "GOOGL",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2024Q3",
+   "metric": "net_income",
+   "value_raw": 26301.0,
+   "notes": ""
+  },
+  {
+   "src_row": 5,
+   "ticker": "GOOGL",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2024Q4",
+   "metric": "revenue",
+   "value_raw": 96469.0,
+   "notes": ""
+  },
+  {
+   "src_row": 6,
+   "ticker": "GOOGL",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2024Q4",
+   "metric": "operating_income",
+   "value_raw": 30972.0,
+   "notes": "10-Q"
+  },
+  {
+   "src_row": 7,
+   "ticker": "GOOGL",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2024Q4",
+   "metric": "operating_income",
+   "value_raw": 30972.0,
+   "notes": "10-Q"
+  },
+  {
+   "src_row": 8,
+   "ticker": "GOOGL",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2024Q4",
+   "metric": "net_income",
+   "value_raw": 26536.0,
+   "notes": "10-Q"
+  },
+  {
+   "src_row": 9,
+   "ticker": "GOOGL",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q1",
+   "metric": "revenue",
+   "value_raw": 90234.0,
+   "notes": "1"
+  },
+  {
+   "src_row": 10,
+   "ticker": "GOOGL",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q1",
+   "metric": "operating_income",
+   "value_raw": 30606.0,
+   "notes": "n/a"
+  },
+  {
+   "src_row": 11,
+   "ticker": "GOOGL",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q1",
+   "metric": "net_income",
+   "value_raw": 30395.0,
+   "notes": "n/a"
+  },
+  {
+   "src_row": 12,
+   "ticker": "GOOGL",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q2",
+   "metric": "revenue",
+   "value_raw": 96428.0,
+   "notes": ""
+  },
+  {
+   "src_row": 13,
+   "ticker": "GOOGL",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q2",
+   "metric": "operating_income",
+   "value_raw": 31271.0,
+   "notes": ""
+  },
+  {
+   "src_row": 14,
+   "ticker": "GOOGL",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q2",
+   "metric": "net_income",
+   "value_raw": 28196.0,
+   "notes": "0.5"
+  },
+  {
+   "src_row": 15,
+   "ticker": "GOOGL",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2025Q3",
+   "metric": "revenue",
+   "value_raw": 102346.0,
+   "notes": "1"
+  },
+  {
+   "src_row": 16,
+   "ticker": "GOOGL",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2025Q3",
+   "metric": "operating_income",
+   "value_raw": 31228.0,
+   "notes": ""
+  },
+  {
+   "src_row": 17,
+   "ticker": "GOOGL",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2025Q3",
+   "metric": "net_income",
+   "value_raw": 34979.0,
+   "notes": ""
+  },
+  {
+   "src_row": 18,
+   "ticker": "GOOGL",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2025Q4",
+   "metric": "revenue",
+   "value_raw": 113829.0,
+   "notes": "12.5"
+  },
+  {
+   "src_row": 19,
+   "ticker": "GOOGL",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2025Q4",
+   "metric": "operating_income",
+   "value_raw": 35934.0,
+   "notes": ""
+  },
+  {
+   "src_row": 20,
+   "ticker": "GOOGL",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2025Q4",
+   "metric": "net_income",
+   "value_raw": 34455.0,
+   "notes": "1"
+  },
+  {
+   "src_row": 21,
+   "ticker": "GOOGL",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q1",
+   "metric": "revenue",
+   "value_raw": 109896.0,
+   "notes": "0.5"
+  },
+  {
+   "src_row": 22,
+   "ticker": "GOOGL",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q1",
+   "metric": "operating_income",
+   "value_raw": 39696.0,
+   "notes": "10-Q"
+  },
+  {
+   "src_row": 23,
+   "ticker": "GOOGL",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q1",
+   "metric": "net_income",
+   "value_raw": 62578.0,
+   "notes": "FY"
+  },
+  {
+   "src_row": 24,
+   "ticker": "GOOGL",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q2",
+   "metric": "revenue",
+   "value_raw": 119796.0,
+   "notes": "10-Q"
+  },
+  {
+   "src_row": 25,
+   "ticker": "GOOGL",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q2",
+   "metric": "operating_income",
+   "value_raw": 40770.0,
+   "notes": "FY"
+  },
+  {
+   "src_row": 26,
+   "ticker": "GOOGL",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q2",
+   "metric": "net_income",
+   "value_raw": 112193.0,
+   "notes": "XBRL"
+  },
+  {
+   "src_row": 27,
+   "ticker": "AMZN",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2024Q3",
+   "metric": "revenue",
+   "value_raw": 158877.0,
+   "notes": "FY"
+  },
+  {
+   "src_row": 28,
+   "ticker": "AMZN",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2024Q3",
+   "metric": "operating_income",
+   "value_raw": 17411.0,
+   "notes": ""
+  },
+  {
+   "src_row": 29,
+   "ticker": "AMZN",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2024Q3",
+   "metric": "net_income",
+   "value_raw": 15328.0,
+   "notes": "12.5"
+  },
+  {
+   "src_row": 30,
+   "ticker": "AMZN",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2024Q4",
+   "metric": "revenue",
+   "value_raw": 187792.0,
+   "notes": "3"
+  },
+  {
+   "src_row": 31,
+   "ticker": "AMZN",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2024Q4",
+   "metric": "operating_income",
+   "value_raw": 21203.0,
+   "notes": "XBRL"
+  },
+  {
+   "src_row": 32,
+   "ticker": "AMZN",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2024Q4",
+   "metric": "net_income",
+   "value_raw": 20004.0,
+   "notes": "2"
+  },
+  {
+   "src_row": 33,
+   "ticker": "AMZN",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q1",
+   "metric": "revenue",
+   "value_raw": 155667.0,
+   "notes": "10-K"
+  },
+  {
+   "src_row": 34,
+   "ticker": "AMZN",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q1",
+   "metric": "operating_income",
+   "value_raw": 18405.0,
+   "notes": "2"
+  },
+  {
+   "src_row": 35,
+   "ticker": "AMZN",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q1",
+   "metric": "net_income",
+   "value_raw": 17127.0,
+   "notes": ""
+  },
+  {
+   "src_row": 36,
+   "ticker": "AMZN",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q2",
+   "metric": "revenue",
+   "value_raw": 167702.0,
+   "notes": ""
+  },
+  {
+   "src_row": 37,
+   "ticker": "AMZN",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q2",
+   "metric": "operating_income",
+   "value_raw": 19171.0,
+   "notes": ""
+  },
+  {
+   "src_row": 38,
+   "ticker": "AMZN",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q2",
+   "metric": "net_income",
+   "value_raw": 18164.0,
+   "notes": "FY"
+  },
+  {
+   "src_row": 39,
+   "ticker": "AMZN",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2025Q3",
+   "metric": "revenue",
+   "value_raw": 201789.0,
+   "notes": "10-Q"
+  },
+  {
+   "src_row": 40,
+   "ticker": "AMZN",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2025Q3",
+   "metric": "operating_income",
+   "value_raw": 17422.0,
+   "notes": "n/a"
+  },
+  {
+   "src_row": 41,
+   "ticker": "AMZN",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2025Q3",
+   "metric": "net_income",
+   "value_raw": 21187.0,
+   "notes": "n/a"
+  },
+  {
+   "src_row": 42,
+   "ticker": "AMZN",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2025Q4",
+   "metric": "revenue",
+   "value_raw": 213386.0,
+   "notes": "12.5"
+  },
+  {
+   "src_row": 43,
+   "ticker": "AMZN",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2025Q4",
+   "metric": "operating_income",
+   "value_raw": 24977.0,
+   "notes": "see filing"
+  },
+  {
+   "src_row": 44,
+   "ticker": "AMZN",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2025Q4",
+   "metric": "net_income",
+   "value_raw": 21192.0,
+   "notes": "FY"
+  },
+  {
+   "src_row": 45,
+   "ticker": "AMZN",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q1",
+   "metric": "revenue",
+   "value_raw": 181519.0,
+   "notes": "FY"
+  },
+  {
+   "src_row": 46,
+   "ticker": "AMZN",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q1",
+   "metric": "operating_income",
+   "value_raw": 23852.0,
+   "notes": "n/a"
+  },
+  {
+   "src_row": 47,
+   "ticker": "AMZN",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q1",
+   "metric": "net_income",
+   "value_raw": 30255.0,
+   "notes": ""
+  },
+  {
+   "src_row": 48,
+   "ticker": "AMZN",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q1",
+   "metric": "net_income",
+   "value_raw": 30255.0,
+   "notes": ""
+  },
+  {
+   "src_row": 49,
+   "ticker": "AMZN",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q2",
+   "metric": "revenue",
+   "value_raw": 200606.0,
+   "notes": "FY"
+  },
+  {
+   "src_row": 50,
+   "ticker": "AMZN",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q2",
+   "metric": "operating_income",
+   "value_raw": 27461.0,
+   "notes": ""
+  },
+  {
+   "src_row": 51,
+   "ticker": "AMZN",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q2",
+   "metric": "net_income",
+   "value_raw": 62647.0,
+   "notes": "see filing"
+  },
+  {
+   "src_row": 52,
+   "ticker": "META",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2024Q3",
+   "metric": "revenue",
+   "value_raw": 40589.0,
+   "notes": "10-K"
+  },
+  {
+   "src_row": 53,
+   "ticker": "META",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2024Q3",
+   "metric": "operating_income",
+   "value_raw": 17350.0,
+   "notes": "10-K"
+  },
+  {
+   "src_row": 54,
+   "ticker": "META",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2024Q3",
+   "metric": "net_income",
+   "value_raw": 15688.0,
+   "notes": ""
+  },
+  {
+   "src_row": 55,
+   "ticker": "META",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2024Q4",
+   "metric": "revenue",
+   "value_raw": 48385000.0,
+   "notes": "0.5"
+  },
+  {
+   "src_row": 56,
+   "ticker": "META",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2024Q4",
+   "metric": "operating_income",
+   "value_raw": 23364000.0,
+   "notes": "1"
+  },
+  {
+   "src_row": 57,
+   "ticker": "META",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2024Q4",
+   "metric": "net_income",
+   "value_raw": 20838000.0,
+   "notes": "12.5"
+  },
+  {
+   "src_row": 58,
+   "ticker": "META",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q1",
+   "metric": "revenue",
+   "value_raw": 42314.0,
+   "notes": ""
+  },
+  {
+   "src_row": 59,
+   "ticker": "META",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q1",
+   "metric": "operating_income",
+   "value_raw": 17555.0,
+   "notes": "FY"
+  },
+  {
+   "src_row": 60,
+   "ticker": "META",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q1",
+   "metric": "net_income",
+   "value_raw": 16644.0,
+   "notes": ""
+  },
+  {
+   "src_row": 61,
+   "ticker": "META",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q2",
+   "metric": "revenue",
+   "value_raw": 47516.0,
+   "notes": ""
+  },
+  {
+   "src_row": 62,
+   "ticker": "META",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q2",
+   "metric": "operating_income",
+   "value_raw": 20441.0,
+   "notes": "prelim"
+  },
+  {
+   "src_row": 63,
+   "ticker": "META",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q2",
+   "metric": "net_income",
+   "value_raw": 18337.0,
+   "notes": "FY"
+  },
+  {
+   "src_row": 64,
+   "ticker": "META",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2025Q3",
+   "metric": "revenue",
+   "value_raw": 51242000.0,
+   "notes": ""
+  },
+  {
+   "src_row": 65,
+   "ticker": "META",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2025Q3",
+   "metric": "operating_income",
+   "value_raw": 20535000.0,
+   "notes": ""
+  },
+  {
+   "src_row": 66,
+   "ticker": "META",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2025Q3",
+   "metric": "net_income",
+   "value_raw": 2709000.0,
+   "notes": "ok"
+  },
+  {
+   "src_row": 67,
+   "ticker": "META",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2025Q4",
+   "metric": "revenue",
+   "value_raw": 59893.0,
+   "notes": "2"
+  },
+  {
+   "src_row": 68,
+   "ticker": "META",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2025Q4",
+   "metric": "operating_income",
+   "value_raw": 24745.0,
+   "notes": ""
+  },
+  {
+   "src_row": 69,
+   "ticker": "META",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2025Q4",
+   "metric": "net_income",
+   "value_raw": 22768.0,
+   "notes": ""
+  },
+  {
+   "src_row": 70,
+   "ticker": "META",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q1",
+   "metric": "revenue",
+   "value_raw": 56311.0,
+   "notes": "3"
+  },
+  {
+   "src_row": 71,
+   "ticker": "META",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q1",
+   "metric": "operating_income",
+   "value_raw": 22872.0,
+   "notes": "prelim"
+  },
+  {
+   "src_row": 72,
+   "ticker": "META",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q1",
+   "metric": "net_income",
+   "value_raw": 26773.0,
+   "notes": ""
+  },
+  {
+   "src_row": 73,
+   "ticker": "META",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q2",
+   "metric": "revenue",
+   "value_raw": 60801.0,
+   "notes": "10-K"
+  },
+  {
+   "src_row": 74,
+   "ticker": "META",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q2",
+   "metric": "operating_income",
+   "value_raw": 18775.0,
+   "notes": "2"
+  },
+  {
+   "src_row": 75,
+   "ticker": "META",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q2",
+   "metric": "net_income",
+   "value_raw": 15848.0,
+   "notes": "1"
+  },
+  {
+   "src_row": 76,
+   "ticker": "MSFT",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2025Q1",
+   "metric": "revenue",
+   "value_raw": 65585.0,
+   "notes": "12.5"
+  },
+  {
+   "src_row": 77,
+   "ticker": "MSFT",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2025Q1",
+   "metric": "operating_income",
+   "value_raw": 30552.0,
+   "notes": ""
+  },
+  {
+   "src_row": 78,
+   "ticker": "MSFT",
+   "period_end": "2024-09-30",
+   "fiscal_label": "FY2025Q1",
+   "metric": "net_income",
+   "value_raw": 24667.0,
+   "notes": "ok"
+  },
+  {
+   "src_row": 79,
+   "ticker": "MSFT",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2025Q2",
+   "metric": "revenue",
+   "value_raw": 69632.0,
+   "notes": "2"
+  },
+  {
+   "src_row": 80,
+   "ticker": "MSFT",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2025Q2",
+   "metric": "operating_income",
+   "value_raw": 31653.0,
+   "notes": ""
+  },
+  {
+   "src_row": 81,
+   "ticker": "MSFT",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2025Q2",
+   "metric": "operating_income",
+   "value_raw": 31652.6,
+   "notes": ""
+  },
+  {
+   "src_row": 82,
+   "ticker": "MSFT",
+   "period_end": "2024-12-31",
+   "fiscal_label": "FY2025Q2",
+   "metric": "net_income",
+   "value_raw": 24108.0,
+   "notes": "3"
+  },
+  {
+   "src_row": 83,
+   "ticker": "MSFT",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q3",
+   "metric": "revenue",
+   "value_raw": 70066.0,
+   "notes": ""
+  },
+  {
+   "src_row": 84,
+   "ticker": "MSFT",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q3",
+   "metric": "revenue",
+   "value_raw": 70066.0,
+   "notes": ""
+  },
+  {
+   "src_row": 85,
+   "ticker": "MSFT",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q3",
+   "metric": "operating_income",
+   "value_raw": 32000.0,
+   "notes": "n/a"
+  },
+  {
+   "src_row": 86,
+   "ticker": "MSFT",
+   "period_end": "2025-03-31",
+   "fiscal_label": "FY2025Q3",
+   "metric": "net_income",
+   "value_raw": 25824.0,
+   "notes": ""
+  },
+  {
+   "src_row": 87,
+   "ticker": "MSFT",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q4",
+   "metric": "revenue",
+   "value_raw": 76441.0,
+   "notes": ""
+  },
+  {
+   "src_row": 88,
+   "ticker": "MSFT",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q4",
+   "metric": "operating_income",
+   "value_raw": 34323.0,
+   "notes": "prelim"
+  },
+  {
+   "src_row": 89,
+   "ticker": "MSFT",
+   "period_end": "2025-06-30",
+   "fiscal_label": "FY2025Q4",
+   "metric": "net_income",
+   "value_raw": 27233.0,
+   "notes": "10-K"
+  },
+  {
+   "src_row": 90,
+   "ticker": "MSFT",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2026Q1",
+   "metric": "revenue",
+   "value_raw": 77673.0,
+   "notes": "ok"
+  },
+  {
+   "src_row": 91,
+   "ticker": "MSFT",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2026Q1",
+   "metric": "operating_income",
+   "value_raw": 37961.0,
+   "notes": "FY"
+  },
+  {
+   "src_row": 92,
+   "ticker": "MSFT",
+   "period_end": "2025-09-30",
+   "fiscal_label": "FY2026Q1",
+   "metric": "net_income",
+   "value_raw": 27747.0,
+   "notes": ""
+  },
+  {
+   "src_row": 93,
+   "ticker": "MSFT",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2026Q2",
+   "metric": "revenue",
+   "value_raw": 81273.0,
+   "notes": "0.5"
+  },
+  {
+   "src_row": 94,
+   "ticker": "MSFT",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2026Q2",
+   "metric": "operating_income",
+   "value_raw": 38275.0,
+   "notes": "10-K"
+  },
+  {
+   "src_row": 95,
+   "ticker": "MSFT",
+   "period_end": "2025-12-31",
+   "fiscal_label": "FY2026Q2",
+   "metric": "net_income",
+   "value_raw": 38458.0,
+   "notes": "prelim"
+  },
+  {
+   "src_row": 96,
+   "ticker": "MSFT",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q3",
+   "metric": "revenue",
+   "value_raw": 82886.0,
+   "notes": ""
+  },
+  {
+   "src_row": 97,
+   "ticker": "MSFT",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q3",
+   "metric": "operating_income",
+   "value_raw": 38398.0,
+   "notes": "XBRL"
+  },
+  {
+   "src_row": 98,
+   "ticker": "MSFT",
+   "period_end": "2026-03-31",
+   "fiscal_label": "FY2026Q3",
+   "metric": "net_income",
+   "value_raw": 31778.0,
+   "notes": "prelim"
+  },
+  {
+   "src_row": 99,
+   "ticker": "MSFT",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q4",
+   "metric": "revenue",
+   "value_raw": 90007.0,
+   "notes": ""
+  },
+  {
+   "src_row": 100,
+   "ticker": "MSFT",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q4",
+   "metric": "operating_income",
+   "value_raw": 40603.0,
+   "notes": ""
+  },
+  {
+   "src_row": 101,
+   "ticker": "MSFT",
+   "period_end": "2026-06-30",
+   "fiscal_label": "FY2026Q4",
+   "metric": "net_income",
+   "value_raw": 35766.0,
+   "notes": "ok"
+  }
+ ],
+ "log": [
+  [
+   2,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'googl'",
+   "GOOGL"
+  ],
+  [
+   2,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Sep-24",
+   "2024-09-30"
+  ],
+  [
+   2,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$88,268",
+   "88268"
+  ],
+  [
+   3,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2024",
+   "2024-09-30"
+  ],
+  [
+   3,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$28,521",
+   "28521"
+  ],
+  [
+   4,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' googl'",
+   "GOOGL"
+  ],
+  [
+   4,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Sep-24",
+   "2024-09-30"
+  ],
+  [
+   5,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' googl'",
+   "GOOGL"
+  ],
+  [
+   6,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Dec-24",
+   "2024-12-31"
+  ],
+  [
+   7,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Dec-24",
+   "2024-12-31"
+  ],
+  [
+   8,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'googl'",
+   "GOOGL"
+  ],
+  [
+   9,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' googl'",
+   "GOOGL"
+  ],
+  [
+   10,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'GOOGL '",
+   "GOOGL"
+  ],
+  [
+   11,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'googl'",
+   "GOOGL"
+  ],
+  [
+   11,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "03/31/2025",
+   "2025-03-31"
+  ],
+  [
+   12,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'googl'",
+   "GOOGL"
+  ],
+  [
+   12,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Jun-25",
+   "2025-06-30"
+  ],
+  [
+   13,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'googl'",
+   "GOOGL"
+  ],
+  [
+   13,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Jun-25",
+   "2025-06-30"
+  ],
+  [
+   14,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' googl'",
+   "GOOGL"
+  ],
+  [
+   14,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "06/30/2025",
+   "2025-06-30"
+  ],
+  [
+   15,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' googl'",
+   "GOOGL"
+  ],
+  [
+   16,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'GOOGL '",
+   "GOOGL"
+  ],
+  [
+   17,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'googl'",
+   "GOOGL"
+  ],
+  [
+   17,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Sep-25",
+   "2025-09-30"
+  ],
+  [
+   18,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'GOOGL '",
+   "GOOGL"
+  ],
+  [
+   18,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "12/31/2025",
+   "2025-12-31"
+  ],
+  [
+   19,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'googl'",
+   "GOOGL"
+  ],
+  [
+   20,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' googl'",
+   "GOOGL"
+  ],
+  [
+   20,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "12/31/2025",
+   "2025-12-31"
+  ],
+  [
+   20,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$34,455",
+   "34455"
+  ],
+  [
+   21,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'googl'",
+   "GOOGL"
+  ],
+  [
+   22,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Mar-26",
+   "2026-03-31"
+  ],
+  [
+   22,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$39,696",
+   "39696"
+  ],
+  [
+   23,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'googl'",
+   "GOOGL"
+  ],
+  [
+   23,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Mar-26",
+   "2026-03-31"
+  ],
+  [
+   24,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'googl'",
+   "GOOGL"
+  ],
+  [
+   24,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "06/30/2026",
+   "2026-06-30"
+  ],
+  [
+   25,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Jun-26",
+   "2026-06-30"
+  ],
+  [
+   26,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Jun-26",
+   "2026-06-30"
+  ],
+  [
+   27,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'AMZN '",
+   "AMZN"
+  ],
+  [
+   27,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Sep-24",
+   "2024-09-30"
+  ],
+  [
+   28,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'amzn '",
+   "AMZN"
+  ],
+  [
+   28,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Sep-24",
+   "2024-09-30"
+  ],
+  [
+   28,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$17,411",
+   "17411"
+  ],
+  [
+   29,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'amzn '",
+   "AMZN"
+  ],
+  [
+   29,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2024",
+   "2024-09-30"
+  ],
+  [
+   29,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$15,328",
+   "15328"
+  ],
+  [
+   30,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' Amzn'",
+   "AMZN"
+  ],
+  [
+   30,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Dec-24",
+   "2024-12-31"
+  ],
+  [
+   31,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' Amzn'",
+   "AMZN"
+  ],
+  [
+   32,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' Amzn'",
+   "AMZN"
+  ],
+  [
+   32,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$20,004",
+   "20004"
+  ],
+  [
+   33,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'amzn '",
+   "AMZN"
+  ],
+  [
+   33,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Mar-25",
+   "2025-03-31"
+  ],
+  [
+   33,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$155,667",
+   "155667"
+  ],
+  [
+   34,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' Amzn'",
+   "AMZN"
+  ],
+  [
+   34,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Mar-25",
+   "2025-03-31"
+  ],
+  [
+   35,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'amzn'",
+   "AMZN"
+  ],
+  [
+   36,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'amzn'",
+   "AMZN"
+  ],
+  [
+   36,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "06/30/2025",
+   "2025-06-30"
+  ],
+  [
+   36,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$167,702",
+   "167702"
+  ],
+  [
+   37,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' Amzn'",
+   "AMZN"
+  ],
+  [
+   38,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'AMZN '",
+   "AMZN"
+  ],
+  [
+   38,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "06/30/2025",
+   "2025-06-30"
+  ],
+  [
+   38,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$18,164",
+   "18164"
+  ],
+  [
+   39,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'amzn'",
+   "AMZN"
+  ],
+  [
+   39,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2025",
+   "2025-09-30"
+  ],
+  [
+   39,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$201,789",
+   "201789"
+  ],
+  [
+   40,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'amzn'",
+   "AMZN"
+  ],
+  [
+   40,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Sep-25",
+   "2025-09-30"
+  ],
+  [
+   41,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2025",
+   "2025-09-30"
+  ],
+  [
+   42,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'amzn'",
+   "AMZN"
+  ],
+  [
+   42,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Dec-25",
+   "2025-12-31"
+  ],
+  [
+   42,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$213,386",
+   "213386"
+  ],
+  [
+   43,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "12/31/2025",
+   "2025-12-31"
+  ],
+  [
+   44,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'amzn '",
+   "AMZN"
+  ],
+  [
+   45,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' Amzn'",
+   "AMZN"
+  ],
+  [
+   45,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$181,519",
+   "181519"
+  ],
+  [
+   46,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'AMZN '",
+   "AMZN"
+  ],
+  [
+   47,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Mar-26",
+   "2026-03-31"
+  ],
+  [
+   48,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Mar-26",
+   "2026-03-31"
+  ],
+  [
+   49,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'amzn '",
+   "AMZN"
+  ],
+  [
+   49,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "06/30/2026",
+   "2026-06-30"
+  ],
+  [
+   50,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'amzn'",
+   "AMZN"
+  ],
+  [
+   50,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$27,461",
+   "27461"
+  ],
+  [
+   52,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'meta'",
+   "META"
+  ],
+  [
+   52,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2024",
+   "2024-09-30"
+  ],
+  [
+   53,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'Meta '",
+   "META"
+  ],
+  [
+   53,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2024",
+   "2024-09-30"
+  ],
+  [
+   54,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'meta '",
+   "META"
+  ],
+  [
+   54,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Sep-24",
+   "2024-09-30"
+  ],
+  [
+   55,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'meta'",
+   "META"
+  ],
+  [
+   55,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Dec-24",
+   "2024-12-31"
+  ],
+  [
+   55,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$48,385,000",
+   "4.8385e+07"
+  ],
+  [
+   56,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' META'",
+   "META"
+  ],
+  [
+   56,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$23,364,000",
+   "2.3364e+07"
+  ],
+  [
+   57,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' META'",
+   "META"
+  ],
+  [
+   57,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$20,838,000",
+   "2.0838e+07"
+  ],
+  [
+   58,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' META'",
+   "META"
+  ],
+  [
+   58,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "03/31/2025",
+   "2025-03-31"
+  ],
+  [
+   59,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$17,555",
+   "17555"
+  ],
+  [
+   60,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'meta '",
+   "META"
+  ],
+  [
+   60,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Mar-25",
+   "2025-03-31"
+  ],
+  [
+   61,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$47,516",
+   "47516"
+  ],
+  [
+   62,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Jun-25",
+   "2025-06-30"
+  ],
+  [
+   62,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$20,441",
+   "20441"
+  ],
+  [
+   63,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'Meta '",
+   "META"
+  ],
+  [
+   63,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "06/30/2025",
+   "2025-06-30"
+  ],
+  [
+   64,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' META'",
+   "META"
+  ],
+  [
+   64,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2025",
+   "2025-09-30"
+  ],
+  [
+   64,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$51,242,000",
+   "5.1242e+07"
+  ],
+  [
+   65,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'Meta '",
+   "META"
+  ],
+  [
+   65,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2025",
+   "2025-09-30"
+  ],
+  [
+   66,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'meta '",
+   "META"
+  ],
+  [
+   66,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2025",
+   "2025-09-30"
+  ],
+  [
+   67,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'meta'",
+   "META"
+  ],
+  [
+   67,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$59,893",
+   "59893"
+  ],
+  [
+   68,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' META'",
+   "META"
+  ],
+  [
+   68,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "12/31/2025",
+   "2025-12-31"
+  ],
+  [
+   68,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$24,745",
+   "24745"
+  ],
+  [
+   69,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'meta'",
+   "META"
+  ],
+  [
+   70,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'meta'",
+   "META"
+  ],
+  [
+   70,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "03/31/2026",
+   "2026-03-31"
+  ],
+  [
+   70,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$56,311",
+   "56311"
+  ],
+  [
+   71,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'meta '",
+   "META"
+  ],
+  [
+   71,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "03/31/2026",
+   "2026-03-31"
+  ],
+  [
+   71,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$22,872",
+   "22872"
+  ],
+  [
+   72,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'Meta '",
+   "META"
+  ],
+  [
+   72,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "03/31/2026",
+   "2026-03-31"
+  ],
+  [
+   73,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' META'",
+   "META"
+  ],
+  [
+   73,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "06/30/2026",
+   "2026-06-30"
+  ],
+  [
+   74,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'meta'",
+   "META"
+  ],
+  [
+   74,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Jun-26",
+   "2026-06-30"
+  ],
+  [
+   75,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' META'",
+   "META"
+  ],
+  [
+   75,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Jun-26",
+   "2026-06-30"
+  ],
+  [
+   75,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$15,848",
+   "15848"
+  ],
+  [
+   76,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2024",
+   "2024-09-30"
+  ],
+  [
+   77,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'MSFT '",
+   "MSFT"
+  ],
+  [
+   77,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2024",
+   "2024-09-30"
+  ],
+  [
+   78,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2024",
+   "2024-09-30"
+  ],
+  [
+   79,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' Msft'",
+   "MSFT"
+  ],
+  [
+   80,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'msft'",
+   "MSFT"
+  ],
+  [
+   80,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Dec-24",
+   "2024-12-31"
+  ],
+  [
+   81,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "12/31/2024",
+   "2024-12-31"
+  ],
+  [
+   82,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' Msft'",
+   "MSFT"
+  ],
+  [
+   82,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "12/31/2024",
+   "2024-12-31"
+  ],
+  [
+   82,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$24,108",
+   "24108"
+  ],
+  [
+   83,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'MSFT '",
+   "MSFT"
+  ],
+  [
+   84,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'MSFT '",
+   "MSFT"
+  ],
+  [
+   85,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'msft'",
+   "MSFT"
+  ],
+  [
+   86,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Mar-25",
+   "2025-03-31"
+  ],
+  [
+   87,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'msft '",
+   "MSFT"
+  ],
+  [
+   87,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "06/30/2025",
+   "2025-06-30"
+  ],
+  [
+   87,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$76,441",
+   "76441"
+  ],
+  [
+   88,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'msft'",
+   "MSFT"
+  ],
+  [
+   88,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "06/30/2025",
+   "2025-06-30"
+  ],
+  [
+   88,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$34,323",
+   "34323"
+  ],
+  [
+   89,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'msft'",
+   "MSFT"
+  ],
+  [
+   89,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Jun-25",
+   "2025-06-30"
+  ],
+  [
+   90,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'MSFT '",
+   "MSFT"
+  ],
+  [
+   90,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$77,673",
+   "77673"
+  ],
+  [
+   91,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'msft '",
+   "MSFT"
+  ],
+  [
+   91,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "09/30/2025",
+   "2025-09-30"
+  ],
+  [
+   92,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'msft'",
+   "MSFT"
+  ],
+  [
+   92,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "30-Sep-25",
+   "2025-09-30"
+  ],
+  [
+   93,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'msft '",
+   "MSFT"
+  ],
+  [
+   93,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$81,273",
+   "81273"
+  ],
+  [
+   94,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "12/31/2025",
+   "2025-12-31"
+  ],
+  [
+   95,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'MSFT '",
+   "MSFT"
+  ],
+  [
+   95,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "12/31/2025",
+   "2025-12-31"
+  ],
+  [
+   96,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' Msft'",
+   "MSFT"
+  ],
+  [
+   96,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "03/31/2026",
+   "2026-03-31"
+  ],
+  [
+   97,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'msft'",
+   "MSFT"
+  ],
+  [
+   97,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Mar-26",
+   "2026-03-31"
+  ],
+  [
+   97,
+   "value",
+   "text-to-number (strip $ and thousands commas)",
+   "$38,398",
+   "38398"
+  ],
+  [
+   98,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'MSFT '",
+   "MSFT"
+  ],
+  [
+   98,
+   "period_end",
+   "date DD-Mon-YY -> YYYY-MM-DD",
+   "31-Mar-26",
+   "2026-03-31"
+  ],
+  [
+   99,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'MSFT '",
+   "MSFT"
+  ],
+  [
+   99,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "06/30/2026",
+   "2026-06-30"
+  ],
+  [
+   100,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "' Msft'",
+   "MSFT"
+  ],
+  [
+   100,
+   "period_end",
+   "date MM/DD/YYYY -> YYYY-MM-DD",
+   "06/30/2026",
+   "2026-06-30"
+  ],
+  [
+   101,
+   "ticker",
+   "standardize ticker (trim/upper)",
+   "'msft '",
+   "MSFT"
+  ]
+ ],
+ "stats": {
+  "ticker": 81,
+  "date": 70,
+  "t2n": 32
+ },
+ "fmt": {
+  "DD-Mon-YY": 32,
+  "MM/DD/YYYY": 38,
+  "ISO": 30
+ },
+ "notes": {
+  "text": 43,
+  "numeric": 22,
+  "blank": 35
+ }
+}

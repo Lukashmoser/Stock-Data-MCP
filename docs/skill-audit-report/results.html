@@ -1,0 +1,168 @@
+<title>Stock-Data MCP Results</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one-column research memo; verdict first, then the scorecard ledger, then findings. Same family as the R0 reference sheet. */
+:root{
+  --bg:#f6f7f5; --panel:#ffffff; --ink:#1b2321; --muted:#5d6966; --rule:#d9dfdc; --accent:#0f6b5c; --accent-soft:#dcefe9;
+  --warn:#a2560b; --warn-bg:#fbf0e2; --neg:#a3352b; --neg-bg:#f8e3e0; --zebra:#f0f3f1;
+  --s2:#ffffff; --s1:#f6ecd8; --s0:#f3d9d4;
+  --display:"Newsreader",Georgia,"Times New Roman",serif; --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121816;--panel:#19211f;--ink:#e3ebe8;--muted:#93a29e;--rule:#2c3835;--accent:#5cc7b2;--accent-soft:#1c3530;--warn:#f0b061;--warn-bg:#2b2116;--neg:#f08b80;--neg-bg:#3a1f1c;--zebra:#1d2624;--s2:#19211f;--s1:#3a2f1a;--s0:#45231f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121816;--panel:#19211f;--ink:#e3ebe8;--muted:#93a29e;--rule:#2c3835;--accent:#5cc7b2;--accent-soft:#1c3530;--warn:#f0b061;--warn-bg:#2b2116;--neg:#f08b80;--neg-bg:#3a1f1c;--zebra:#1d2624;--s2:#19211f;--s1:#3a2f1a;--s0:#45231f;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:1080px;margin:0 auto}
+header{padding-block:40px 24px;border-bottom:2px solid var(--ink)}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font:600 clamp(30px,5vw,44px)/1.1 var(--display);margin:10px 0 14px;text-wrap:balance}
+.lede{max-width:70ch;margin:0;font-size:17px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 26px;font:13px/1.4 var(--mono);color:var(--muted);margin-top:16px}
+.meta b{color:var(--ink);font-weight:500}
+.verdict{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:24px}
+.v{background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:14px 16px;min-width:0}
+.v .k{font:500 12px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.v .n{font:600 30px/1.15 var(--display);margin-top:6px;font-variant-numeric:tabular-nums}
+.v .n small{font:400 15px var(--body);color:var(--muted)}
+.v p{margin:4px 0 0;font-size:13px;color:var(--muted)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:2;background:var(--bg);border-bottom:1px solid var(--rule);display:flex;gap:4px 18px;flex-wrap:wrap;padding-block:10px;font:500 13px var(--body)}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover,nav a:focus-visible{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section{padding-top:36px}
+h2{font:600 26px/1.2 var(--display);margin:0 0 6px}
+h3{font:600 13px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:22px 0 8px}
+.sub{color:var(--muted);margin:0 0 14px;max-width:80ch;font-size:14px}
+.tw{overflow-x:auto;background:var(--panel);border:1px solid var(--rule);border-radius:3px}
+table{border-collapse:collapse;width:100%;font:13px/1.35 var(--mono);font-variant-numeric:tabular-nums}
+th{font:600 11.5px/1.3 var(--body);color:var(--muted);padding:8px 8px;border-bottom:1px solid var(--rule);white-space:nowrap;text-align:center;vertical-align:bottom}
+th.grp{border-bottom:1px solid var(--rule);font-size:12px;color:var(--ink)}
+td{padding:6px 8px;text-align:center;border-bottom:1px solid var(--rule);white-space:nowrap}
+td.id{font-weight:500;text-align:left}
+td.sk{font-family:var(--body);text-align:left;color:var(--muted)}
+td.pair{border-right:1px solid var(--rule)}
+td.s2{background:var(--s2)} td.s1{background:var(--s1)} td.s0{background:var(--s0);font-weight:600}
+td.tot{font-weight:600}
+td.delta{text-align:left;min-width:96px}
+td.delta.pos{color:var(--accent)} td.delta.neg{color:var(--neg)} td.delta.zero{color:var(--muted)}
+.bar{display:inline-block;height:9px;border-radius:1px;margin-left:8px;vertical-align:middle}
+.bar.pos{background:var(--accent)} .bar.neg{background:var(--neg)}
+.dot{display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--rule);margin-left:8px;vertical-align:middle}
+td.mcp{color:var(--muted)}
+tr.adjrow td{text-align:left;white-space:normal;font:12.5px/1.45 var(--body);color:var(--warn);padding-top:0;border-bottom:1px solid var(--rule)}
+tfoot td{font-weight:600;border-top:2px solid var(--ink);border-bottom:0}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font:12px var(--mono);color:var(--muted);margin-top:10px}
+.legend span{display:inline-flex;gap:6px;align-items:center}
+.sw{width:14px;height:14px;border:1px solid var(--rule);display:inline-block}
+.findings{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.findings li{background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:12px 14px;display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:baseline}
+.findings li>div{min-width:0}
+.tag{font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:2px;justify-self:start}
+.t-bug{color:var(--neg);background:var(--neg-bg)}
+.t-gap{color:var(--warn);background:var(--warn-bg)}
+.t-win{color:var(--accent);background:var(--accent-soft)}
+.t-info{color:var(--muted);border:1px solid var(--rule)}
+.prose{max-width:72ch}
+.prose p{margin:0 0 10px}
+.ktab td,.ktab th{text-align:left;white-space:normal}
+.ktab td:first-child{white-space:nowrap;font-weight:500}
+@media (max-width:560px){.findings li{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Skill comparison · Equity Research + Financial Analysis plugins</div>
+  <h1>Stock-Data MCP results</h1>
+  <p class="lede">With the stock-data tools on, the skills scored 237 of 240 against 221 without them. The gain came from freshness, sourcing and a few accuracy misses. The difference showed in 11 of 24 tests and was zero on the control. Without the tools, Claude still got most figures right from web pages and filings, but it took far more fetches, leaned on memory more often, and sometimes used stale prices.</p>
+  <div class="meta">
+    <span>Runs <b>2026-10-14 to 10-16 UTC</b></span>
+    <span>Tests <b>24 × 2 arms</b></span>
+    <span>Scored by <b>4 separate judge agents</b></span>
+    <span>References <b>R0, R0b, R0c + fixture keys</b></span>
+  </div>
+  <div class="verdict">
+    <div class="v"><div class="k">Arm B · MCP on</div><div class="n">237 <small>/ 240</small></div><p>98.8% of available points</p></div>
+    <div class="v"><div class="k">Arm A · MCP off</div><div class="n">221 <small>/ 240</small></div><p>92.1% of available points</p></div>
+    <div class="v"><div class="k">Tests where B &gt; A</div><div class="n">10 <small>of 24</small></div><p>13 tied, 1 where A &gt; B</p></div>
+    <div class="v"><div class="k">Control (FA-10)</div><div class="n">0 <small>Δ</small></div><p>No run-to-run noise to discount</p></div>
+  </div>
+</header>
+<nav><a href="#scorecard">Scorecard</a><a href="#where">Where it mattered</a><a href="#bugs">MCP issues</a><a href="#keys">Fixture keys</a><a href="#fa13">FA-13 follow-up</a><a href="#method">Method &amp; deviations</a></nav>
+
+<section id="scorecard">
+<h2>Scorecard</h2>
+<p class="sub">Each arm scored 0–2 per dimension using the protocol's rubric (section 7.2). Fabrication is inverted: 2 means no wrong figure was stated with High confidence. Two rows differ from the judges' raw scores because the reference value itself was wrong; the note under each says why. The judges' original scores are kept in <code>scores/scorecard.json</code>.</p>
+<div class="tw"><table>
+<thead>
+<tr><th rowspan="2" style="text-align:left">ID</th><th rowspan="2" style="text-align:left">Skill</th><th class="grp" colspan="2">Accuracy</th><th class="grp" colspan="2">Freshness</th><th class="grp" colspan="2">Sourcing</th><th class="grp" colspan="2">Complete</th><th class="grp" colspan="2">Fabrication</th><th class="grp" colspan="2">Total</th><th rowspan="2" style="text-align:left">Δ B−A</th><th rowspan="2">MCP used</th></tr>
+<tr><th>A</th><th>B</th><th>A</th><th>B</th><th>A</th><th>B</th><th>A</th><th>B</th><th>A</th><th>B</th><th>A</th><th>B</th></tr>
+</thead>
+<tbody><tr><td class="id">ER-01</td><td class="sk">catalyst-calendar</td><td class="s0">0</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">7</td><td class="tot">10</td><td class="delta pos">+3<span class="bar pos" style="width:42px"></span></td><td class="mcp">yes</td></tr><tr class="adjrow"><td></td><td colspan="15">↳ Reference correction: R0&#x27;s quote listed AAPL&#x27;s 52-week high as 345.34 while showing a 348.15 day high the same day, and Yahoo rolled GOOGL&#x27;s 52-week window minutes later. B&#x27;s 348.15 and 244.15 were right at fetch time.</td></tr><tr><td class="id">ER-02</td><td class="sk">earnings-preview</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">9</td><td class="tot">10</td><td class="delta pos">+1<span class="bar pos" style="width:14px"></span></td><td class="mcp">yes</td></tr><tr><td class="id">ER-03</td><td class="sk">earnings-analysis</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">ER-04</td><td class="sk">initiating-coverage T1</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">9</td><td class="tot">10</td><td class="delta pos">+1<span class="bar pos" style="width:14px"></span></td><td class="mcp">yes</td></tr><tr class="adjrow"><td></td><td colspan="15">↳ Reference correction: R0&#x27;s AMD FCF (6,735) is OCF minus capex including discontinued operations; both arms&#x27; 5,519 is AMD&#x27;s reported figure. Counted as correct.</td></tr><tr><td class="id">ER-05</td><td class="sk">initiating-coverage T2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">ER-06</td><td class="sk">initiating-coverage T3</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">ER-07</td><td class="sk">model-update</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">9</td><td class="tot">10</td><td class="delta pos">+1<span class="bar pos" style="width:14px"></span></td><td class="mcp">yes</td></tr><tr><td class="id">ER-08</td><td class="sk">morning-note</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">ER-09</td><td class="sk">idea-generation</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">ER-10</td><td class="sk">sector-overview</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="tot">7</td><td class="tot">10</td><td class="delta pos">+3<span class="bar pos" style="width:42px"></span></td><td class="mcp">yes</td></tr><tr><td class="id">ER-11</td><td class="sk">thesis-tracker</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-01</td><td class="sk">3-statement-model</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-02</td><td class="sk">competitive-analysis</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">7</td><td class="tot">10</td><td class="delta pos">+3<span class="bar pos" style="width:42px"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-03</td><td class="sk">comps-analysis</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-04</td><td class="sk">dcf-model</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-05</td><td class="sk">audit-xls</td><td class="s1">1</td><td class="s1 pair">1</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">7</td><td class="tot">9</td><td class="delta pos">+2<span class="bar pos" style="width:28px"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-06</td><td class="sk">lbo-model</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">9</td><td class="tot">10</td><td class="delta pos">+1<span class="bar pos" style="width:14px"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-07</td><td class="sk">clean-data-xls</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">8</td><td class="tot">10</td><td class="delta pos">+2<span class="bar pos" style="width:28px"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-08</td><td class="sk">deck-refresh</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-09</td><td class="sk">ib-check-deck</td><td class="s2">2</td><td class="s1 pair">1</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s1 pair">1</td><td class="tot">10</td><td class="tot">8</td><td class="delta neg">-2<span class="bar neg" style="width:28px"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-10</td><td class="sk">ppt-template-creator (control)</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">no</td></tr><tr><td class="id">FA-11</td><td class="sk">pptx-author</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-12</td><td class="sk">xlsx-author</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">10</td><td class="tot">10</td><td class="delta zero">+0<span class="dot"></span></td><td class="mcp">yes</td></tr><tr><td class="id">FA-13</td><td class="sk">skill-creator</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="s1">1</td><td class="s2 pair">2</td><td class="s2">2</td><td class="s2 pair">2</td><td class="tot">9</td><td class="tot">10</td><td class="delta pos">+1<span class="bar pos" style="width:14px"></span></td><td class="mcp">yes</td></tr></tbody>
+<tfoot><tr><td colspan="2" style="text-align:left">All 24 tests</td><td>42</td><td>46</td><td>43</td><td>48</td><td>42</td><td>48</td><td>47</td><td>48</td><td>47</td><td>47</td><td>221</td><td>237</td><td style="text-align:left;color:var(--accent)">+16</td><td></td></tr></tfoot>
+</table></div>
+<div class="legend"><span><i class="sw" style="background:var(--s2)"></i>2</span><span><i class="sw" style="background:var(--s1)"></i>1</span><span><i class="sw" style="background:var(--s0)"></i>0</span><span>"MCP used" = arm B called stock-data tools on its own (the prompts never mention them)</span></div>
+</section>
+
+<section id="where">
+<h2>Where the MCP made a difference</h2>
+<p class="sub">Freshness (+5) and sourcing (+6) account for most of the gap. On accuracy, arm A was usually right too, because the latest filings and prices are on the open web. It got there with three to ten times as many fetches, and it fell back on memory or stale caches more often.</p>
+<ul class="findings">
+<li><span class="tag t-win">ER-01 +3</span><div>Catalyst calendar. Arm A computed 52-week positions from closing-price ranges off an aggregator, so all eight "% of range" figures fell outside tolerance. It also missed later 8-Ks for GOOGL and NVDA because EDGAR was blocked from the workspace.</div></li>
+<li><span class="tag t-win">ER-10 +3</span><div>Sector overview. Arm A took every Apple figure from memory and used a different META capex definition marked High confidence. Arm B built all 33 figures from 52 tool calls and no web search.</div></li>
+<li><span class="tag t-win">FA-02 +3</span><div>Competitive analysis. Arm A's META market cap came from a cached Google Finance page dated 09-25, and its RDDT cap was 3% off. Arm B's were exact.</div></li>
+<li><span class="tag t-win">FA-05 +2 · FA-07 +2</span><div>Audit and data cleaning. Both arms caught every planted error. Arm A checked FY2023–25 historicals from memory, and in FA-07 it "corrected" two values that were already right (1-unit rounding). Arm B checked every cell against XBRL.</div></li>
+<li><span class="tag t-win">ER-02, ER-04, ER-07, FA-06, FA-13 +1</span><div>Smaller gaps: memory-sourced post-earnings moves (ER-02), a day-old MSFT price (ER-07), a one-day-old HY spread (FA-06). For FA-13, arm A's generated skill couldn't parse the real tool output because the tools were hidden while it was written.</div></li>
+<li><span class="tag t-bug">FA-09 −2</span><div>The only test arm A won, and the cause is an MCP bug. Arm B reported ZM's 10-15 move as +5.6% with High confidence; the real move was +4.28%, because <code>get_quote</code> returned a wrong <code>prev_close</code> that day.</div></li>
+<li><span class="tag t-info">Ties (13)</span><div>ER-03, ER-05, ER-06, ER-08, ER-09, ER-11, FA-01, FA-03, FA-04, FA-08, FA-10, FA-11, FA-12 scored the same. Effort did not tie: ER-05 arm A needed 23 SEC page fetches against arm B's 4 tool calls, FA-03 45 fetches, FA-12 18 against 2.</div></li>
+</ul>
+</section>
+
+<section id="bugs">
+<h2>Issues found in the MCP</h2>
+<p class="sub">These are for the stock-data repo. None caused a tool error; each returned plausible-looking data.</p>
+<ul class="findings">
+<li><span class="tag t-bug">Bug</span><div><b><code>get_quote</code> prev_close wrong on 2026-10-15</b>, so <code>change</code> and <code>change_pct</code> were wrong for every ticker checked. QQQ showed +0.82% on a −0.13% day; MSFT +1.65% against +1.08%. Price and market cap were correct. Verified against <code>get_price_history</code>. The value was right on 10-13 and 10-14.</div></li>
+<li><span class="tag t-bug">Bug</span><div><b>Stale 52-week fields.</b> On 10-13, AAPL's quote showed a 348.15 day high but kept 345.34 as the 52-week high. Consider deriving 52-week high/low from price history instead of trusting the quote field.</div></li>
+<li><span class="tag t-gap">Gap</span><div><b>D&amp;A missing</b> for MSFT, GOOGL, ORCL and AMD, so EBITDA (comps, DCF, LBO) needed a filing or the web in both arms. <b>Debt lines missing</b> for ORCL, ADBE, QCOM, IBM and NFLX (ER-09 arm B patched six from sec.gov).</div></li>
+<li><span class="tag t-gap">Gap</span><div><b>Derived Q4 quarters return null EPS and share counts.</b> Every Q4-sensitive test had to compute them (ER-07, FA-11).</div></li>
+<li><span class="tag t-gap">Gap</span><div><b><code>free_cash_flow</code> includes discontinued operations.</b> For AMD FY2025 the tool gives 6,735 against the company's 5,519.</div></li>
+<li><span class="tag t-gap">Gap</span><div><b><code>get_filings</code> returns 10-K/A ahead of the original 10-K</b> by default (AMD). Large-cap filing lists are dominated by Forms 4 and 144, so a 40-row call can miss every periodic filing (META in the FA-13 follow-up).</div></li>
+<li><span class="tag t-info">Info</span><div>Arm B found the tools on its own in 23 of 23 market-data tests, and correctly didn't call them on the FA-10 control. Several runs hit transient bridge disconnects on their first calls and recovered on retry.</div></li>
+</ul>
+</section>
+
+<section id="keys">
+<h2>Fixture answer-key hits</h2>
+<div class="tw"><table class="ktab">
+<thead><tr><th>Test</th><th>Arm A (MCP off)</th><th>Arm B (MCP on)</th></tr></thead>
+<tbody>
+<tr><td>FA-05 audit</td><td>3/3 data + 4/4 formula</td><td>3/3 data + 4/4 formula; also flagged the stale price</td></tr>
+<tr><td>FA-07 clean data</td><td>formatting 4/4; units 6/6 rows (5/6 exact); wrong values 2/2; <b>2 false positives</b></td><td>formatting 4/4; units 6/6 rows (6/6 exact); wrong values 2/2; 0 false positives</td></tr>
+<tr><td>FA-08 deck refresh</td><td>0 old values missed; 12/12 new values; FY2026 bar clipped at axis 320</td><td>0 old values missed; 12/12 new values; axis rescaled to 400</td></tr>
+<tr><td>FA-09 deck QC</td><td>X 2/2; I/N/L 8/8</td><td>X 2/2; I/N/L 8/8; plus a valid catch (the $80.01 "10/13/2025 close" is the week-of close); one wrong figure from the MCP bug</td></tr>
+<tr><td>ER-07 model update</td><td>6/6 actuals; prior estimates 6/6; cited 8-K date</td><td>6/6 actuals; prior estimates 6/6; cited 10-K date</td></tr>
+</tbody></table></div>
+<p class="sub" style="margin-top:10px">The fixture tests show the MCP's limits clearly. The formula errors and planted inconsistencies were caught equally by both arms. The MCP helped only on checks against external data, and even there arm A usually got the answer from earnings releases.</p>
+</section>
+
+<section id="fa13">
+<h2>FA-13 follow-up: did the generated skill work?</h2>
+<div class="prose">
+<p>Each arm's <code>weekly-watchlist-review</code> skill was installed and run on AAPL, NVDA and META with the tools on. Neither produced a fully correct table without help, but arm B's came much closer.</p>
+<p><b>Arm A's skill</b> was written without seeing the tool schemas. Run as written, it silently returned n/a for 1W, 1M and 52-week position on every name, because its parser didn't recognise the real <code>get_price_history</code> output shape. It was correct only after the reshape step its own reference doc describes.</p>
+<p><b>Arm B's skill</b> ran exactly as written: correct tool names and parameters, all numbers right. Its one wrong cell was META's latest SEC filing, left blank and unflagged, because 40 rows of Forms 4/144 crowded out every periodic filing.</p>
+</div>
+</section>
+
+<section id="method">
+<h2>Method and deviations</h2>
+<ul class="findings">
+<li><span class="tag t-info">Setup</span><div>Each run was a separate agent with no shared memory, not a fresh chat. Arm A was told the stock-data tools were off rather than having them removed, so it knew they existed. It never called them, which the judges confirmed from run logs and work folders. Canned replies C1–C3 were given up front, since agents can't pause.</div></li>
+<li><span class="tag t-info">Timing</span><div>Runs spanned three trading days because of usage-limit pauses: ER-01 to ER-11 and FA-02 on the 10-13 close (R0), FA-01 and FA-03 to FA-05 on 10-14 (R0b), FA-06 to FA-13 on 10-15 (R0c). Both arms of each test always ran together.</div></li>
+<li><span class="tag t-gap">Caveat</span><div>ER-10 arm A accidentally ran a build script arm B had left in a shared scratch folder, then rebuilt its own outputs. The judge found none of B's distinctive figures in A's work. All later runs used private work folders.</div></li>
+<li><span class="tag t-gap">Caveat</span><div>Single run per arm, so there's no variance estimate beyond the control. The control showed zero difference, so the 16-point gap is unlikely to be noise, but per-test gaps of 1 point are within what a second run could flip.</div></li>
+<li><span class="tag t-info">Files</span><div>Transcripts, deliverables, fixtures, keys, judge files and <code>scorecard.md</code> are in the results bundle (<code>skill_comparison_2026-10-13.zip</code>).</div></li>
+</ul>
+</section>
+</div>

@@ -1,0 +1,196 @@
+source_row,column,change,before,after
+2,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Sep-24,2024-09-30
+2,ticker,standardize ticker (trim/upper),'googl',GOOGL
+2,value,text-to-number (strip $ and thousands commas),"$88,268",88268
+3,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2024,2024-09-30
+3,value,text-to-number (strip $ and thousands commas),"$28,521",28521
+4,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Sep-24,2024-09-30
+4,ticker,standardize ticker (trim/upper),' googl',GOOGL
+5,ticker,standardize ticker (trim/upper),' googl',GOOGL
+6,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Dec-24,2024-12-31
+7,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Dec-24,2024-12-31
+7,row,removed: exact duplicate (after normalization) of source row 6,,(deleted)
+8,ticker,standardize ticker (trim/upper),'googl',GOOGL
+9,ticker,standardize ticker (trim/upper),' googl',GOOGL
+10,ticker,standardize ticker (trim/upper),'GOOGL ',GOOGL
+11,period_end,date MM/DD/YYYY -> YYYY-MM-DD,03/31/2025,2025-03-31
+11,ticker,standardize ticker (trim/upper),'googl',GOOGL
+11,value,value does not match SEC filing; replaced with reported figure,"30,395","34,540"
+12,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Jun-25,2025-06-30
+12,ticker,standardize ticker (trim/upper),'googl',GOOGL
+13,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Jun-25,2025-06-30
+13,ticker,standardize ticker (trim/upper),'googl',GOOGL
+14,period_end,date MM/DD/YYYY -> YYYY-MM-DD,06/30/2025,2025-06-30
+14,ticker,standardize ticker (trim/upper),' googl',GOOGL
+15,ticker,standardize ticker (trim/upper),' googl',GOOGL
+16,ticker,standardize ticker (trim/upper),'GOOGL ',GOOGL
+17,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Sep-25,2025-09-30
+17,ticker,standardize ticker (trim/upper),'googl',GOOGL
+18,period_end,date MM/DD/YYYY -> YYYY-MM-DD,12/31/2025,2025-12-31
+18,ticker,standardize ticker (trim/upper),'GOOGL ',GOOGL
+19,ticker,standardize ticker (trim/upper),'googl',GOOGL
+20,period_end,date MM/DD/YYYY -> YYYY-MM-DD,12/31/2025,2025-12-31
+20,ticker,standardize ticker (trim/upper),' googl',GOOGL
+20,value,text-to-number (strip $ and thousands commas),"$34,455",34455
+21,ticker,standardize ticker (trim/upper),'googl',GOOGL
+22,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Mar-26,2026-03-31
+22,value,text-to-number (strip $ and thousands commas),"$39,696",39696
+23,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Mar-26,2026-03-31
+23,ticker,standardize ticker (trim/upper),'googl',GOOGL
+24,period_end,date MM/DD/YYYY -> YYYY-MM-DD,06/30/2026,2026-06-30
+24,ticker,standardize ticker (trim/upper),'googl',GOOGL
+25,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Jun-26,2026-06-30
+26,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Jun-26,2026-06-30
+27,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Sep-24,2024-09-30
+27,ticker,standardize ticker (trim/upper),'AMZN ',AMZN
+28,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Sep-24,2024-09-30
+28,ticker,standardize ticker (trim/upper),'amzn ',AMZN
+28,value,text-to-number (strip $ and thousands commas),"$17,411",17411
+29,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2024,2024-09-30
+29,ticker,standardize ticker (trim/upper),'amzn ',AMZN
+29,value,text-to-number (strip $ and thousands commas),"$15,328",15328
+30,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Dec-24,2024-12-31
+30,ticker,standardize ticker (trim/upper),' Amzn',AMZN
+31,ticker,standardize ticker (trim/upper),' Amzn',AMZN
+32,ticker,standardize ticker (trim/upper),' Amzn',AMZN
+32,value,text-to-number (strip $ and thousands commas),"$20,004",20004
+33,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Mar-25,2025-03-31
+33,ticker,standardize ticker (trim/upper),'amzn ',AMZN
+33,value,text-to-number (strip $ and thousands commas),"$155,667",155667
+34,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Mar-25,2025-03-31
+34,ticker,standardize ticker (trim/upper),' Amzn',AMZN
+35,ticker,standardize ticker (trim/upper),'amzn',AMZN
+36,period_end,date MM/DD/YYYY -> YYYY-MM-DD,06/30/2025,2025-06-30
+36,ticker,standardize ticker (trim/upper),'amzn',AMZN
+36,value,text-to-number (strip $ and thousands commas),"$167,702",167702
+37,ticker,standardize ticker (trim/upper),' Amzn',AMZN
+38,period_end,date MM/DD/YYYY -> YYYY-MM-DD,06/30/2025,2025-06-30
+38,ticker,standardize ticker (trim/upper),'AMZN ',AMZN
+38,value,text-to-number (strip $ and thousands commas),"$18,164",18164
+39,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2025,2025-09-30
+39,ticker,standardize ticker (trim/upper),'amzn',AMZN
+39,value,text-to-number (strip $ and thousands commas),"$201,789",201789
+39,value,value does not match SEC filing; replaced with reported figure,"201,789","180,169"
+40,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Sep-25,2025-09-30
+40,ticker,standardize ticker (trim/upper),'amzn',AMZN
+41,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2025,2025-09-30
+42,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Dec-25,2025-12-31
+42,ticker,standardize ticker (trim/upper),'amzn',AMZN
+42,value,text-to-number (strip $ and thousands commas),"$213,386",213386
+43,period_end,date MM/DD/YYYY -> YYYY-MM-DD,12/31/2025,2025-12-31
+44,ticker,standardize ticker (trim/upper),'amzn ',AMZN
+45,ticker,standardize ticker (trim/upper),' Amzn',AMZN
+45,value,text-to-number (strip $ and thousands commas),"$181,519",181519
+46,ticker,standardize ticker (trim/upper),'AMZN ',AMZN
+47,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Mar-26,2026-03-31
+48,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Mar-26,2026-03-31
+48,row,removed: exact duplicate (after normalization) of source row 47,,(deleted)
+49,period_end,date MM/DD/YYYY -> YYYY-MM-DD,06/30/2026,2026-06-30
+49,ticker,standardize ticker (trim/upper),'amzn ',AMZN
+50,ticker,standardize ticker (trim/upper),'amzn',AMZN
+50,value,text-to-number (strip $ and thousands commas),"$27,461",27461
+52,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2024,2024-09-30
+52,ticker,standardize ticker (trim/upper),'meta',META
+53,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2024,2024-09-30
+53,ticker,standardize ticker (trim/upper),'Meta ',META
+54,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Sep-24,2024-09-30
+54,ticker,standardize ticker (trim/upper),'meta ',META
+55,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Dec-24,2024-12-31
+55,ticker,standardize ticker (trim/upper),'meta',META
+55,value,text-to-number (strip $ and thousands commas),"$48,385,000",4.8385e+07
+55,value,unit error: USD thousands -> USD millions,"48,385,000","48,385"
+56,ticker,standardize ticker (trim/upper),' META',META
+56,value,text-to-number (strip $ and thousands commas),"$23,364,000",2.3364e+07
+56,value,unit error: USD thousands -> USD millions,"23,364,000","23,364"
+57,ticker,standardize ticker (trim/upper),' META',META
+57,value,text-to-number (strip $ and thousands commas),"$20,838,000",2.0838e+07
+57,value,unit error: USD thousands -> USD millions,"20,838,000","20,838"
+58,period_end,date MM/DD/YYYY -> YYYY-MM-DD,03/31/2025,2025-03-31
+58,ticker,standardize ticker (trim/upper),' META',META
+59,value,text-to-number (strip $ and thousands commas),"$17,555",17555
+60,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Mar-25,2025-03-31
+60,ticker,standardize ticker (trim/upper),'meta ',META
+61,value,text-to-number (strip $ and thousands commas),"$47,516",47516
+62,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Jun-25,2025-06-30
+62,value,text-to-number (strip $ and thousands commas),"$20,441",20441
+63,period_end,date MM/DD/YYYY -> YYYY-MM-DD,06/30/2025,2025-06-30
+63,ticker,standardize ticker (trim/upper),'Meta ',META
+64,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2025,2025-09-30
+64,ticker,standardize ticker (trim/upper),' META',META
+64,value,text-to-number (strip $ and thousands commas),"$51,242,000",5.1242e+07
+64,value,unit error: USD thousands -> USD millions,"51,242,000","51,242"
+65,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2025,2025-09-30
+65,ticker,standardize ticker (trim/upper),'Meta ',META
+65,value,unit error: USD thousands -> USD millions,"20,535,000","20,535"
+66,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2025,2025-09-30
+66,ticker,standardize ticker (trim/upper),'meta ',META
+66,value,unit error: USD thousands -> USD millions,"2,709,000","2,709"
+67,ticker,standardize ticker (trim/upper),'meta',META
+67,value,text-to-number (strip $ and thousands commas),"$59,893",59893
+68,period_end,date MM/DD/YYYY -> YYYY-MM-DD,12/31/2025,2025-12-31
+68,ticker,standardize ticker (trim/upper),' META',META
+68,value,text-to-number (strip $ and thousands commas),"$24,745",24745
+69,ticker,standardize ticker (trim/upper),'meta',META
+70,period_end,date MM/DD/YYYY -> YYYY-MM-DD,03/31/2026,2026-03-31
+70,ticker,standardize ticker (trim/upper),'meta',META
+70,value,text-to-number (strip $ and thousands commas),"$56,311",56311
+71,period_end,date MM/DD/YYYY -> YYYY-MM-DD,03/31/2026,2026-03-31
+71,ticker,standardize ticker (trim/upper),'meta ',META
+71,value,text-to-number (strip $ and thousands commas),"$22,872",22872
+72,period_end,date MM/DD/YYYY -> YYYY-MM-DD,03/31/2026,2026-03-31
+72,ticker,standardize ticker (trim/upper),'Meta ',META
+73,period_end,date MM/DD/YYYY -> YYYY-MM-DD,06/30/2026,2026-06-30
+73,ticker,standardize ticker (trim/upper),' META',META
+74,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Jun-26,2026-06-30
+74,ticker,standardize ticker (trim/upper),'meta',META
+75,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Jun-26,2026-06-30
+75,ticker,standardize ticker (trim/upper),' META',META
+75,value,text-to-number (strip $ and thousands commas),"$15,848",15848
+76,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2024,2024-09-30
+77,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2024,2024-09-30
+77,ticker,standardize ticker (trim/upper),'MSFT ',MSFT
+78,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2024,2024-09-30
+79,ticker,standardize ticker (trim/upper),' Msft',MSFT
+80,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Dec-24,2024-12-31
+80,ticker,standardize ticker (trim/upper),'msft',MSFT
+81,period_end,date MM/DD/YYYY -> YYYY-MM-DD,12/31/2024,2024-12-31
+81,row,removed: near-duplicate (value 31652.6 vs kept 31653; kept value matches filing) of source row 80,,(deleted)
+82,period_end,date MM/DD/YYYY -> YYYY-MM-DD,12/31/2024,2024-12-31
+82,ticker,standardize ticker (trim/upper),' Msft',MSFT
+82,value,text-to-number (strip $ and thousands commas),"$24,108",24108
+83,ticker,standardize ticker (trim/upper),'MSFT ',MSFT
+84,row,removed: exact duplicate (after normalization) of source row 83,,(deleted)
+84,ticker,standardize ticker (trim/upper),'MSFT ',MSFT
+85,ticker,standardize ticker (trim/upper),'msft',MSFT
+86,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Mar-25,2025-03-31
+87,period_end,date MM/DD/YYYY -> YYYY-MM-DD,06/30/2025,2025-06-30
+87,ticker,standardize ticker (trim/upper),'msft ',MSFT
+87,value,text-to-number (strip $ and thousands commas),"$76,441",76441
+88,period_end,date MM/DD/YYYY -> YYYY-MM-DD,06/30/2025,2025-06-30
+88,ticker,standardize ticker (trim/upper),'msft',MSFT
+88,value,text-to-number (strip $ and thousands commas),"$34,323",34323
+89,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Jun-25,2025-06-30
+89,ticker,standardize ticker (trim/upper),'msft',MSFT
+90,ticker,standardize ticker (trim/upper),'MSFT ',MSFT
+90,value,text-to-number (strip $ and thousands commas),"$77,673",77673
+91,period_end,date MM/DD/YYYY -> YYYY-MM-DD,09/30/2025,2025-09-30
+91,ticker,standardize ticker (trim/upper),'msft ',MSFT
+92,period_end,date DD-Mon-YY -> YYYY-MM-DD,30-Sep-25,2025-09-30
+92,ticker,standardize ticker (trim/upper),'msft',MSFT
+93,ticker,standardize ticker (trim/upper),'msft ',MSFT
+93,value,text-to-number (strip $ and thousands commas),"$81,273",81273
+94,period_end,date MM/DD/YYYY -> YYYY-MM-DD,12/31/2025,2025-12-31
+95,period_end,date MM/DD/YYYY -> YYYY-MM-DD,12/31/2025,2025-12-31
+95,ticker,standardize ticker (trim/upper),'MSFT ',MSFT
+96,period_end,date MM/DD/YYYY -> YYYY-MM-DD,03/31/2026,2026-03-31
+96,ticker,standardize ticker (trim/upper),' Msft',MSFT
+97,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Mar-26,2026-03-31
+97,ticker,standardize ticker (trim/upper),'msft',MSFT
+97,value,text-to-number (strip $ and thousands commas),"$38,398",38398
+98,period_end,date DD-Mon-YY -> YYYY-MM-DD,31-Mar-26,2026-03-31
+98,ticker,standardize ticker (trim/upper),'MSFT ',MSFT
+99,period_end,date MM/DD/YYYY -> YYYY-MM-DD,06/30/2026,2026-06-30
+99,ticker,standardize ticker (trim/upper),'MSFT ',MSFT
+100,period_end,date MM/DD/YYYY -> YYYY-MM-DD,06/30/2026,2026-06-30
+100,ticker,standardize ticker (trim/upper),' Msft',MSFT
+101,ticker,standardize ticker (trim/upper),'msft ',MSFT

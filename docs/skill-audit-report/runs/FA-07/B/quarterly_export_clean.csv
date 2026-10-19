@@ -1,0 +1,97 @@
+ticker,period_end,fiscal_label,metric,value_usd_m,flag,flag_detail,source,notes_original,source_row
+AMZN,2024-09-30,FY2024Q3,revenue,158877,,,stock-data get_financials (SEC XBRL) (matches),FY,27
+AMZN,2024-09-30,FY2024Q3,operating_income,17411,,,stock-data get_financials (SEC XBRL) (matches),,28
+AMZN,2024-09-30,FY2024Q3,net_income,15328,,,stock-data get_financials (SEC XBRL) (matches),12.5,29
+AMZN,2024-12-31,FY2024Q4,revenue,187792,,,stock-data get_financials (SEC XBRL) (matches),3,30
+AMZN,2024-12-31,FY2024Q4,operating_income,21203,,,stock-data get_financials (SEC XBRL) (matches),XBRL,31
+AMZN,2024-12-31,FY2024Q4,net_income,20004,,,stock-data get_financials (SEC XBRL) (matches),2,32
+AMZN,2025-03-31,FY2025Q1,revenue,155667,,,stock-data get_financials (SEC XBRL) (matches),10-K,33
+AMZN,2025-03-31,FY2025Q1,operating_income,18405,,,stock-data get_financials (SEC XBRL) (matches),2,34
+AMZN,2025-03-31,FY2025Q1,net_income,17127,,,stock-data get_financials (SEC XBRL) (matches),,35
+AMZN,2025-06-30,FY2025Q2,revenue,167702,,,stock-data get_financials (SEC XBRL) (matches),,36
+AMZN,2025-06-30,FY2025Q2,operating_income,19171,,,stock-data get_financials (SEC XBRL) (matches),,37
+AMZN,2025-06-30,FY2025Q2,net_income,18164,,,stock-data get_financials (SEC XBRL) (matches),FY,38
+AMZN,2025-09-30,FY2025Q3,revenue,180169,WRONG_VALUE_CORRECTED,"Exported 201,789 vs reported 180,169 (diff +21,620, +12.0%)",Amazon 10-Q filed 2025-10-31; stock-data get_financials (SEC XBRL),10-Q,39
+AMZN,2025-09-30,FY2025Q3,operating_income,17422,,,stock-data get_financials (SEC XBRL) (matches),n/a,40
+AMZN,2025-09-30,FY2025Q3,net_income,21187,,,stock-data get_financials (SEC XBRL) (matches),n/a,41
+AMZN,2025-12-31,FY2025Q4,revenue,213386,,,stock-data get_financials (SEC XBRL) (matches),12.5,42
+AMZN,2025-12-31,FY2025Q4,operating_income,24977,,,stock-data get_financials (SEC XBRL) (matches),see filing,43
+AMZN,2025-12-31,FY2025Q4,net_income,21192,,,stock-data get_financials (SEC XBRL) (matches),FY,44
+AMZN,2026-03-31,FY2026Q1,revenue,181519,,,stock-data get_financials (SEC XBRL) (matches),FY,45
+AMZN,2026-03-31,FY2026Q1,operating_income,23852,,,stock-data get_financials (SEC XBRL) (matches),n/a,46
+AMZN,2026-03-31,FY2026Q1,net_income,30255,,,stock-data get_financials (SEC XBRL) (matches),,47
+AMZN,2026-06-30,FY2026Q2,revenue,200606,,,stock-data get_financials (SEC XBRL) (matches),FY,49
+AMZN,2026-06-30,FY2026Q2,operating_income,27461,,,stock-data get_financials (SEC XBRL) (matches),,50
+AMZN,2026-06-30,FY2026Q2,net_income,62647,OUTLIER_VERIFIED,"NI ~2x prior quarter; verified (pretax 80,857 incl. non-operating gains)",stock-data get_financials (SEC XBRL) (matches),see filing,51
+GOOGL,2024-09-30,FY2024Q3,revenue,88268,,,stock-data get_financials (SEC XBRL) (matches),n/a,2
+GOOGL,2024-09-30,FY2024Q3,operating_income,28521,,,stock-data get_financials (SEC XBRL) (matches),,3
+GOOGL,2024-09-30,FY2024Q3,net_income,26301,,,stock-data get_financials (SEC XBRL) (matches),,4
+GOOGL,2024-12-31,FY2024Q4,revenue,96469,,,stock-data get_financials (SEC XBRL) (matches),,5
+GOOGL,2024-12-31,FY2024Q4,operating_income,30972,,,stock-data get_financials (SEC XBRL) (matches),10-Q,6
+GOOGL,2024-12-31,FY2024Q4,net_income,26536,,,stock-data get_financials (SEC XBRL) (matches),10-Q,8
+GOOGL,2025-03-31,FY2025Q1,revenue,90234,,,stock-data get_financials (SEC XBRL) (matches),1,9
+GOOGL,2025-03-31,FY2025Q1,operating_income,30606,,,stock-data get_financials (SEC XBRL) (matches),n/a,10
+GOOGL,2025-03-31,FY2025Q1,net_income,34540,WRONG_VALUE_CORRECTED,"Exported 30,395 vs reported 34,540 (diff -4,145, -12.0%)",Alphabet 10-Q filed 2025-04-25; stock-data get_financials (SEC XBRL),n/a,11
+GOOGL,2025-06-30,FY2025Q2,revenue,96428,,,stock-data get_financials (SEC XBRL) (matches),,12
+GOOGL,2025-06-30,FY2025Q2,operating_income,31271,,,stock-data get_financials (SEC XBRL) (matches),,13
+GOOGL,2025-06-30,FY2025Q2,net_income,28196,,,stock-data get_financials (SEC XBRL) (matches),0.5,14
+GOOGL,2025-09-30,FY2025Q3,revenue,102346,,,stock-data get_financials (SEC XBRL) (matches),1,15
+GOOGL,2025-09-30,FY2025Q3,operating_income,31228,,,stock-data get_financials (SEC XBRL) (matches),,16
+GOOGL,2025-09-30,FY2025Q3,net_income,34979,,,stock-data get_financials (SEC XBRL) (matches),,17
+GOOGL,2025-12-31,FY2025Q4,revenue,113829,,,stock-data get_financials (SEC XBRL) (matches),12.5,18
+GOOGL,2025-12-31,FY2025Q4,operating_income,35934,,,stock-data get_financials (SEC XBRL) (matches),,19
+GOOGL,2025-12-31,FY2025Q4,net_income,34455,,,stock-data get_financials (SEC XBRL) (matches),1,20
+GOOGL,2026-03-31,FY2026Q1,revenue,109896,,,stock-data get_financials (SEC XBRL) (matches),0.5,21
+GOOGL,2026-03-31,FY2026Q1,operating_income,39696,,,stock-data get_financials (SEC XBRL) (matches),10-Q,22
+GOOGL,2026-03-31,FY2026Q1,net_income,62578,OUTLIER_VERIFIED,"NI 57% of revenue; verified (pretax 77,412 incl. large non-operating gains)",stock-data get_financials (SEC XBRL) (matches),FY,23
+GOOGL,2026-06-30,FY2026Q2,revenue,119796,,,stock-data get_financials (SEC XBRL) (matches),10-Q,24
+GOOGL,2026-06-30,FY2026Q2,operating_income,40770,,,stock-data get_financials (SEC XBRL) (matches),FY,25
+GOOGL,2026-06-30,FY2026Q2,net_income,112193,OUTLIER_VERIFIED,"NI 94% of revenue; verified (pretax 138,753 incl. large non-operating gains)",stock-data get_financials (SEC XBRL) (matches),XBRL,26
+META,2024-09-30,FY2024Q3,revenue,40589,,,stock-data get_financials (SEC XBRL) (matches),10-K,52
+META,2024-09-30,FY2024Q3,operating_income,17350,,,stock-data get_financials (SEC XBRL) (matches),10-K,53
+META,2024-09-30,FY2024Q3,net_income,15688,,,stock-data get_financials (SEC XBRL) (matches),,54
+META,2024-12-31,FY2024Q4,revenue,48385,UNIT_ERROR_FIXED,"Exported in USD thousands (48,385,000); divided by 1,000",Meta 10-K filed 2025-01-30 (Q4 = FY less 9M); stock-data get_financials (SEC XBRL),0.5,55
+META,2024-12-31,FY2024Q4,operating_income,23364,UNIT_ERROR_FIXED,"Exported in USD thousands (23,364,000); divided by 1,000",Meta 10-K filed 2025-01-30 (Q4 = FY less 9M); stock-data get_financials (SEC XBRL),1,56
+META,2024-12-31,FY2024Q4,net_income,20838,UNIT_ERROR_FIXED,"Exported in USD thousands (20,838,000); divided by 1,000",Meta 10-K filed 2025-01-30 (Q4 = FY less 9M); stock-data get_financials (SEC XBRL),12.5,57
+META,2025-03-31,FY2025Q1,revenue,42314,,,stock-data get_financials (SEC XBRL) (matches),,58
+META,2025-03-31,FY2025Q1,operating_income,17555,,,stock-data get_financials (SEC XBRL) (matches),FY,59
+META,2025-03-31,FY2025Q1,net_income,16644,,,stock-data get_financials (SEC XBRL) (matches),,60
+META,2025-06-30,FY2025Q2,revenue,47516,,,stock-data get_financials (SEC XBRL) (matches),,61
+META,2025-06-30,FY2025Q2,operating_income,20441,,,stock-data get_financials (SEC XBRL) (matches),prelim,62
+META,2025-06-30,FY2025Q2,net_income,18337,,,stock-data get_financials (SEC XBRL) (matches),FY,63
+META,2025-09-30,FY2025Q3,revenue,51242,UNIT_ERROR_FIXED,"Exported in USD thousands (51,242,000); divided by 1,000",Meta 10-Q filed 2025-10-30; stock-data get_financials (SEC XBRL),,64
+META,2025-09-30,FY2025Q3,operating_income,20535,UNIT_ERROR_FIXED,"Exported in USD thousands (20,535,000); divided by 1,000",Meta 10-Q filed 2025-10-30; stock-data get_financials (SEC XBRL),,65
+META,2025-09-30,FY2025Q3,net_income,2709,UNIT_ERROR_FIXED,"Exported in USD thousands (2,709,000); divided by 1,000",Meta 10-Q filed 2025-10-30; stock-data get_financials (SEC XBRL),ok,66
+META,2025-12-31,FY2025Q4,revenue,59893,,,stock-data get_financials (SEC XBRL) (matches),2,67
+META,2025-12-31,FY2025Q4,operating_income,24745,,,stock-data get_financials (SEC XBRL) (matches),,68
+META,2025-12-31,FY2025Q4,net_income,22768,,,stock-data get_financials (SEC XBRL) (matches),,69
+META,2026-03-31,FY2026Q1,revenue,56311,,,stock-data get_financials (SEC XBRL) (matches),3,70
+META,2026-03-31,FY2026Q1,operating_income,22872,,,stock-data get_financials (SEC XBRL) (matches),prelim,71
+META,2026-03-31,FY2026Q1,net_income,26773,,,stock-data get_financials (SEC XBRL) (matches),,72
+META,2026-06-30,FY2026Q2,revenue,60801,,,stock-data get_financials (SEC XBRL) (matches),10-K,73
+META,2026-06-30,FY2026Q2,operating_income,18775,,,stock-data get_financials (SEC XBRL) (matches),2,74
+META,2026-06-30,FY2026Q2,net_income,15848,,,stock-data get_financials (SEC XBRL) (matches),1,75
+MSFT,2024-09-30,FY2025Q1,revenue,65585,,,stock-data get_financials (SEC XBRL) (matches),12.5,76
+MSFT,2024-09-30,FY2025Q1,operating_income,30552,,,stock-data get_financials (SEC XBRL) (matches),,77
+MSFT,2024-09-30,FY2025Q1,net_income,24667,,,stock-data get_financials (SEC XBRL) (matches),ok,78
+MSFT,2024-12-31,FY2025Q2,revenue,69632,,,stock-data get_financials (SEC XBRL) (matches),2,79
+MSFT,2024-12-31,FY2025Q2,operating_income,31653,,,stock-data get_financials (SEC XBRL) (matches),,80
+MSFT,2024-12-31,FY2025Q2,net_income,24108,,,stock-data get_financials (SEC XBRL) (matches),3,82
+MSFT,2025-03-31,FY2025Q3,revenue,70066,,,stock-data get_financials (SEC XBRL) (matches),,83
+MSFT,2025-03-31,FY2025Q3,operating_income,32000,,,stock-data get_financials (SEC XBRL) (matches),n/a,85
+MSFT,2025-03-31,FY2025Q3,net_income,25824,,,stock-data get_financials (SEC XBRL) (matches),,86
+MSFT,2025-06-30,FY2025Q4,revenue,76441,,,stock-data get_financials (SEC XBRL) (matches),,87
+MSFT,2025-06-30,FY2025Q4,operating_income,34323,,,stock-data get_financials (SEC XBRL) (matches),prelim,88
+MSFT,2025-06-30,FY2025Q4,net_income,27233,,,stock-data get_financials (SEC XBRL) (matches),10-K,89
+MSFT,2025-09-30,FY2026Q1,revenue,77673,,,stock-data get_financials (SEC XBRL) (matches),ok,90
+MSFT,2025-09-30,FY2026Q1,operating_income,37961,,,stock-data get_financials (SEC XBRL) (matches),FY,91
+MSFT,2025-09-30,FY2026Q1,net_income,27747,,,stock-data get_financials (SEC XBRL) (matches),,92
+MSFT,2025-12-31,FY2026Q2,revenue,81273,,,stock-data get_financials (SEC XBRL) (matches),0.5,93
+MSFT,2025-12-31,FY2026Q2,operating_income,38275,,,stock-data get_financials (SEC XBRL) (matches),10-K,94
+MSFT,2025-12-31,FY2026Q2,net_income,38458,,,stock-data get_financials (SEC XBRL) (matches),prelim,95
+MSFT,2026-03-31,FY2026Q3,revenue,82886,,,stock-data get_financials (SEC XBRL) (matches),,96
+MSFT,2026-03-31,FY2026Q3,operating_income,38398,,,stock-data get_financials (SEC XBRL) (matches),XBRL,97
+MSFT,2026-03-31,FY2026Q3,net_income,31778,,,stock-data get_financials (SEC XBRL) (matches),prelim,98
+MSFT,2026-06-30,FY2026Q4,revenue,90007,,,stock-data get_financials (SEC XBRL) (matches),,99
+MSFT,2026-06-30,FY2026Q4,operating_income,40603,,,stock-data get_financials (SEC XBRL) (matches),,100
+MSFT,2026-06-30,FY2026Q4,net_income,35766,,,stock-data get_financials (SEC XBRL) (matches),ok,101
